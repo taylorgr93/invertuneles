@@ -1,10 +1,18 @@
 // lib/useTranslation.ts
+
 export async function useTranslation(locale: string, namespace = "common") {
   const translations = await import(
     `../locales/${locale}/${namespace}.json`
   ).then((mod) => mod.default);
 
-  return {
-    t: (key: string) => translations[key] || key,
+  // Soporte para claves anidadas: "pages.contact" => translations.pages.contact
+  const t = (key: string): string => {
+    return (
+      key.split(".").reduce((obj, segment) => {
+        return obj?.[segment];
+      }, translations as any) || key
+    );
   };
+
+  return { t };
 }

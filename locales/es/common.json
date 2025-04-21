@@ -1,3 +1,9 @@
 {
-  "greeting": "Hola mundo!"
+  "pages": {
+    "contact": "Contacto",
+    "home": "Inicio",
+    "products": "Productos"
+  },
+  "greeting": "Hola mundo!",
+  "contact": "Contacto"
 }

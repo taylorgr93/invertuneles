@@ -24,7 +24,9 @@ export default async function RootLayout({
   children: React.ReactNode;
   params: any;
 }>) {
+  // NOTE: iterar paramas para sacar locales y no marque error
   const { locale } = await params;
+
   return (
     <html lang={locale}>
       <body
