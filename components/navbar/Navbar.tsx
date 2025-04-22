@@ -1,39 +1,57 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
-import { useTranslation } from "../../lib/useTranslation";
 import LanguageSwitcher from "../LanguageSwitcher";
+import { useTranslation } from "../../lib/useTranslation";
 
 export default async function Navbar({ locale }: any) {
   const { t } = await useTranslation(locale);
 
   return (
-    <div className="w-full bg-white sticky top-0 z-50 shadow-md">
-      {/* <nav className="flex bg-blue-800 bg-opacity-30 p-2 m-2 rounded"> */}
-      <nav className="flex flex-row p-4 m-4 md:flex-row justify-end items-center bg-amber-400">
-        <div className="w-1/3 relative h-16 bg-black">
+    <div className="w-full  sticky top-0 z-50 shadow-md">
+      <nav className="flex items-center justify-between flex-wrap px-4 py-3 md:px-8">
+        {/* LOGO */}
+        <Link
+          href="/"
+          className="relative h-24 w-48 md:h-28 md:w-56 flex-shrink-0 block"
+        >
           <Image
-            src="/recurso-1-8.webp"
+            src="/images/recurso-1-8.webp"
             alt="logo"
-            fill // Usa "fill" para ajustar la imagen al contenedor
-            sizes="(max-width: 768px) 200px, 300px" // Esto ayuda con la optimización del rendimiento
-            className="object-contain" // Cambiar a "object-cover" si prefieres que llene el contenedor
+            fill
+            sizes="(max-width: 768px) 192px, 256px"
+            className="object-contain"
           />
-        </div>
+        </Link>
 
-        <div className="w-1/3 flex flex-row justify-between bg-blue-400">
-          <a className="text-2xl" href={`/${locale}/about`}>
-            {t("pages.about")}
-          </a>
-          <a className="text-2xl" href={`/${locale}/products`}>
-            {t("pages.products")}
-          </a>
-          <a className="text-2xl" href={`/${locale}/contact`}>
-            {t("pages.contact")}
-          </a>
-        </div>
+        {/* LINKS + IDIOMA */}
+        <div className="flex flex-col sm:flex-row items-center gap-4 md:gap-6">
+          {/* LINKS */}
+          <div className="flex flex-col sm:flex-row items-center gap-4">
+            <a
+              href={`/${locale}/about`}
+              className="text-sm sm:text-base md:text-2xl font-medium text-white hover:text-green-500 transition"
+            >
+              {t("pages.about")}
+            </a>
+            <a
+              href={`/${locale}/products`}
+              className="text-sm sm:text-base md:text-2xl font-medium text-white hover:text-green-500 transition"
+            >
+              {t("pages.products")}
+            </a>
+            <a
+              href={`/${locale}/contact`}
+              className="text-sm sm:text-base md:text-2xl font-medium text-white hover:text-green-500 transition"
+            >
+              {t("pages.contact")}
+            </a>
+          </div>
 
-        <div className="w-1/8 flex flex-row justify-center bg-green-400">
-          <LanguageSwitcher />
+          {/* IDIOMA */}
+          <div>
+            <LanguageSwitcher />
+          </div>
         </div>
       </nav>
     </div>

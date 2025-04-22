@@ -43,7 +43,7 @@ export default function LanguageSwitcher() {
   return (
     <div className="relative" ref={dropdownRef}>
       <button
-        className="cursor-pointer rounded-full w-10 h-10 text-2xl flex items-center justify-center border border-gray-300 shadow-sm"
+        className="cursor-pointer rounded-full w-10 h-10 text-2xl flex items-center justify-center border border-gray-300 shadow-sm hover:border-green-500"
         onClick={() => setOpen((prev) => !prev)}
       >
         {getFlag(currentLocale)}
@@ -54,13 +54,13 @@ export default function LanguageSwitcher() {
         <div className="absolute right-0 mt-2 w-28 bg-black rounded">
           <button
             onClick={() => changeLocale("en")}
-            className="cursor-pointer w-full px-4 py-2 text-left hover:bg-gray-50 rounded-t text-sm hover:text-black transition"
+            className="cursor-pointer w-full px-4 py-2 text-left rounded-t text-sm transition-colors hover:bg-gray-50 hover:text-green-600"
           >
             English
           </button>
           <button
             onClick={() => changeLocale("es")}
-            className="cursor-pointer w-full px-4 py-2 text-left hover:bg-gray-50 rounded-b text-sm hover:text-black transition"
+            className="cursor-pointer w-full px-4 py-2 text-left rounded-b text-sm transition-colors hover:bg-gray-50 hover:text-green-600"
           >
             Español
           </button>
