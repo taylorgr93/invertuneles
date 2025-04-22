@@ -1,7 +1,8 @@
 {
   "pages": {
-    "contact": "Contact",
     "home": "Home",
+    "about": "About",
+    "contact": "Contact",
     "products": "Products"
   },
   "greeting": "Hello world!"
