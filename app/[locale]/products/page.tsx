@@ -13,9 +13,10 @@ export const metadata: Metadata = {
 export default function ProductsPage({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }) {
-  const { t } = use(getTranslations(params.locale));
+  const { locale } = use(params);
+  const { t } = use(getTranslations(locale));
 
   return (
     <>

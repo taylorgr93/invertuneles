@@ -10,8 +10,13 @@ export const metadata: Metadata = {
   keywords: ["acerca de", "acerca de nosotros", "..."],
 };
 
-export default function AboutPage({ params }: { params: { locale: string } }) {
-  const { t } = use(getTranslations(params.locale));
+export default function AboutPage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = use(params);
+  const { t } = use(getTranslations(locale));
 
   return (
     <>

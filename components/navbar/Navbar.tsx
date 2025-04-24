@@ -12,6 +12,7 @@ type Props = {
 
 export default function Navbar({ locale }: Props) {
   const { t } = use(getTranslations(locale));
+
   return (
     <div className="w-full sticky top-0 z-50 shadow-md bg-black">
       <nav className="flex items-center justify-between flex-wrap px-4 py-3 md:px-8">
