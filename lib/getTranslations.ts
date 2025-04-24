@@ -1,17 +1,25 @@
-// lib/useTranslation.ts
+type NestedTranslations = {
+  [key: string]: string | { [key: string]: unknown };
+};
 
 export async function getTranslations(locale: string, namespace = "common") {
   const translations = await import(
     `../locales/${locale}/${namespace}.json`
-  ).then((mod) => mod.default);
+  ).then((mod) => mod.default as NestedTranslations);
 
-  // Soporte para claves anidadas: "pages.contact" => translations.pages.contact
   const t = (key: string): string => {
-    return (
-      key.split(".").reduce((obj, segment) => {
-        return obj?.[segment];
-      }, translations as any) || key
-    );
+    const segments = key.split(".");
+
+    let value: unknown = translations;
+    for (const segment of segments) {
+      if (typeof value === "object" && value !== null && segment in value) {
+        value = (value as Record<string, unknown>)[segment];
+      } else {
+        return key; // fallback si la clave no existe
+      }
+    }
+
+    return typeof value === "string" ? value : key;
   };
 
   return { t };
