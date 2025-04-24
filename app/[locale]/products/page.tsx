@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { useTranslation } from "../../../lib/useTranslation";
+import { getTranslations } from "../../../lib/getTranslations";
 
 export const metadata: Metadata = {
   title: "Invertuneles",
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 export default async function ProductsPage({ params }: any) {
   const { locale } = await params;
-  const { t } = await useTranslation(locale);
+  const { t } = await getTranslations(locale);
 
   return (
     <>

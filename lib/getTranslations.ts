@@ -1,6 +1,6 @@
 // lib/useTranslation.ts
 
-export async function useTranslation(locale: string, namespace = "common") {
+export async function getTranslations(locale: string, namespace = "common") {
   const translations = await import(
     `../locales/${locale}/${namespace}.json`
   ).then((mod) => mod.default);

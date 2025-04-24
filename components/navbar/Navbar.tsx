@@ -2,10 +2,10 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import LanguageSwitcher from "../LanguageSwitcher";
-import { useTranslation } from "../../lib/useTranslation";
+import { getTranslations } from "../../lib/getTranslations";
 
 export default async function Navbar({ locale }: any) {
-  const { t } = await useTranslation(locale);
+  const { t } = await getTranslations(locale);
 
   return (
     <div className="w-full sticky top-0 z-50 shadow-md bg-black">
