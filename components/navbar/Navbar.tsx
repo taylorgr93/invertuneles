@@ -4,7 +4,11 @@ import Image from "next/image";
 import LanguageSwitcher from "../LanguageSwitcher";
 import { getTranslations } from "../../lib/getTranslations";
 
-export default async function Navbar({ locale }: any) {
+type Props = {
+  locale: string;
+};
+
+export default async function Navbar({ locale }: Props) {
   const { t } = await getTranslations(locale);
 
   return (

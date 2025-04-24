@@ -2,7 +2,7 @@
 import { getTranslations } from "@/lib/getTranslations";
 import VideoBackground from "@/components/home/VideoBackground";
 
-export default async function Home({ params }: any) {
+export default async function Home({ params }: { params: { locale: string } }) {
   const { locale } = await params;
   // Desestructurar correctamente con `params.locale`
   const { t } = await getTranslations(locale);

@@ -29,7 +29,7 @@ export default async function RootLayout({
   params,
 }: Readonly<{
   children: React.ReactNode;
-  params: any;
+  params: { locale: string };
 }>) {
   // NOTE: iterar paramas para sacar locales y no marque error
   const { locale } = await params;

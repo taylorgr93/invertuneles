@@ -8,7 +8,11 @@ export const metadata: Metadata = {
   keywords: ["acerca de", "acerca de nosotros", "..."],
 };
 
-export default async function AboutPage({ params }: any) {
+export default async function AboutPage({
+  params,
+}: {
+  params: { locale: string };
+}) {
   const { locale } = await params;
   const { t } = await getTranslations(locale);
 
