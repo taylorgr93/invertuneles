@@ -1,3 +1,5 @@
+// app/layout.tsx
+import { use } from "react";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
@@ -23,16 +25,14 @@ export const metadata: Metadata = {
   },
 };
 
-// NOTE: EL rootlayout es un HOC (Higher order component) - por que se mandan componentes children
-export default async function RootLayout({
-  children,
-  params,
-}: Readonly<{
+type Props = {
   children: React.ReactNode;
-  params: { locale: string };
-}>) {
-  // NOTE: iterar paramas para sacar locales y no marque error
-  const { locale } = await params;
+  params: Promise<{ locale: string }>; // 👈 importante: params es ahora una promesa
+};
+
+// NOTE: EL rootlayout es un HOC (Higher order component) - por que se mandan componentes children
+export default function RootLayout({ children, params }: Props) {
+  const { locale } = use(params);
 
   return (
     <html lang={locale}>

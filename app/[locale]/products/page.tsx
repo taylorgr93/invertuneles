@@ -1,3 +1,5 @@
+// app/products/page.tsx
+import { use } from "react";
 import type { Metadata } from "next";
 import { getTranslations } from "../../../lib/getTranslations";
 
@@ -8,13 +10,12 @@ export const metadata: Metadata = {
   keywords: ["acerca de", "acerca de nosotros", "..."],
 };
 
-export default async function ProductsPage({
+export default function ProductsPage({
   params,
 }: {
   params: { locale: string };
 }) {
-  const { locale } = await params;
-  const { t } = await getTranslations(locale);
+  const { t } = use(getTranslations(params.locale));
 
   return (
     <>

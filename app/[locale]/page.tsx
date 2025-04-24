@@ -1,11 +1,11 @@
 // app/page.tsx
+import { use } from "react";
 import { getTranslations } from "@/lib/getTranslations";
 import VideoBackground from "@/components/home/VideoBackground";
 
-export default async function Home({ params }: { params: { locale: string } }) {
-  const { locale } = await params;
-  // Desestructurar correctamente con `params.locale`
-  const { t } = await getTranslations(locale);
+export default function Home(props: { params: Promise<{ locale: string }> }) {
+  const { locale } = use(props.params);
+  const { t } = use(getTranslations(locale));
 
   return (
     <div className="relative min-h-screen">

@@ -1,3 +1,5 @@
+// components/navbar/Navbar.tsx
+import { use } from "react";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
@@ -8,9 +10,8 @@ type Props = {
   locale: string;
 };
 
-export default async function Navbar({ locale }: Props) {
-  const { t } = await getTranslations(locale);
-
+export default function Navbar({ locale }: Props) {
+  const { t } = use(getTranslations(locale));
   return (
     <div className="w-full sticky top-0 z-50 shadow-md bg-black">
       <nav className="flex items-center justify-between flex-wrap px-4 py-3 md:px-8">
