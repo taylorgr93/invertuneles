@@ -1,11 +1,15 @@
 // app/page.tsx
 import { use } from "react";
-import { getTranslations } from "@/lib/getTranslations";
+import { getTranslations, Dict } from "@/lib/getTranslations";
 import VideoBackground from "@/components/home/VideoBackground";
 
 export default function Home(props: { params: Promise<{ locale: string }> }) {
   const { locale } = use(props.params);
-  const { t } = use(getTranslations(locale));
+  const translations: Dict = use(getTranslations(locale));
+
+  /* Helper local de traducción (solo strings, no se envía al client) */
+  const t = (key: string) =>
+    key.split(".").reduce<any>((obj, s) => obj?.[s], translations) ?? key;
 
   return (
     <div className="relative min-h-screen">

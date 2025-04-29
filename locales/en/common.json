@@ -3,7 +3,9 @@
     "home": "Home",
     "about": "About",
     "contact": "Contact",
-    "products": "Products"
+    "products": "Products",
+    "careers": "Careers",
+    "blog": "Blog"
   },
   "greeting": "Hello world!",
   "home": {

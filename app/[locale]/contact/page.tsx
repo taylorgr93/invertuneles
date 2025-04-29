@@ -1,7 +1,7 @@
 // app/contact/page.tsx
 import { use } from "react";
 import type { Metadata } from "next";
-import { getTranslations } from "../../../lib/getTranslations";
+import { getTranslations, Dict } from "../../../lib/getTranslations";
 
 export const metadata: Metadata = {
   title: "Invertuneles",
@@ -16,7 +16,11 @@ export default function ContactPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = use(params);
-  const { t } = use(getTranslations(locale));
+  const translations: Dict = use(getTranslations(locale));
+
+  /* Helper local de traducción (solo strings, no se envía al client) */
+  const t = (key: string) =>
+    key.split(".").reduce<any>((obj, s) => obj?.[s], translations) ?? key;
 
   return (
     <>

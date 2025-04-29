@@ -3,7 +3,9 @@
     "home": "Inicio",
     "about": "Acerca de",
     "contact": "Contacto",
-    "products": "Productos"
+    "products": "Productos",
+    "careers": "Carreras",
+    "blog": "Blog"
   },
   "greeting": "Hola mundo!",
   "home": {
