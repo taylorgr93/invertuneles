@@ -41,55 +41,67 @@ export default function NavbarClient({ locale, translations }: Props) {
       <Link
         href={`/${locale}`}
         onClick={() => setOpen(false)}
-        className="block px-4 py-2 md:p-0 text-white hover:text-green-500"
+        className="group inline-block" /* el Link controla el hover */
       >
-        {t("pages.home")}
+        <h2 className="px-4 py-2 md:p-0 text-white text-3xl md:text-2xl font-semibold transition-all duration-200 group-hover:text-green-500 [text-shadow:none] group-hover:[text-shadow:0_0_10px_rgba(255,255,255,0.9)]">
+          {t("pages.home")}
+        </h2>
       </Link>
       <Link
         href={`/${locale}/about`}
         onClick={() => setOpen(false)}
-        className="block px-4 py-2 md:p-0 text-white hover:text-green-500"
+        className="group inline-block" /* el Link controla el hover */
       >
-        {t("pages.about")}
+        <h2 className="px-4 py-2 md:p-0 text-white text-3xl md:text-2xl font-semibold transition-all duration-200 group-hover:text-green-500 [text-shadow:none] group-hover:[text-shadow:0_0_10px_rgba(255,255,255,0.9)]">
+          {t("pages.about")}
+        </h2>
       </Link>
       <Link
         href={`/${locale}/products`}
         onClick={() => setOpen(false)}
-        className="block px-4 py-2 md:p-0 text-white hover:text-green-500"
+        className="group inline-block" /* el Link controla el hover */
       >
-        {t("pages.products")}
+        <h2 className="px-4 py-2 md:p-0 text-white text-3xl md:text-2xl font-semibold transition-all duration-200 group-hover:text-green-500 [text-shadow:none] group-hover:[text-shadow:0_0_10px_rgba(255,255,255,0.9)]">
+          {t("pages.products")}
+        </h2>
       </Link>
       <Link
         href={`/${locale}/contact`}
         onClick={() => setOpen(false)}
-        className="block px-4 py-2 md:p-0 text-white hover:text-green-500"
+        className="group inline-block" /* el Link controla el hover */
       >
-        {t("pages.contact")}
+        <h2 className="px-4 py-2 md:p-0 text-white text-3xl md:text-2xl font-semibold transition-all duration-200 group-hover:text-green-500 [text-shadow:none] group-hover:[text-shadow:0_0_10px_rgba(255,255,255,0.9)]">
+          {t("pages.contact")}
+        </h2>
       </Link>
       <Link
         href={`/${locale}/blog`}
         onClick={() => setOpen(false)}
-        className="block px-4 py-2 md:p-0 text-white hover:text-green-500"
+        className="group inline-block" /* el Link controla el hover */
       >
-        {t("pages.blog")}
+        <h2 className="px-4 py-2 md:p-0 text-white text-3xl md:text-2xl font-semibold transition-all duration-200 group-hover:text-green-500 [text-shadow:none] group-hover:[text-shadow:0_0_10px_rgba(255,255,255,0.9)]">
+          {t("pages.blog")}
+        </h2>
       </Link>
       <Link
         href={`/${locale}/careers`}
         onClick={() => setOpen(false)}
-        className="block px-4 py-2 md:p-0 text-white hover:text-green-500"
+        className="group inline-block" /* el Link controla el hover */
       >
-        {t("pages.careers")}
+        <h2 className="px-4 py-2 md:p-0 text-white text-3xl md:text-2xl font-semibold transition-all duration-200 group-hover:text-green-500 [text-shadow:none] group-hover:[text-shadow:0_0_10px_rgba(255,255,255,0.9)]">
+          {t("pages.careers")}
+        </h2>
       </Link>
     </>
   );
 
   return (
     <header className="w-full sticky top-0 z-50 bg-black shadow-md">
-      <nav className="flex items-center justify-between px-4 py-3 md:px-8">
+      <nav className="flex items-center justify-between px-4 py-2 md:px-8">
         {/* Logo */}
         <Link
           href={`/${locale}`}
-          className="relative h-20 w-48 md:h-24 md:w-56 flex-shrink-0"
+          className="relative h-24 w-56 md:h-32 md:w-72 flex-shrink-0"
         >
           <Image
             src="/images/recurso-1-8.webp"

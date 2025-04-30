@@ -41,6 +41,7 @@ export default function RootLayout({ children, params }: Props) {
       >
         <Navbar locale={locale} />
         {children}
+        {/* <Footer locale={locale} /> */}
       </body>
     </html>
   );
