@@ -19,8 +19,23 @@ export default function ProductsPage({
   const translations: Dict = use(getTranslations(locale));
 
   /* Helper local de traducción (solo strings, no se envía al client) */
-  const t = (key: string) =>
-    key.split(".").reduce<any>((obj, s) => obj?.[s], translations) ?? key;
+  const t = (key: string): string => {
+    let value: unknown = translations;
+
+    for (const segment of key.split(".")) {
+      if (
+        typeof value === "object" &&
+        value !== null &&
+        segment in (value as Record<string, unknown>)
+      ) {
+        value = (value as Record<string, unknown>)[segment];
+      } else {
+        return key; // Fallback si no existe
+      }
+    }
+
+    return typeof value === "string" ? value : key;
+  };
 
   return (
     <>
