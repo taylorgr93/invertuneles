@@ -1,30 +1,13 @@
 // app/page.tsx
 import { use } from "react";
+import { makeT } from "@/lib/makeT";
 import { getTranslations, Dict } from "@/lib/getTranslations";
 import VideoBackground from "@/components/home/VideoBackground";
 
 export default function Home(props: { params: Promise<{ locale: string }> }) {
   const { locale } = use(props.params);
   const translations: Dict = use(getTranslations(locale));
-
-  /* Helper local de traducción (solo strings, no se envía al client) */ const t =
-    (key: string): string => {
-      let value: unknown = translations;
-
-      for (const segment of key.split(".")) {
-        if (
-          typeof value === "object" &&
-          value !== null &&
-          segment in (value as Record<string, unknown>)
-        ) {
-          value = (value as Record<string, unknown>)[segment];
-        } else {
-          return key; // Fallback si no existe
-        }
-      }
-
-      return typeof value === "string" ? value : key;
-    };
+  const t = makeT(translations);
 
   return (
     <div className="relative min-h-screen">

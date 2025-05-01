@@ -1,7 +1,8 @@
 // app/careers/page.tsx
 import { use } from "react";
 import type { Metadata } from "next";
-import { getTranslations, Dict } from "../../../lib/getTranslations";
+import { makeT } from "@/lib/makeT";
+import { getTranslations, Dict } from "@/lib/getTranslations";
 
 export const metadata: Metadata = {
   title: "Página Acerca de careers",
@@ -17,25 +18,7 @@ export default function CareersPage({
 }) {
   const { locale } = use(params);
   const translations: Dict = use(getTranslations(locale));
-
-  /* Helper local de traducción (solo strings, no se envía al client) */
-  const t = (key: string): string => {
-    let value: unknown = translations;
-
-    for (const segment of key.split(".")) {
-      if (
-        typeof value === "object" &&
-        value !== null &&
-        segment in (value as Record<string, unknown>)
-      ) {
-        value = (value as Record<string, unknown>)[segment];
-      } else {
-        return key; // Fallback si no existe
-      }
-    }
-
-    return typeof value === "string" ? value : key;
-  };
+  const t = makeT(translations);
 
   return (
     <>

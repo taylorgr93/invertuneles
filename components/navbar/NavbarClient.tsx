@@ -5,6 +5,7 @@ import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import LanguageSwitcher from "../LanguageSwitcher";
+import { makeT } from "@/lib/makeT";
 import { Dict } from "@/lib/getTranslations";
 
 type Props = {
@@ -13,28 +14,9 @@ type Props = {
 };
 
 export default function NavbarClient({ locale, translations }: Props) {
-  /* helper de traducción 100 % en el client */
-  const t = (key: string): string => {
-    let value: unknown = translations;
-
-    for (const segment of key.split(".")) {
-      if (
-        typeof value === "object" &&
-        value !== null &&
-        segment in (value as Record<string, unknown>)
-      ) {
-        value = (value as Record<string, unknown>)[segment];
-      } else {
-        return key; // Fallback si no existe
-      }
-    }
-
-    return typeof value === "string" ? value : key;
-  };
-  /* ---------------------------------- */
-
   const [open, setOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
+  const t = makeT(translations);
 
   /* Cerrar al click-fuera */
   useEffect(() => {
