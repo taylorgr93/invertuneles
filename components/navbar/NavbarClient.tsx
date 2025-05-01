@@ -14,8 +14,23 @@ type Props = {
 
 export default function NavbarClient({ locale, translations }: Props) {
   /* helper de traducción 100 % en el client */
-  const t = (key: string) =>
-    key.split(".").reduce<any>((obj, s) => obj?.[s], translations) ?? key;
+  const t = (key: string): string => {
+    let value: unknown = translations;
+
+    for (const segment of key.split(".")) {
+      if (
+        typeof value === "object" &&
+        value !== null &&
+        segment in (value as Record<string, unknown>)
+      ) {
+        value = (value as Record<string, unknown>)[segment];
+      } else {
+        return key; // Fallback si no existe
+      }
+    }
+
+    return typeof value === "string" ? value : key;
+  };
   /* ---------------------------------- */
 
   const [open, setOpen] = useState(false);

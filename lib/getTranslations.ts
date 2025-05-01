@@ -26,9 +26,9 @@
 // }
 
 // lib/getTranslations.ts
-export type Dict = Record<string, any>;
+export type Dict = Record<string, unknown>;
 
 export async function getTranslations(locale: string, ns = "common") {
   const json = await import(`../locales/${locale}/${ns}.json`);
-  return json.default as Dict; // ← solo JSON serializable
+  return json.default as Dict; // sigue siendo serializable
 }
