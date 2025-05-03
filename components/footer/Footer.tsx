@@ -6,5 +6,5 @@ type Props = { locale: string };
 
 export default function Footer({ locale }: Props) {
   const translations: Dict = use(getTranslations(locale));
-  return <FooterClient locale={locale} translations={translations} />;
+  return <FooterClient translations={translations} />;
 }

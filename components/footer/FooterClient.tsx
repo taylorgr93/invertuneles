@@ -5,11 +5,10 @@ import { makeT } from "@/lib/makeT";
 import { Dict } from "@/lib/getTranslations";
 
 type Props = {
-  locale: string;
   translations: Dict;
 };
 
-export default function FooterClient({ locale, translations }: Props) {
+export default function FooterClient({ translations }: Props) {
   const t = makeT(translations);
 
   return (
