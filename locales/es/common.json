@@ -10,5 +10,17 @@
   "greeting": "Hola mundo!",
   "home": {
     "were": "Somos una empresa líder en el desarrollo de soluciones innovadoras para la agricultura protegida. Nuestro compromiso es brindar tecnologías que impulsen la productividad, optimicen recursos y cuiden el medio ambiente, asegurando el éxito de agricultores alrededor del mundo."
+  },
+  "footer": {
+    "numbers": "Teléfonos de Oficina",
+    "contact": "Contáctanos",
+    "name": "Nombre Completo",
+    "namePlaceholder": "Nombre Apellido",
+    "email": "Correo electronico",
+    "comments": "Comentarios",
+    "commentsPlaceholder": "Favor de expresar sus dudas o comentarios...",
+    "send": "Enviar",
+    "message": "Nos pondremos en contacto",
+    "rights": "Todos los derechos reservados."
   }
 }
