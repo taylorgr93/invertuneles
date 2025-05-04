@@ -36,7 +36,7 @@ export default function FooterClient({ translations }: Props) {
               />
             </svg>
 
-            <span>ventas@invertuneles.com</span>
+            <p className="text-xl">ventas@invertuneles.com</p>
           </Link>
 
           {/* ── Dirección ─────────────────── */}
@@ -66,7 +66,9 @@ export default function FooterClient({ translations }: Props) {
               />
             </svg>
 
-            <span>Morelia‑Guadalajara, 59835 Jacona de Plancarte, Mich.</span>
+            <p className="text-xl">
+              Morelia‑Guadalajara, 59835 Jacona de Plancarte, Mich.
+            </p>
           </Link>
 
           {/* ──── WhatsApp ─────────────── */}
@@ -82,26 +84,93 @@ export default function FooterClient({ translations }: Props) {
             >
               <path d="M12.04 2A9.94 9.94 0 002 11.99c0 1.76.46 3.47 1.34 4.98L2 22l5.15-1.31a9.93 9.93 0 004.89 1.25h.03A9.94 9.94 0 0022 11.99 9.94 9.94 0 0012.04 2zm5.68 14.52c-.24.67-1.39 1.28-1.93 1.36-.5.08-1.1.11-1.77-.12-.4-.13-.91-.29-1.56-.57a9.63 9.63 0 01-3.42-2.7 8.71 8.71 0 01-1.8-3.17c-.19-.52-.02-1.15.26-1.5.27-.34.6-.43.93-.43h.67c.26 0 .39.02.56.44.24.59.83 2.04.9 2.19.07.15.12.33.02.52-.1.19-.15.31-.3.48-.15.17-.31.37-.44.5-.15.15-.3.3-.13.59.17.28.77 1.26 1.64 2.04 1.12 1.01 2.06 1.33 2.33 1.48.26.15.41.12.56-.07.15-.19.65-.75.83-1 .17-.26.34-.22.56-.15.23.07 1.47.7 1.72.83.26.12.43.19.5.3.08.12.08.67-.15 1.34z"></path>
             </svg>
-            <span>WhatsApp</span>
+            <p className="text-xl">WhatsApp</p>
+          </Link>
+
+          {/* ──── Instagram ─────────────── */}
+          <Link
+            href="https://www.instagram.com/Invertuneles"
+            target="_blank"
+            className="flex items-start gap-3 group hover:text-green-500 transition"
+          >
+            <svg
+              className="w-7 h-7 flex-shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+            </svg>
+            <p className="text-xl">Instagram</p>
+          </Link>
+
+          {/* ──── LinkedIn ─────────────── */}
+          <Link
+            href="https://www.linkedin.com/company/invertuneles-corp/posts/?feedView=all"
+            target="_blank"
+            className="flex items-start gap-3 group hover:text-green-500 transition"
+          >
+            <svg
+              className="w-7 h-7 flex-shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <rect x="2" y="9" width="4" height="12" />
+              <circle cx="4" cy="4" r="2" />
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
+            </svg>
+            <p className="text-2xl">LinkedIn</p>
+          </Link>
+
+          {/* ──── Facebook ─────────────── */}
+          <Link
+            href="https://www.facebook.com/profile.php?id=100063643256369"
+            target="_blank"
+            className="flex items-start gap-3 group hover:text-green-500 transition"
+          >
+            <svg
+              className="w-7 h-7 flex-shrink-0"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M18 2h-3a4 4 0 0 0-4 4v3H8v4h3v8h4v-8h3l1-4h-4V6a1 1 0 0 1 1-1h3z" />
+            </svg>
+            <p className="text-2xl">Facebook</p>
           </Link>
         </address>
 
         {/* ───────── Columna 2 ───────── */}
         <div>
           <h3 className="text-xl font-semibold mb-4">
-            {t("footer.officePhones") ?? "Teléfonos de Oficina"}
+            {t("footer.officePhones")}
           </h3>
           <div className="flex items-start gap-5">
             <div className="flex-shrink-0">
               {/* phone in circle */}
               <span className="inline-flex items-center justify-center w-12 h-12 rounded-full border-2 border-white">
-                <svg className="w-6 h-6" fill="none" stroke="currentColor">
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.8}
-                    d="M2 4.5l4.5 1.5 3 6-2 2c1.5 3 4.5 6 7.5 7.5l2-2 6 3 1.5 4.5c-3 1.5-7.5 0-13.5-6S.5 7.5 2 4.5z"
-                  />
+                <svg
+                  className="w-6 h-6"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="1.5" /* un poco más delgado */
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M2 4.5l4.5 1.5 3 6-2 2c1.5 3 4.5 6 7.5 7.5l2-2 6 3 1.5 4.5c-3 1.5-7.5 0-13.5-6S.5 7.5 2 4.5z" />
                 </svg>
               </span>
             </div>
