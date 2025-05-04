@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export type OfferItem = {
+  id: number; // unique id
   slug: string; // enlace «/products/[slug]»
   title: string; // HILO, PROVENT, etc.
   range: string; // Advantage Range, Premium, …
@@ -13,6 +14,7 @@ export type OfferItem = {
 };
 
 export default function OfferCard({
+  id,
   slug,
   title,
   range,
@@ -21,7 +23,7 @@ export default function OfferCard({
 }: OfferItem) {
   return (
     <Link
-      href={`/products/${slug}`}
+      href={`/products/${id}`}
       className="group relative block aspect-[4/3] overflow-hidden rounded-sm shadow-md transition-shadow duration-300 hover:shadow-xl"
     >
       {/* Imagen de fondo */}

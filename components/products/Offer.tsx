@@ -12,7 +12,7 @@ export default function Offer({ items }: Props) {
 
       <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
         {items.map((item) => (
-          <OfferCard key={item.slug} {...item} />
+          <OfferCard key={item.id} {...item} />
         ))}
       </div>
     </section>
