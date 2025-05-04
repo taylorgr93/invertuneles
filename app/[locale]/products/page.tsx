@@ -24,7 +24,7 @@ export default function ProductsPage({
 
   return (
     <>
-      {/* <span className="text-7xl">{t("pages.products")}</span> */}
+      <span className="text-7xl">{t("pages.products")}</span>
       <Offer items={offerItems} />
     </>
   );

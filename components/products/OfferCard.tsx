@@ -15,7 +15,7 @@ export type OfferItem = {
 
 export default function OfferCard({
   id,
-  slug,
+  slug: _slug,
   title,
   range,
   image,
