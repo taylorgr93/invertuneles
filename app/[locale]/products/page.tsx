@@ -3,6 +3,8 @@ import { use } from "react";
 import type { Metadata } from "next";
 import { makeT } from "@/lib/makeT";
 import { getTranslations, Dict } from "@/lib/getTranslations";
+import Offer from "@/components/products/Offer";
+import { offerItems } from "@/app/data/offerItems";
 
 export const metadata: Metadata = {
   title: "Invertuneles",
@@ -22,7 +24,8 @@ export default function ProductsPage({
 
   return (
     <>
-      <span className="text-7xl">{t("pages.products")}</span>
+      {/* <span className="text-7xl">{t("pages.products")}</span> */}
+      <Offer items={offerItems} />
     </>
   );
 }
