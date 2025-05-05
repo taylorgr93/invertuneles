@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import { makeT } from "@/lib/makeT";
 import { getTranslations, Dict } from "@/lib/getTranslations";
 import Offer from "@/components/products/Offer";
-import { offerItems } from "@/app/data/offerItems";
+import { useProducts } from "@/hooks/useProducts";
 
 export const metadata: Metadata = {
   title: "Invertuneles",
@@ -21,11 +21,12 @@ export default function ProductsPage({
   const { locale } = use(params);
   const translations: Dict = use(getTranslations(locale));
   const t = makeT(translations);
+  const products = useProducts(locale);
 
   return (
     <>
       <span className="text-7xl">{t("pages.products")}</span>
-      <Offer items={offerItems} />
+      <Offer items={products} />
     </>
   );
 }
