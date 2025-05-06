@@ -4,7 +4,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export type OfferItem = {
+export type Product = {
   id: number; // unique id
   slug: string; // enlace «/products/[slug]»
   title: string; // HILO, PROVENT, etc.
@@ -13,14 +13,14 @@ export type OfferItem = {
   bulletPoints: string[]; // descripción breve
 };
 
-export default function OfferCard({
+export default function ProductCard({
   id,
   // slug,
   title,
   range,
   image,
   bulletPoints,
-}: OfferItem) {
+}: Product) {
   return (
     <Link
       href={`/products/${id}`}

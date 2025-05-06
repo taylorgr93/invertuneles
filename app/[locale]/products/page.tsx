@@ -3,7 +3,7 @@ import { use } from "react";
 import type { Metadata } from "next";
 import { makeT } from "@/lib/makeT";
 import { getTranslations, Dict } from "@/lib/getTranslations";
-import Offer from "@/components/products/Offer";
+import Products from "@/components/products/Products";
 import { useProducts } from "@/hooks/useProducts";
 
 export const metadata: Metadata = {
@@ -26,7 +26,7 @@ export default function ProductsPage({
   return (
     <>
       <span className="text-7xl">{t("pages.products")}</span>
-      <Offer items={products} />
+      <Products items={products} />
     </>
   );
 }
