@@ -3,6 +3,7 @@ import { use } from "react";
 import type { Metadata } from "next";
 import { makeT } from "@/lib/makeT";
 import { getTranslations, Dict } from "@/lib/getTranslations";
+import ContactHero from "@/components/contact/ContactHero";
 
 export const metadata: Metadata = {
   title: "Invertuneles",
@@ -22,7 +23,8 @@ export default function ContactPage({
 
   return (
     <>
-      <span className="text-7xl">{t("pages.contact")}</span>
+      {/* <span className="text-7xl">{t("pages.contact")}</span> */}
+      <ContactHero />
     </>
   );
 }

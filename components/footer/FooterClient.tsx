@@ -41,7 +41,7 @@ export default function FooterClient({ translations }: Props) {
 
           {/* ── Dirección ─────────────────── */}
           <Link
-            href="https://goo.gl/maps/7o7DhDqUjN3o3H2W7" /* mismo enlace solo más corto */
+            href="https://maps.app.goo.gl/F8wrgQsPYH4864q96" /* mismo enlace solo más corto */
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-start gap-3 group hover:text-green-500 transition leading-tight"
@@ -174,11 +174,7 @@ export default function FooterClient({ translations }: Props) {
                 </svg>
               </span>
             </div>
-            <ul className="space-y-1 text-sm md:text-base">
-              <li>01 (351) 116 6243</li>
-              <li>01 (351) 116 6244</li>
-              <li>01 (351) 116 6158</li>
-            </ul>
+            <p className="space-y-1 text-xl md:text-2xl">+52 351 121 2843</p>
           </div>
         </div>
 
