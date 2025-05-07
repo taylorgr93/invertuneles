@@ -3,14 +3,17 @@ import Image from "next/image";
 
 export default function ContactHero() {
   return (
-    <div className="relative w-full h-[35vh] sm:h-[50vh] lg:h-[60vh]">
+    <div className="relative w-full h-[60vh] overflow-hidden">
       <Image
         src="/images/handshake.jpg"
         alt="A handshake"
-        fill /* hace que la imagen use position:absolute y llene el contenedor */
-        priority /* opcional: precarga la imagen porque es above‑the‑fold */
-        className="object-cover" /* <–– recorta para cubrir todo el contenedor */
-        sizes="100vw" /* indica a Next que siempre ocupa el 100 % del viewport */
+        fill
+        sizes="100vw"
+        priority
+        /* object-cover para que llene el marco
+       object-[center_70%] → ancla en el 70 % de alto
+       (enseña más la parte baja y recorta más arriba) */
+        className="object-cover object-[center_70%]"
       />
     </div>
   );
