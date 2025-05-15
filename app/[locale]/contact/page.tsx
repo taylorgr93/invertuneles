@@ -12,9 +12,8 @@ export const metadata: Metadata = {
   keywords: ["acerca de", "acerca de nosotros", "..."],
 };
 
-export default function ContactPage({
-  params,
-}: {
+export default function ContactPage({}: // params,
+{
   params: Promise<{ locale: string }>;
 }) {
   // const { locale } = use(params);

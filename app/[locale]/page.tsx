@@ -10,19 +10,29 @@ export default function Home(props: { params: Promise<{ locale: string }> }) {
   const t = makeT(translations);
 
   return (
-    <div className="relative min-h-screen">
-      {/* Video de fondo */}
+    <div
+      // className="relative min-h-screen"
+      className="relative "
+    >
+      {/* video de fondo */}
       <VideoBackground
         src="/videos/videoHome.mp4"
         className="absolute inset-0 -z-10"
       />
 
-      {/* Contenedor del texto */}
+      {/* texto centrado */}
       <div
-        // className="flex min-h-screen items-center justify-center px-4 sm:px-10"
-        className="flex items-center justify-center p-8"
+        // className="flex items-center justify-center px-4 sm:px-10"
+        className="flex items-center justify-center p-10"
       >
-        <h1 className="max-w-lg text-center text-2xl sm:text-4xl font-bold leading-snug tracking-tight text-white drop-shadow-lg">
+        <h1
+          className="
+            w-full max-w-6xl
+            text-center text-3xl sm:text-5xl lg:text-6xl
+            font-bold leading-snug tracking-tight
+            text-white drop-shadow-lg
+          "
+        >
           {t("home.were")}
         </h1>
       </div>

@@ -8,7 +8,7 @@ import { ProductDTO } from "@/types/ProductDTO";
 export type Product = ProductDTO;
 
 export default function ProductCard({
-  id,
+  // id,
   title,
   range,
   image,
