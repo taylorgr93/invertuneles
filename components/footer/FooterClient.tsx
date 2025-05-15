@@ -13,7 +13,7 @@ export default function FooterClient({ translations }: Props) {
 
   return (
     <footer className="bg-[#111] text-white px-6 md:px-16 py-14">
-      <div className="max-w-7xl mx-auto grid gap-12 md:grid-cols-3">
+      <div className="max-w-7xl mx-auto grid gap-12 sm:grid-cols-1 lg:grid-cols-3">
         {/* ───────── Columna 1 ───────── */}
         <address className="not-italic space-y-4 text-sm md:text-base">
           {/* ── Correo ────────────────────── */}

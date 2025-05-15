@@ -71,10 +71,10 @@ export default function NavbarClient({ locale, translations }: Props) {
           {t("pages.contact")}
         </h2>
       </Link>
-      <Link
+      {/* <Link
         href={`/${locale}/blog`}
         onClick={() => setOpen(false)}
-        className="group inline-block" /* el Link controla el hover */
+        className="group inline-block"
       >
         <h2 className="px-4 py-2 md:p-0 text-white text-3xl md:text-2xl font-semibold transition-all duration-200 group-hover:text-green-500 [text-shadow:none] group-hover:[text-shadow:0_0_10px_rgba(255,255,255,0.9)]">
           {t("pages.blog")}
@@ -83,12 +83,12 @@ export default function NavbarClient({ locale, translations }: Props) {
       <Link
         href={`/${locale}/careers`}
         onClick={() => setOpen(false)}
-        className="group inline-block" /* el Link controla el hover */
+        className="group inline-block"
       >
         <h2 className="px-4 py-2 md:p-0 text-white text-3xl md:text-2xl font-semibold transition-all duration-200 group-hover:text-green-500 [text-shadow:none] group-hover:[text-shadow:0_0_10px_rgba(255,255,255,0.9)]">
           {t("pages.careers")}
         </h2>
-      </Link>
+      </Link> */}
     </>
   );
 
