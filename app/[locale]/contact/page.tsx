@@ -1,8 +1,8 @@
 // app/contact/page.tsx
-import { use } from "react";
+// import { use } from "react";
 import type { Metadata } from "next";
-import { makeT } from "@/lib/makeT";
-import { getTranslations, Dict } from "@/lib/getTranslations";
+// import { makeT } from "@/lib/makeT";
+// import { getTranslations, Dict } from "@/lib/getTranslations";
 import Hero from "@/components/common/Hero";
 
 export const metadata: Metadata = {
@@ -17,9 +17,9 @@ export default function ContactPage({
 }: {
   params: Promise<{ locale: string }>;
 }) {
-  const { locale } = use(params);
-  const translations: Dict = use(getTranslations(locale));
-  const t = makeT(translations);
+  // const { locale } = use(params);
+  // const translations: Dict = use(getTranslations(locale));
+  // const t = makeT(translations);
 
   return (
     <>

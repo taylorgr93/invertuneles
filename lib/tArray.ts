@@ -1,14 +1,28 @@
 // src/lib/tArray.ts
+type Translations = Record<string, unknown>;
+
 /**
  * Extrae un array traducido desde un objeto de traducciones anidado.
  *
- * @param translations - El diccionario ya cargado (p.ej. resultado de getTranslations)
- * @param path         - Clave anidada style "about.who.paragraphs"
- * @returns            - Siempre un string[] (si la ruta no existe, devuelve [])
+ * @param translations - Diccionario cargado (p.ej. resultado de getTranslations)
+ * @param path         - Clave anidada estilo "about.who.paragraphs"
+ * @returns            - Siempre string[]; [] si la ruta no existe
  */
-export function tArray(translations: any, path: string): string[] {
-  const value = path.split(".").reduce<any>((o, k) => o?.[k], translations);
-  if (Array.isArray(value)) return value;
+export function tArray(translations: Translations, path: string): string[] {
+  // Navegamos por el objeto sin asumir su estructura exacta
+  const value = path.split(".").reduce<unknown>((obj, key) => {
+    if (obj && typeof obj === "object" && key in obj) {
+      return (obj as Record<string, unknown>)[key];
+    }
+    return undefined;
+  }, translations);
+
+  if (Array.isArray(value)) {
+    // Nos aseguramos de que cada entrada sea string
+    return value.filter((v): v is string => typeof v === "string");
+  }
+
   if (typeof value === "string") return [value];
+
   return [];
 }
