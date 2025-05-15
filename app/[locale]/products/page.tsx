@@ -5,6 +5,7 @@ import { makeT } from "@/lib/makeT";
 import { getTranslations, Dict } from "@/lib/getTranslations";
 import Products from "@/components/products/Products";
 import { useProducts } from "@/hooks/useProducts";
+import Hero from "@/components/common/Hero";
 
 export const metadata: Metadata = {
   title: "Invertuneles",
@@ -25,7 +26,13 @@ export default function ProductsPage({
 
   return (
     <>
-      <span className="text-7xl">{t("pages.products")}</span>
+      {/* <span className="text-7xl">{t("pages.products")}</span> */}
+      <Hero
+        src="/images/products/products_hero.jpg"
+        alt="A handshake"
+        priority
+        sizes="100vw"
+      />
       <Products items={products} />
     </>
   );

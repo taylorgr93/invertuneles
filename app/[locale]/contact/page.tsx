@@ -3,7 +3,7 @@ import { use } from "react";
 import type { Metadata } from "next";
 import { makeT } from "@/lib/makeT";
 import { getTranslations, Dict } from "@/lib/getTranslations";
-import ContactHero from "@/components/contact/ContactHero";
+import Hero from "@/components/common/Hero";
 
 export const metadata: Metadata = {
   title: "Invertuneles",
@@ -24,7 +24,12 @@ export default function ContactPage({
   return (
     <>
       {/* <span className="text-7xl">{t("pages.contact")}</span> */}
-      <ContactHero />
+      <Hero
+        src="/images/contact/handshake.jpg"
+        alt="A handshake"
+        priority
+        sizes="100vw"
+      />
     </>
   );
 }

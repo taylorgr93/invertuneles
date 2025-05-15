@@ -3,6 +3,7 @@ import { use } from "react";
 import type { Metadata } from "next";
 import { makeT } from "@/lib/makeT";
 import { getTranslations, Dict } from "@/lib/getTranslations";
+import Hero from "@/components/common/Hero";
 
 export const metadata: Metadata = {
   title: "Página Acerca de",
@@ -22,7 +23,13 @@ export default function AboutPage({
 
   return (
     <>
-      <span className="text-7xl">{t("pages.about")}</span>
+      {/* <span className="text-7xl">{t("pages.about")}</span> */}
+      <Hero
+        src="/images/about/hero_about.jpg"
+        alt="A handshake"
+        priority
+        sizes="100vw"
+      />
     </>
   );
 }
