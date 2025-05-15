@@ -45,5 +45,12 @@
         "Commercialise the products required and ensure they are profitable for the organisation."
       ]
     }
+  },
+  "categories": {
+    "all": "All",
+    "accessories": "Accessories",
+    "greenhouse": "Greenhouse",
+    "tights": "Tights",
+    "plastic films": "Plastic films"
   }
 }

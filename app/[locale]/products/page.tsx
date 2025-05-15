@@ -2,7 +2,7 @@
 import { use } from "react";
 import type { Metadata } from "next";
 // import { makeT } from "@/lib/makeT";
-// import { getTranslations, Dict } from "@/lib/getTranslations";
+import { getTranslations, Dict } from "@/lib/getTranslations";
 import Products from "@/components/products/Products";
 import { useProducts } from "@/hooks/useProducts";
 import Hero from "@/components/common/Hero";
@@ -20,7 +20,7 @@ export default function ProductsPage({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = use(params);
-  // const translations: Dict = use(getTranslations(locale));
+  const translations: Dict = use(getTranslations(locale));
   // const t = makeT(translations);
   const products = useProducts(locale);
 
@@ -33,7 +33,7 @@ export default function ProductsPage({
         priority
         sizes="100vw"
       />
-      <Products items={products} />
+      <Products items={products} translations={translations} />
     </>
   );
 }

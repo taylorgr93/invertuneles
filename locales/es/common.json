@@ -45,5 +45,12 @@
         "Comercializar productos que requiera y que sean rentables para la organización."
       ]
     }
+  },
+  "categories": {
+    "all": "Todo",
+    "accessories": "Accesorios",
+    "greenhouse": "Invernaderos",
+    "tights": "Mallas",
+    "plastic films": "Peliculas plasticas"
   }
 }

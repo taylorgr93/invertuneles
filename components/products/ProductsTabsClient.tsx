@@ -3,12 +3,17 @@
 
 import { useState } from "react";
 import ProductCard, { Product } from "./ProductCard";
+import { Dict } from "@/lib/getTranslations";
+import { makeT } from "@/lib/makeT";
 
 type Props = {
   items: Product[];
+  translations: Dict;
 };
 
-export default function ProductsTabsClient({ items }: Props) {
+export default function ProductsTabsClient({ items, translations }: Props) {
+  const t = makeT(translations);
+
   const categories = ["all", ...new Set(items.map((p) => p.category))] as const;
   const [active, setActive] = useState<(typeof categories)[number]>("all");
 
@@ -34,7 +39,7 @@ export default function ProductsTabsClient({ items }: Props) {
             }
           `}
           >
-            {cat === "all" ? "Todos" : cat}
+            {t(`categories.${cat}`)}
           </button>
         ))}
       </div>

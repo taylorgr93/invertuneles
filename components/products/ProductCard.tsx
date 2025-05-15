@@ -1,7 +1,7 @@
 // components/products/OfferCard.tsx
 "use client";
 
-import Link from "next/link";
+// import Link from "next/link";
 import Image from "next/image";
 import { ProductDTO } from "@/types/ProductDTO";
 
@@ -9,15 +9,15 @@ export type Product = ProductDTO;
 
 export default function ProductCard({
   id,
-  // slug,
   title,
   range,
   image,
   bulletPoints,
 }: Product) {
   return (
-    <Link
-      href={`/products/${id}`}
+    // <Link
+    <a
+      // href={`/products/${id}`}
       className="group relative block aspect-[4/3] overflow-hidden rounded-sm shadow-md transition-shadow duration-300 hover:shadow-xl"
     >
       {/* Imagen de fondo */}
@@ -47,11 +47,11 @@ export default function ProductCard({
           ))}
         </ul>
 
-        <span className="self-end text-[11px] font-semibold text-[#37b4bd]">
-          {/** Ajusta texto si quieres otro idioma */}
+        {/* <span className="self-end text-[11px] font-semibold text-[#37b4bd]">
           Click for more
-        </span>
+        </span> */}
       </div>
-    </Link>
+    </a>
+    // </Link>
   );
 }
