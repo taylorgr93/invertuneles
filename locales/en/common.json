@@ -22,5 +22,28 @@
     "send": "Send",
     "message": "We will contact you",
     "rights": "All rights reserved."
+  },
+  "about": {
+    "who": {
+      "title": "Who we are",
+      "paragraphs": [
+        "We are a company with more than 20 years of agricultural experience, 16 of those in protected agriculture.",
+        "We produce and market the products required for crop development, aiming to be the best structural and covering solution.",
+        "Maintaining balance and profitability for national and international growers."
+      ]
+    },
+    "mission": {
+      "title": "Our mission",
+      "paragraphs": [
+        "To offer a set of structural and covering solutions for protected agriculture, seeking the best balance point and profitability for national and international producers."
+      ]
+    },
+    "vision": {
+      "title": "Our vision",
+      "paragraphs": [
+        "Provide an improved, comprehensive solution in protected agriculture that remains economical and profitable for the producer.",
+        "Commercialise the products required and ensure they are profitable for the organisation."
+      ]
+    }
   }
 }

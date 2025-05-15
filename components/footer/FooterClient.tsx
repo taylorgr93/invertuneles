@@ -229,7 +229,7 @@ export default function FooterClient({ translations }: Props) {
       </div>
 
       {/* Línea inferior */}
-      <div className="mt-12 text-center text-xs text-gray-400">
+      <div className="mt-12 text-center text-md text-gray-400">
         © {new Date().getFullYear()} Invertúneles. {t("footer.rights")}
       </div>
     </footer>

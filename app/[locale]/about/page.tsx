@@ -3,7 +3,9 @@ import { use } from "react";
 import type { Metadata } from "next";
 import { makeT } from "@/lib/makeT";
 import { getTranslations, Dict } from "@/lib/getTranslations";
+import { tArray } from "@/lib/tArray";
 import Hero from "@/components/common/Hero";
+import InfoBlocks, { InfoItem } from "@/components/about/InfoBlocks";
 
 export const metadata: Metadata = {
   title: "Página Acerca de",
@@ -21,15 +23,35 @@ export default function AboutPage({
   const translations: Dict = use(getTranslations(locale));
   const t = makeT(translations);
 
+  /* ---------- Construimos los bloques ---------- */
+  const blocks: InfoItem[] = [
+    {
+      title: t("about.who.title"),
+      image: "/images/about/who_we_are.jpg",
+      paragraphs: tArray(translations, "about.who.paragraphs"),
+    },
+    {
+      title: t("about.mission.title"),
+      image: "/images/about/our_mission.jpg",
+      paragraphs: tArray(translations, "about.mission.paragraphs"),
+    },
+    {
+      title: t("about.vision.title"),
+      image: "/images/about/vision.jpg",
+      paragraphs: tArray(translations, "about.vision.paragraphs"),
+    },
+  ];
+
   return (
     <>
       {/* <span className="text-7xl">{t("pages.about")}</span> */}
       <Hero
         src="/images/about/hero_about.jpg"
-        alt="A handshake"
+        alt={t("pages.about_hero_alt") ?? "About us hero"}
         priority
         sizes="100vw"
       />
+      <InfoBlocks items={blocks} />;
     </>
   );
 }

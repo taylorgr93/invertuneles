@@ -22,5 +22,28 @@
     "send": "Enviar",
     "message": "Nos pondremos en contacto",
     "rights": "Todos los derechos reservados."
+  },
+  "about": {
+    "who": {
+      "title": "Quiénes somos",
+      "paragraphs": [
+        "Somos una empresa con una experiencia de más de 20 años en la agricultura y de estos son 16 años en la agricultura protegida.",
+        "Producimos y comercializamos los productos que se requieran para el desarrollo de sus cultivos, buscando ser la mejor solución estructural y de cubierta.",
+        "Conservando el punto de equilibrio y rentabilidad para el agricultor nacional e internacional."
+      ]
+    },
+    "mission": {
+      "title": "Nuestra misión",
+      "paragraphs": [
+        "Ofrecer un conjunto de soluciones estructurales y de cubierta para la agricultura protegida, buscando el mejor punto de equilibrio y rentabilidad para el productor nacional e internacional."
+      ]
+    },
+    "vision": {
+      "title": "Nuestra visión",
+      "paragraphs": [
+        "Brindar una solución mejorada integral en la agricultura protegida que sea económica y rentable para el productor.",
+        "Comercializar productos que requiera y que sean rentables para la organización."
+      ]
+    }
   }
 }
