@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage({
-  params: _params,
+  params,
 }: {
   params: Promise<{ locale: string }>;
 }) {

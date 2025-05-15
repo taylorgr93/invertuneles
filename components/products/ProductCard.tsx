@@ -3,15 +3,9 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { ProductDTO } from "@/types/ProductDTO";
 
-export type Product = {
-  id: number; // unique id
-  slug: string; // enlace «/products/[slug]»
-  title: string; // HILO, PROVENT, etc.
-  range: string; // Advantage Range, Premium, …
-  image: string; // /images/...jpg|webp
-  bulletPoints: string[]; // descripción breve
-};
+export type Product = ProductDTO;
 
 export default function ProductCard({
   id,
@@ -38,7 +32,11 @@ export default function ProductCard({
       {/* Banda de título (esquina sup‑izq) */}
       <div className="absolute top-0 left-0 bg-[#37b4bd] text-white px-4 py-2">
         <h3 className="text-xl font-bold leading-none">{title}</h3>
-        <span className="text-[11px] tracking-widest uppercase">{range}</span>
+        {range ? (
+          <span className="text-[11px] tracking-widest uppercase">{range}</span>
+        ) : (
+          <></>
+        )}
       </div>
 
       {/* Overlay: aparece al hover */}
