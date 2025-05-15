@@ -13,11 +13,11 @@ export default function InfoBlocks({ items }: Props) {
   return (
     <section className="mx-auto max-w-6xl px-4 py-16 space-y-8">
       {items.map((item, idx) => {
-        const isEven = idx % 2 === 0;
+        // const isEven = idx % 2 === 0;
         return (
           <article
             key={item.title}
-            className="grid gap-10 rounded-sm bg-gray-100 p-6 shadow-sm md:grid-cols-2"
+            className="grid gap-10 rounded-sm bg-gray-100 p-10 shadow-sm md:grid-cols-2"
             // className="grid gap-10 rounded-md bg-white/5 p-10 shadow-sm ring-1 ring-white/10 md:grid-cols-2"
           >
             {/* Imagen */}
@@ -50,7 +50,7 @@ export default function InfoBlocks({ items }: Props) {
                 .map((p) => (
                   <p
                     key={p}
-                    className="text-lg leading-relaxed text-gray-700 text-justify"
+                    className="text-lg leading-relaxed text-gray-800 text-justify"
                   >
                     {p}
                   </p>
