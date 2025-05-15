@@ -1,3 +1,4 @@
+// eslint-disable-next-line …no-unused-vars
 // app/contact/page.tsx
 // import { use } from "react";
 import type { Metadata } from "next";
