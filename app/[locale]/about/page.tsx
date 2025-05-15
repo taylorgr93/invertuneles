@@ -6,6 +6,7 @@ import { getTranslations, Dict } from "@/lib/getTranslations";
 import { tArray } from "@/lib/tArray";
 import Hero from "@/components/common/Hero";
 import InfoBlocks, { InfoItem } from "@/components/about/InfoBlocks";
+import DualImages from "@/components/about/DualImages";
 
 export const metadata: Metadata = {
   title: "Página Acerca de",
@@ -52,6 +53,16 @@ export default function AboutPage({
         sizes="100vw"
       />
       <InfoBlocks items={blocks} />;
+      <DualImages
+        left={{
+          src: "/images/about/compromiso-y-experiencia.jpg",
+          alt: "Compromiso y experiencia",
+        }}
+        right={{
+          src: "/images/about/valores-mesa-de-trabajo.jpg",
+          alt: "Nuestros valores",
+        }}
+      />
     </>
   );
 }
