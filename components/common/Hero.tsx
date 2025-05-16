@@ -1,8 +1,8 @@
 // components/common/Hero.tsx
-import Image, { ImageProps } from "next/image";
+import Image, { ImageProps, StaticImageData } from "next/image";
 
 type HeroProps = {
-  src: string; // imagen obligatoria
+  src: StaticImageData | string; // imagen obligatoria
   alt?: string; // alt opcional → “Hero image” por defecto
   containerHeight?: string; // alto tailwind: "h-[60vh]" (default)
   objectPosition?: string; // p.ej. "center 70%" (default como antes)

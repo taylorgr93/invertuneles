@@ -6,6 +6,7 @@ import { getTranslations, Dict } from "@/lib/getTranslations";
 import Products from "@/components/products/Products";
 import { useProducts } from "@/hooks/useProducts";
 import Hero from "@/components/common/Hero";
+import heroProducts from "@/public/images/products/products_hero.webp";
 
 export const metadata: Metadata = {
   title: "Invertuneles",
@@ -28,7 +29,7 @@ export default function ProductsPage({
     <>
       {/* <span className="text-7xl">{t("pages.products")}</span> */}
       <Hero
-        src="/images/products/products_hero.webp"
+        src={heroProducts}
         alt="A handshake"
         priority
         // sizes="100vw"

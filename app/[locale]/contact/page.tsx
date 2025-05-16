@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 // import { makeT } from "@/lib/makeT";
 // import { getTranslations, Dict } from "@/lib/getTranslations";
 import Hero from "@/components/common/Hero";
+import heroContact from "@/public/images/contact/handshake.webp";
 
 export const metadata: Metadata = {
   title: "Invertuneles",
@@ -24,7 +25,7 @@ export default function ContactPage({}: // params,
     <>
       {/* <span className="text-7xl">{t("pages.contact")}</span> */}
       <Hero
-        src="/images/contact/handshake.webp"
+        src={heroContact}
         alt="A handshake"
         priority
         // sizes="100vw"

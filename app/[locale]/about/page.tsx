@@ -7,6 +7,7 @@ import { tArray } from "@/lib/tArray";
 import Hero from "@/components/common/Hero";
 import InfoBlocks, { InfoItem } from "@/components/about/InfoBlocks";
 import DualImages from "@/components/about/DualImages";
+import heroAbout from "@/public/images/about/hero_about.webp";
 
 export const metadata: Metadata = {
   title: "Página Acerca de",
@@ -47,7 +48,7 @@ export default function AboutPage({
     <>
       {/* <span className="text-7xl">{t("pages.about")}</span> */}
       <Hero
-        src="/images/about/hero_about.webp"
+        src={heroAbout}
         alt={t("pages.about_hero_alt")}
         priority
         // sizes="100vw"
