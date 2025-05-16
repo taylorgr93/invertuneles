@@ -62,5 +62,14 @@
       "Compromiso con el medio ambiente"
     ],
     "title": "NUESTROS PRODUCTOS"
+  },
+  "contact": {
+    "advisors": {
+      "title": "Agenda de asesores",
+      "paragraphs": [
+        "Ponemos a tu disposición nuestra agenda de asesores altamente capacitados para atender cualquier necesidad que tengas. Nuestro equipo está listo para ofrecer asesoramiento personalizado, garantizando soluciones efectivas y ajustadas a tus requerimientos.",
+        "Contamos con expertos en diversas áreas, asegurando que cada consulta sea atendida con profesionalismo y dedicación. Nuestro objetivo es ayudarte a alcanzar tus metas, proporcionando el apoyo necesario en cada paso del camino."
+      ]
+    }
   }
 }

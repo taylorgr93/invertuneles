@@ -62,5 +62,14 @@
       "Commitment to the environment"
     ],
     "title": "OUR PRODUCTS"
+  },
+  "contact": {
+    "advisors": {
+      "title": "Advisor agenda",
+      "paragraphs": [
+        "Our highly qualified advisors are ready to help you with any need you may have. We offer personalised guidance, guaranteeing effective solutions tailored to your requirements.",
+        "With experts in several areas, every query is handled professionally and with dedication. Our goal is to help you reach your targets, supporting you every step of the way."
+      ]
+    }
   }
 }

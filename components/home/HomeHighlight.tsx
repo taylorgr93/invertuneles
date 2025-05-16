@@ -26,11 +26,6 @@ export default function HomeHighlight({
   title,
   productImages,
 }: Props) {
-  console.log(
-    "imgs:",
-    productImages.map((i) => i.key ?? i.src)
-  );
-
   return (
     <section className="mx-auto my-20 max-w-7xl px-4 text-center">
       {/* Kicker */}
