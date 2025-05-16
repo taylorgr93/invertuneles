@@ -1,6 +1,7 @@
 /* app/[locale]/page.tsx */
 import { use } from "react";
 import { makeT } from "@/lib/makeT";
+import { tArray } from "@/lib/tArray";
 import { getTranslations, Dict } from "@/lib/getTranslations";
 import VideoBackground from "@/components/home/VideoBackground";
 import HomeHighlight from "@/components/home/HomeHighlight";
@@ -10,6 +11,12 @@ export default function Home(props: { params: Promise<{ locale: string }> }) {
   const { locale } = use(props.params);
   const translations: Dict = use(getTranslations(locale));
   const t = makeT(translations);
+
+  /* -------- datos para el componente -------- */
+  const kicker = t("homeHighlight.kicker");
+  const headline = t("homeHighlight.headline");
+  const benefits = tArray(translations, "homeHighlight.benefits");
+  const title = t("homeHighlight.title");
 
   return (
     <div
@@ -43,14 +50,10 @@ export default function Home(props: { params: Promise<{ locale: string }> }) {
       {/* HomeHighlight */}
       <HomeHighlight
         locale={locale}
-        kicker="Te ofrecemos:"
-        headline="Agricultura Protegida de Vanguardia"
-        benefits={[
-          "Innovación en agricultura",
-          "Asesoramiento personalizado",
-          "Compromiso con el medio ambiente",
-        ]}
-        title="NUESTROS PRODUCTOS"
+        kicker={kicker}
+        headline={headline}
+        benefits={benefits}
+        title={title}
         productImages={[
           {
             key: 1,

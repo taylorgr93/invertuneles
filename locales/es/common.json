@@ -52,5 +52,15 @@
     "greenhouse": "Invernaderos",
     "tights": "Mallas",
     "plastic films": "Peliculas plasticas"
+  },
+  "homeHighlight": {
+    "kicker": "Te ofrecemos:",
+    "headline": "Agricultura Protegida de Vanguardia",
+    "benefits": [
+      "Innovación en agricultura",
+      "Asesoramiento personalizado",
+      "Compromiso con el medio ambiente"
+    ],
+    "title": "NUESTROS PRODUCTOS"
   }
 }

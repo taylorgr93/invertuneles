@@ -52,5 +52,15 @@
     "greenhouse": "Greenhouse",
     "tights": "Tights",
     "plastic films": "Plastic films"
+  },
+  "homeHighlight": {
+    "kicker": "We offer you:",
+    "headline": "Cutting-edge protected agriculture",
+    "benefits": [
+      "Innovation in agriculture",
+      "Personalised advice",
+      "Commitment to the environment"
+    ],
+    "title": "OUR PRODUCTS"
   }
 }

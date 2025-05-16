@@ -62,7 +62,7 @@ export default function HomeHighlight({
           <Link key={img.key} href={`/${locale}/products`} scroll={false}>
             <figure
               className="
-        group relative h-36 w-56
+        group relative h-36 w-65
         overflow-hidden rounded-2xl shadow-lg ring-4 ring-emerald-400/60
         transition-transform duration-500 hover:scale-105 cursor-pointer
       "
@@ -71,7 +71,7 @@ export default function HomeHighlight({
                 src={img.src}
                 alt={img.alt}
                 fill
-                sizes="224px" /* coincide con w-56 */
+                sizes="234px" /* coincide con w-56 */
                 className="object-cover"
                 priority
               />
