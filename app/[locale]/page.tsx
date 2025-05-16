@@ -28,7 +28,7 @@ export default function Home(props: { params: Promise<{ locale: string }> }) {
         <h1
           className="
             w-full max-w-6xl
-            text-center text-3xl sm:text-5xl lg:text-6xl
+            text-center text-xl sm:text-3xl lg:text-5xl
             font-bold leading-snug tracking-tight
             text-white drop-shadow-lg
           "

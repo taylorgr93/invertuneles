@@ -24,6 +24,7 @@ export default function DualImages({ left, right }: DualImagesProps) {
             height={1600}
             className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
             sizes="(max-width:768px) 100vw, 50vw"
+            placeholder="blur"
             priority
           />
 

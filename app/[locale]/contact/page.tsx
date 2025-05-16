@@ -24,10 +24,12 @@ export default function ContactPage({}: // params,
     <>
       {/* <span className="text-7xl">{t("pages.contact")}</span> */}
       <Hero
-        src="/images/contact/handshake.jpg"
+        src="/images/contact/handshake.webp"
         alt="A handshake"
         priority
-        sizes="100vw"
+        // sizes="100vw"
+        sizes="(max-width:768px) 100vw, (max-width:1280px) 75vw, 1920px"
+        placeholder="blur"
       />
     </>
   );

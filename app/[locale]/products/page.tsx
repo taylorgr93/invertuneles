@@ -28,10 +28,12 @@ export default function ProductsPage({
     <>
       {/* <span className="text-7xl">{t("pages.products")}</span> */}
       <Hero
-        src="/images/products/products_hero.jpg"
+        src="/images/products/products_hero.webp"
         alt="A handshake"
         priority
-        sizes="100vw"
+        // sizes="100vw"
+        sizes="(max-width:768px) 100vw, (max-width:1280px) 75vw, 1920px"
+        placeholder="blur"
       />
       <Products items={products} translations={translations} />
     </>

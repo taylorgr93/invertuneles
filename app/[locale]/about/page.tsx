@@ -28,17 +28,17 @@ export default function AboutPage({
   const blocks: InfoItem[] = [
     {
       title: t("about.who.title"),
-      image: "/images/about/who_we_are.jpg",
+      image: "/images/about/who_we_are.webp",
       paragraphs: tArray(translations, "about.who.paragraphs"),
     },
     {
       title: t("about.mission.title"),
-      image: "/images/about/our_mission.jpg",
+      image: "/images/about/our_mission.webp",
       paragraphs: tArray(translations, "about.mission.paragraphs"),
     },
     {
       title: t("about.vision.title"),
-      image: "/images/about/vision.jpg",
+      image: "/images/about/vision.webp",
       paragraphs: tArray(translations, "about.vision.paragraphs"),
     },
   ];
@@ -47,19 +47,21 @@ export default function AboutPage({
     <>
       {/* <span className="text-7xl">{t("pages.about")}</span> */}
       <Hero
-        src="/images/about/hero_about.jpg"
-        alt={t("pages.about_hero_alt") ?? "About us hero"}
+        src="/images/about/hero_about.webp"
+        alt={t("pages.about_hero_alt")}
         priority
-        sizes="100vw"
+        // sizes="100vw"
+        sizes="(max-width:768px) 100vw, (max-width:1280px) 75vw, 1920px"
+        placeholder="blur"
       />
       <InfoBlocks items={blocks} />;
       <DualImages
         left={{
-          src: "/images/about/compromiso-y-experiencia.jpg",
+          src: "/images/about/compromiso-y-experiencia.webp",
           alt: "Compromiso y experiencia",
         }}
         right={{
-          src: "/images/about/valores-mesa-de-trabajo.jpg",
+          src: "/images/about/valores-mesa-de-trabajo.webp",
           alt: "Nuestros valores",
         }}
       />
