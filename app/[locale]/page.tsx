@@ -1,8 +1,10 @@
-/* app/page.tsx */
+/* app/[locale]/page.tsx */
 import { use } from "react";
 import { makeT } from "@/lib/makeT";
 import { getTranslations, Dict } from "@/lib/getTranslations";
 import VideoBackground from "@/components/home/VideoBackground";
+import HomeHighlight from "@/components/home/HomeHighlight";
+import Divider from "@/components/common/Divider";
 
 export default function Home(props: { params: Promise<{ locale: string }> }) {
   const { locale } = use(props.params);
@@ -36,6 +38,42 @@ export default function Home(props: { params: Promise<{ locale: string }> }) {
           {t("home.were")}
         </h1>
       </div>
+      <Divider />
+
+      {/* HomeHighlight */}
+      <HomeHighlight
+        locale={locale}
+        kicker="Te ofrecemos:"
+        headline="Agricultura Protegida de Vanguardia"
+        benefits={[
+          "Innovación en agricultura",
+          "Asesoramiento personalizado",
+          "Compromiso con el medio ambiente",
+        ]}
+        title="NUESTROS PRODUCTOS"
+        productImages={[
+          {
+            key: 1,
+            src: "/images/products/products_hero.webp",
+            alt: "Invernadero tipo A",
+          },
+          {
+            key: 2,
+            src: "/images/products/products_hero.webp",
+            alt: "Invernadero tipo B",
+          },
+          {
+            key: 3,
+            src: "/images/products/products_hero.webp",
+            alt: "Interior",
+          },
+          {
+            key: 4,
+            src: "/images/products/products_hero.webp",
+            alt: "Sustratos",
+          },
+        ]}
+      />
     </div>
   );
 }
