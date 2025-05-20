@@ -52,7 +52,7 @@ export default function HomeHighlight({
       </h3>
 
       {/* Carrusel -> Grid sin scroll */}
-      <div className="grid gap-6 p-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-6 p-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 items-center justify-items-center">
         {productImages.map((img) => (
           <Link key={img.key} href={`/${locale}/products`} scroll={false}>
             <figure

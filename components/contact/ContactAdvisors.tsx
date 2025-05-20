@@ -45,7 +45,7 @@ export default function ContactAdvisors({
         {paragraphs.map((p) => (
           <p
             key={p}
-            className="leading-relaxed text-lg text-justify text-gray-300"
+            className="leading-relaxed text-xl text-justify text-gray-300"
           >
             {p}
           </p>

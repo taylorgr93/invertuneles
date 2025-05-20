@@ -63,6 +63,9 @@
     ],
     "title": "OUR PRODUCTS"
   },
+  "UpcomingEvents": {
+    "next_events": "NEXT EVENTS…"
+  },
   "contact": {
     "advisors": {
       "title": "Advisor agenda",

@@ -6,6 +6,35 @@ import { getTranslations, Dict } from "@/lib/getTranslations";
 import VideoBackground from "@/components/home/VideoBackground";
 import HomeHighlight from "@/components/home/HomeHighlight";
 import Divider from "@/components/common/Divider";
+import UpcomingEvents, { EventCard } from "@/components/home/UpcomingEvents";
+
+const events: EventCard[] = [
+  {
+    id: 1,
+    poster: "/images/home/events/22_and_23_may_event.webp",
+    alt: "ExpoBerries 2025 Zamora-Jacona",
+  },
+  // {
+  //   id: 2,
+  //   poster: "/images/home/events/22_and_23_may_event.webp",
+  //   alt: "Greentech México 2025",
+  // },
+  // {
+  //   id: 3,
+  //   poster: "/images/home/events/22_and_23_may_event.webp",
+  //   alt: "Congreso de plásticos agrícolas",
+  // },
+  // {
+  //   id: 4,
+  //   poster: "/images/home/events/22_and_23_may_event.webp",
+  //   alt: "Congreso de plásticos agrícolass",
+  // },
+  // {
+  //   id: 5,
+  //   poster: "/images/home/events/22_and_23_may_event.webp",
+  //   alt: "Congreso de plásticos agrícolasss",
+  // },
+];
 
 export default function Home(props: { params: Promise<{ locale: string }> }) {
   const { locale } = use(props.params);
@@ -28,15 +57,13 @@ export default function Home(props: { params: Promise<{ locale: string }> }) {
         src="/videos/videoHome.mp4"
         className="absolute inset-0 -z-10"
       />
+      <Divider />
 
       {/* texto centrado */}
-      <div
-        // className="flex items-center justify-center px-4 sm:px-10"
-        className="flex items-center justify-center p-10"
-      >
+      <div className="flex items-center justify-center p-10">
         <h1
           className="
-            w-full max-w-6xl
+            w-full max-w-8xl
             text-center text-xl sm:text-3xl lg:text-5xl
             font-bold leading-snug tracking-tight
             text-white drop-shadow-lg
@@ -77,6 +104,11 @@ export default function Home(props: { params: Promise<{ locale: string }> }) {
           },
         ]}
       />
+      <Divider />
+
+      {/* UpcomingEvents */}
+      <UpcomingEvents title={t("UpcomingEvents.next_events")} events={events} />
+      <Divider />
     </div>
   );
 }

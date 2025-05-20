@@ -63,6 +63,9 @@
     ],
     "title": "NUESTROS PRODUCTOS"
   },
+  "UpcomingEvents": {
+    "next_events": "PRÓXIMOS EVENTOS…"
+  },
   "contact": {
     "advisors": {
       "title": "Agenda de asesores",

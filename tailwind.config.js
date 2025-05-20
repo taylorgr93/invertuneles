@@ -12,15 +12,17 @@ module.exports = {
 
   /* -------------  P L U G I N S  ------------- */
   plugins: [
-    require("tailwindcss/plugin")(function ({ addUtilities }) {
+    plugin(function ({ addUtilities }) {
       addUtilities({
+        /* contenedor */
         ".scrollbar-hide": {
-          /* Chrome / Safari / Edge */
-          "&::-webkit-scrollbar": { display: "none" },
-          /* Firefox */
-          "scrollbar-width": "none",
-          /* IE y fallback */
-          "-ms-overflow-style": "none",
+          "-ms-overflow-style": "none" /* IE y Edge Legacy  */,
+          "scrollbar-width": "none" /* Firefox          */,
+        },
+        /* barra WebKit (horizontal y vertical) */
+        ".scrollbar-hide::-webkit-scrollbar": {
+          width: "0px",
+          height: "0px",
         },
       });
     }),
