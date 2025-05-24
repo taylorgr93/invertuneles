@@ -46,7 +46,7 @@ export default function AboutPage({
   ];
 
   return (
-    <>
+    <div className="bg-black">
       {/* <span className="text-7xl">{t("pages.about")}</span> */}
       <Hero
         src={heroAbout}
@@ -70,6 +70,6 @@ export default function AboutPage({
         }}
       />
       <Divider />
-    </>
+    </div>
   );
 }

@@ -29,7 +29,7 @@ export default function ContactPage({
   const paragraphs = tArray(translations, "contact.advisors.paragraphs");
 
   return (
-    <>
+    <div className="bg-black">
       {/* <span className="text-7xl">{t("pages.contact")}</span> */}
       <Hero
         src={heroContact}
@@ -83,6 +83,6 @@ export default function ContactPage({
         ]}
       />
       <Divider />
-    </>
+    </div>
   );
 }

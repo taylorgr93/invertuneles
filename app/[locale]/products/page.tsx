@@ -27,7 +27,7 @@ export default function ProductsPage({
   const products = useProducts(locale);
 
   return (
-    <>
+    <div className="bg-black">
       {/* <span className="text-7xl">{t("pages.products")}</span> */}
       <Hero
         src={heroProducts}
@@ -40,6 +40,6 @@ export default function ProductsPage({
       <Divider />
       <Products items={products} translations={translations} />
       <Divider />
-    </>
+    </div>
   );
 }
