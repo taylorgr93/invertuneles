@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { makeT } from "@/lib/makeT";
 import { getTranslations, Dict } from "@/lib/getTranslations";
 import Hero from "@/components/common/Hero";
+import Divider from "@/components/common/Divider";
 import heroContact from "@/public/images/contact/handshake.webp";
 import ContactAdvisors from "@/components/contact/ContactAdvisors";
 import { tArray } from "@/lib/tArray";
@@ -38,6 +39,7 @@ export default function ContactPage({
         sizes="(max-width:768px) 100vw, (max-width:1280px) 75vw, 1920px"
         placeholder="blur"
       />
+      <Divider />
       <ContactAdvisors
         title={title}
         paragraphs={paragraphs}
@@ -80,6 +82,7 @@ export default function ContactPage({
           },
         ]}
       />
+      <Divider />
     </>
   );
 }

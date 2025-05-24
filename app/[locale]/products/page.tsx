@@ -6,6 +6,7 @@ import { getTranslations, Dict } from "@/lib/getTranslations";
 import Products from "@/components/products/Products";
 import { useProducts } from "@/hooks/useProducts";
 import Hero from "@/components/common/Hero";
+import Divider from "@/components/common/Divider";
 import heroProducts from "@/public/images/products/products_hero.webp";
 
 export const metadata: Metadata = {
@@ -36,7 +37,9 @@ export default function ProductsPage({
         sizes="(max-width:768px) 100vw, (max-width:1280px) 75vw, 1920px"
         placeholder="blur"
       />
+      <Divider />
       <Products items={products} translations={translations} />
+      <Divider />
     </>
   );
 }

@@ -5,8 +5,9 @@ import { makeT } from "@/lib/makeT";
 import { getTranslations, Dict } from "@/lib/getTranslations";
 import { tArray } from "@/lib/tArray";
 import Hero from "@/components/common/Hero";
-import InfoBlocks, { InfoItem } from "@/components/about/InfoBlocks";
+import Divider from "@/components/common/Divider";
 import DualImages from "@/components/about/DualImages";
+import InfoBlocks, { InfoItem } from "@/components/about/InfoBlocks";
 import heroAbout from "@/public/images/about/hero_about.webp";
 
 export const metadata: Metadata = {
@@ -55,7 +56,9 @@ export default function AboutPage({
         sizes="(max-width:768px) 100vw, (max-width:1280px) 75vw, 1920px"
         placeholder="blur"
       />
+      <Divider />
       <InfoBlocks items={blocks} />;
+      <Divider />
       <DualImages
         left={{
           src: "/images/about/compromiso-y-experiencia.webp",
@@ -66,6 +69,7 @@ export default function AboutPage({
           alt: "Nuestros valores",
         }}
       />
+      <Divider />
     </>
   );
 }
