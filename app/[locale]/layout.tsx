@@ -38,7 +38,11 @@ export default function RootLayout({ children, params }: Props) {
   return (
     <html lang={locale}>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`
+          bg-black text-white            /* ← color de fondo y texto por defecto  */
+          ${geistSans.variable} ${geistMono.variable}
+          antialiased
+        `}
       >
         <Navbar locale={locale} />
         {children}
