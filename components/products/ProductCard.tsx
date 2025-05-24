@@ -15,10 +15,13 @@ export default function ProductCard({
   bulletPoints,
 }: Product) {
   return (
-    // <Link
     <a
       // href={`/products/${id}`}
-      className="group relative block aspect-[4/3] overflow-hidden rounded-sm shadow-md transition-shadow duration-300 hover:shadow-xl"
+      className="group relative block aspect-[4/3]   /*  ➜ móvil  */
+             sm:aspect-[5/4]                      /*  ➜ tablet */
+             lg:aspect-square                     /*  ➜ desktop */
+             overflow-hidden rounded-md shadow-lg
+             transition-shadow duration-300 hover:shadow-2xl cursor-pointer"
     >
       {/* Imagen de fondo */}
       <Image
@@ -26,14 +29,16 @@ export default function ProductCard({
         alt={title}
         fill
         sizes="(max-width: 768px) 100vw, (max-width:1024px) 50vw, 33vw"
-        className="object-cover transition-transform duration-300 group-hover:scale-105"
+        className="object-contain bg-black transition-transform duration-300 group-hover:scale-105"
       />
 
       {/* Banda de título (esquina sup‑izq) */}
-      <div className="absolute top-0 left-0 bg-[#37b4bd] text-white px-4 py-2">
-        <h3 className="text-xl font-bold leading-none">{title}</h3>
+      <div className="absolute top-0 left-0 bg-[#37b4bd] text-white p-1.5 sm:px-4 rounded-br-md">
+        <h3 className="text-base sm:text-lg font-semibold leading-tight">
+          {title}
+        </h3>
         {range ? (
-          <span className="text-[11px] tracking-widest uppercase">{range}</span>
+          <span className="text-[10px] tracking-widest uppercase">{range}</span>
         ) : (
           <></>
         )}
@@ -52,6 +57,5 @@ export default function ProductCard({
         </span> */}
       </div>
     </a>
-    // </Link>
   );
 }
