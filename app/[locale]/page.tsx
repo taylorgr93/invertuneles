@@ -50,12 +50,12 @@ export default function Home(props: { params: Promise<{ locale: string }> }) {
   return (
     <div
       // className="relative min-h-screen"
-      className="relative "
+      className="relative bg-black"
     >
       {/* video de fondo */}
       <VideoBackground
         src="/videos/videoHome.mp4"
-        className="absolute inset-0 -z-10"
+        className="absolute inset-0 z-10"
       />
       <Divider />
 
