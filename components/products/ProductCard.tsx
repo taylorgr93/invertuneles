@@ -4,7 +4,9 @@
 import { useState } from "react";
 import Image from "next/image";
 import ProductModal from "./ProductModal";
-import type { ProductDTO as Product } from "@/types/ProductDTO";
+import type { ProductDTO } from "@/types/ProductDTO";
+
+export type Product = ProductDTO;
 
 export default function ProductCard({
   title,
