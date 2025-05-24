@@ -161,14 +161,14 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         category: "greenhouse",
         bulletPoints: ["Traditional Macrotunnel"],
       },
-      // {
-      //   id: 54,
-      //   title: "Macrotunel con Apertura",
-      //   // range: "GAMA ADVANTAGE",
-      //   image: "/images/products/greenhouses/MACROTUNEL APERTURA.JPG",
-      //   category: "greenhouse",
-      //   bulletPoints: ["Macrotunel con Apertura"],
-      // },
+      {
+        id: 54,
+        title: "Macrotunnel with Opening",
+        // range: "GAMA ADVANTAGE",
+        image: "/images/products/greenhouses/Macrotunel_Apertura.webp",
+        category: "greenhouse",
+        bulletPoints: ["Macrotunnel with Opening"],
+      },
     ],
     es: [
       // Accesorios
@@ -326,14 +326,14 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         category: "greenhouse",
         bulletPoints: ["Macrotunel Tradicional"],
       },
-      // {
-      //   id: 54,
-      //   title: "Macrotunel con Apertura",
-      //   // range: "GAMA ADVANTAGE",
-      //   image: "/images/products/greenhouses/MACROTUNEL APERTURA.JPG",
-      //   category: "greenhouse",
-      //   bulletPoints: ["Macrotunel con Apertura"],
-      // },
+      {
+        id: 54,
+        title: "Macrotunel con Apertura",
+        // range: "GAMA ADVANTAGE",
+        image: "/images/products/greenhouses/Macrotunel_Apertura.webp",
+        category: "greenhouse",
+        bulletPoints: ["Macrotunel con Apertura"],
+      },
     ],
   };
 
