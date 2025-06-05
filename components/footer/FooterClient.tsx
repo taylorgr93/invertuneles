@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { makeT } from "@/lib/makeT";
 import { Dict } from "@/lib/getTranslations";
@@ -19,6 +19,16 @@ export default function FooterClient({ translations }: Props) {
     email: "",
     message: "",
   });
+
+  useEffect(() => {
+    if (status === "ok" || status === "error") {
+      const timeout = setTimeout(() => {
+        setStatus("idle");
+      }, 10000); // 10 segundos
+
+      return () => clearTimeout(timeout); // limpia si cambia antes de tiempo
+    }
+  }, [status]);
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();

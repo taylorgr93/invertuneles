@@ -161,11 +161,15 @@ export default function NavbarClient({ locale, translations }: Props) {
       {/* Mobile menu */}
       {open && (
         <div
-          ref={menuRef}
-          className="md:hidden bg-black border-t border-gray-700"
+          onClick={() => setOpen(false)} // ← esto cierra al hacer clic fuera del panel
+          className="fixed top-0 right-0 h-screen w-full bg-black/80 z-50 flex justify-end md:hidden"
         >
-          {navLinks}
-          <div className="px-4 py-2">
+          <div
+            ref={menuRef}
+            onClick={(e) => e.stopPropagation()} // ← esto evita que se cierre al hacer clic dentro
+            className="w-64 h-fit mt-20 bg-black rounded-lg p-6 flex flex-col items-center gap-6 shadow-xl"
+          >
+            {navLinks}
             <LanguageSwitcher />
           </div>
         </div>
