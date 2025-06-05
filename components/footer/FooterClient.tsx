@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { makeT } from "@/lib/makeT";
 import { Dict } from "@/lib/getTranslations";
@@ -10,6 +11,40 @@ type Props = {
 
 export default function FooterClient({ translations }: Props) {
   const t = makeT(translations);
+  const [status, setStatus] = useState<"idle" | "sending" | "ok" | "error">(
+    "idle"
+  );
+  const [formValues, setFormValues] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setStatus("sending");
+
+    const data = Object.fromEntries(new FormData(e.currentTarget)) as Record<
+      string,
+      string
+    >;
+
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: data.name,
+        email: data.email,
+        message: data.message,
+      }),
+    });
+
+    setStatus(res.ok ? "ok" : "error");
+    if (res.ok) {
+      setFormValues({ name: "", email: "", message: "" });
+      setStatus("ok");
+    }
+  }
 
   return (
     <footer className="bg-black text-white px-6 md:px-16 py-14">
@@ -179,20 +214,17 @@ export default function FooterClient({ translations }: Props) {
         </div>
 
         {/* ───────── Columna 3 ───────── */}
-        <form
-          onSubmit={(e) => {
-            e.preventDefault();
-            alert(t("footer.message")); // placeholder
-          }}
-          className="space-y-4"
-        >
+        <form onSubmit={handleSubmit} className="space-y-4">
           <h3 className="text-xl font-semibold">{t("footer.contact")}</h3>
 
           <div>
             <label className="block mb-1 text-sm">{t("footer.name")}</label>
             <input
-              required
-              type="text"
+              name="name"
+              value={formValues.name}
+              onChange={(e) =>
+                setFormValues({ ...formValues, name: e.target.value })
+              }
               placeholder={t("footer.namePlaceholder")}
               className="w-full bg-transparent border border-gray-500 rounded px-3 py-2 outline-none focus:border-green-500"
             />
@@ -201,8 +233,11 @@ export default function FooterClient({ translations }: Props) {
           <div>
             <label className="block mb-1 text-sm">{t("footer.email")}</label>
             <input
-              required
-              type="email"
+              name="email"
+              value={formValues.email}
+              onChange={(e) =>
+                setFormValues({ ...formValues, email: e.target.value })
+              }
               placeholder={t("footer.email")}
               className="w-full bg-transparent border border-gray-500 rounded px-3 py-2 outline-none focus:border-green-500"
             />
@@ -213,6 +248,11 @@ export default function FooterClient({ translations }: Props) {
               {t("footer.comments") ?? "Comentarios"}
             </label>
             <textarea
+              name="message"
+              value={formValues.message}
+              onChange={(e) =>
+                setFormValues({ ...formValues, message: e.target.value })
+              }
               rows={4}
               placeholder={t("footer.commentsPlaceholder")}
               className="w-full bg-transparent border border-gray-500 rounded px-3 py-2 resize-none outline-none focus:border-green-500"
@@ -221,10 +261,18 @@ export default function FooterClient({ translations }: Props) {
 
           <button
             type="submit"
-            className="bg-gray-600 hover:bg-green-600 transition px-6 py-2 rounded text-sm md:text-base"
+            disabled={status === "sending"}
+            className="bg-gray-600 hover:bg-green-600 transition px-6 py-2 rounded text-sm md:text-base cursor-pointer"
           >
-            {t("footer.send")}
+            {status === "sending" ? t("footer.sending") : t("footer.send")}
           </button>
+
+          {status === "ok" && (
+            <p className="text-green-400">{t("footer.sent")}</p>
+          )}
+          {status === "error" && (
+            <p className="text-red-400">{t("footer.error")}</p>
+          )}
         </form>
       </div>
 

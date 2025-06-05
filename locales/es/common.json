@@ -20,6 +20,9 @@
     "comments": "Comentarios",
     "commentsPlaceholder": "Favor de expresar sus dudas o comentarios...",
     "send": "Enviar",
+    "sending": "Enviando",
+    "sent": "¡Mensaje enviado!",
+    "error": "Algo salió mal",
     "message": "Nos pondremos en contacto",
     "rights": "Todos los derechos reservados."
   },

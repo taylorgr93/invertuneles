@@ -20,6 +20,9 @@
     "comments": "Comments",
     "commentsPlaceholder": "Please express your questions or comments...",
     "send": "Send",
+    "sending": "Sending",
+    "sent": "Message sent!",
+    "error": "Something went wrong",
     "message": "We will contact you",
     "rights": "All rights reserved."
   },
