@@ -89,17 +89,17 @@ export default function Home(props: { params: Promise<{ locale: string }> }) {
           },
           {
             key: 2,
-            src: "/images/products/products_hero.webp",
+            src: "/images/products/tights/MALLA SOMBRA.webp",
             alt: "Invernadero tipo B",
           },
           {
             key: 3,
-            src: "/images/products/products_hero.webp",
+            src: "/images/products/plastic-films/PELICULA ATRAPA INSECTOS_3_11zon.webp",
             alt: "Interior",
           },
           {
             key: 4,
-            src: "/images/products/products_hero.webp",
+            src: "/images/products/greenhouses/Macrotunel_Apertura.webp",
             alt: "Sustratos",
           },
         ]}

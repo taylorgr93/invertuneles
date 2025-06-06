@@ -10,8 +10,8 @@ export async function POST(req: NextRequest) {
     // host: process.env.SMTP_HOST,
     // port: Number(process.env.SMTP_PORT),
     // secure: false, // STARTTLS
-    secure: true,
-    service: "gmail",
+    service: "gmail", // o smtp.office365.com / Resend SMTP…
+    secure: true, // puerto 465
     auth: {
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASS,
@@ -24,7 +24,8 @@ export async function POST(req: NextRequest) {
   try {
     await transporter.sendMail({
       from: `"Web Contact" <${process.env.SMTP_USER}>`,
-      to: "taylorgr@outlook.com",
+      to: "taylorgr93@outlook.com", // testing
+      // to: "contacto@invertuneles.com",
       replyTo: email,
       subject: `Nuevo mensaje de ${name}`,
       // text: `Nombre: ${name}\nCorreo: ${email}\n\n${message}`,

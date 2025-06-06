@@ -36,7 +36,7 @@ export default function ProductModal({ src, alt, onClose }: Props) {
         <button
           onClick={onClose}
           className="absolute -top-4 -right-4 rounded-full bg-white/90 p-2
-                     text-black shadow-lg transition hover:bg-red-500 hover:text-white"
+                     text-black shadow-lg transition hover:bg-green-600 hover:text-white cursor-pointer"
         >
           ✕
         </button>
