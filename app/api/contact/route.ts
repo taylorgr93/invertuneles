@@ -7,33 +7,52 @@ export async function POST(req: NextRequest) {
 
   /* Configura tu SMTP (.env.local) */
   const transporter = nodemailer.createTransport({
-    // host: process.env.SMTP_HOST,
-    // port: Number(process.env.SMTP_PORT),
-    // secure: false, // STARTTLS
-    service: "gmail", // o smtp.office365.com / Resend SMTP…
-    secure: true, // puerto 465
+    host: process.env.SMTP_HOST,
+    port: Number(process.env.SMTP_PORT),
+    secure: false, // STARTTLS
+    requireTLS: true,
+    // service: "gmail",
+    // secure: true,
     auth: {
       user: process.env.SMTP_USER,
       pass: process.env.SMTP_PASS,
     },
     tls: {
       rejectUnauthorized: false, // Evita problemas en local con certificados
+      // ciphers: "SSLv3", // recomendado por MSFT
     },
   });
 
   try {
     await transporter.sendMail({
-      from: `"Web Contact" <${process.env.SMTP_USER}>`,
-      to: "taylorgr93@outlook.com", // testing
-      // to: "contacto@invertuneles.com",
-      replyTo: email,
-      subject: `Nuevo mensaje de ${name}`,
-      // text: `Nombre: ${name}\nCorreo: ${email}\n\n${message}`,
+      from: `"Invertúneles" <${process.env.SMTP_USER}>`,
+      to: email, // testing
+      // replyTo: email,
+      subject: `¡Gracias por tu mensaje!`,
+      text: `
+Hola ${name},
+
+Hemos recibido tu consulta y uno de nuestros asesores se pondrá
+en contacto contigo muy pronto.
+
+— Equipo Invertúneles
+    `.trim(),
       html: `
-        <p><strong>Nombre:</strong> ${name}</p>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Mensaje:</strong><br/>${message.replace(/\n/g, "<br/>")}</p>
-      `,
+      <p>Hola <strong>${name}</strong>,</p>
+      <p>
+        ¡Gracias por escribirnos! Hemos recibido tu mensaje y uno de nuestros
+        asesores se comunicará contigo a la brevedad.
+      </p>
+      <hr>
+      <p><em>Resumen de tu mensaje:</em></p>
+      <blockquote style="white-space:pre-line;color:#555;font-style:italic">
+        ${message}
+      </blockquote>
+      <p style="margin-top:2rem">
+        Saludos cordiales,<br/>
+        <strong>Equipo Invertúneles</strong>
+      </p>
+    `,
     });
 
     return NextResponse.json({ ok: true });
