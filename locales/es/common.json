@@ -9,7 +9,8 @@
   },
   "greeting": "Hola mundo!",
   "home": {
-    "were": "Somos una empresa líder en el desarrollo de soluciones innovadoras para la agricultura protegida. Nuestro compromiso es brindar tecnologías que impulsen la productividad, optimicen recursos y cuiden el medio ambiente, asegurando el éxito de agricultores alrededor del mundo."
+    "were": "Transformamos la manera de cultivar",
+    "summary": "Somos una empresa líder en el desarrollo de soluciones innovadoras para la agricultura protegida. Nuestro compromiso es brindar tecnologías que impulsen la productividad, optimicen recursos y cuiden el medio ambiente, asegurando el éxito de los agricultores alrededor del mundo. \n\nNos sostenemos como institución por nuestros 2 pilares más importantes: los colaboradores en toda la cadena agrícola (agricultores, socios trabajadores, productores, cosechadores) y la Calidad en el trabajo que ofrecemos. \n\nDescubre cómo nuestra tecnología, experiencia y enfoque humano están cambiando la agricultura desde la raíz."
   },
   "footer": {
     "officePhones": "Teléfonos de Oficina",
@@ -30,22 +31,26 @@
     "who": {
       "title": "Quiénes somos",
       "paragraphs": [
-        "Somos una empresa con una experiencia de más de 20 años en la agricultura y de estos son 16 años en la agricultura protegida.",
-        "Producimos y comercializamos los productos que se requieran para el desarrollo de sus cultivos, buscando ser la mejor solución estructural y de cubierta.",
-        "Conservando el punto de equilibrio y rentabilidad para el agricultor nacional e internacional."
+        "Somos una empresa centralizada en las personas, lo más primero más importante son nuestros colaboradores agrícolas: Socios trabajadores, Agricultores y productores, técnicos agrícolas, ingenieros agrónomos, trabajadores del campo, Operadores, Comerciantes y Consumidores.",
+        "Después de las personas, lo segundo más importante es la calidad en el servicio, los productos, y el trabajo que ofrecemos y desarrollamos día tras día."
       ]
     },
     "mission": {
       "title": "Nuestra misión",
       "paragraphs": [
-        "Ofrecer un conjunto de soluciones estructurales y de cubierta para la agricultura protegida, buscando el mejor punto de equilibrio y rentabilidad para el productor nacional e internacional."
+        "Añadir valor a la cadena agrícola brindando la solución más especializada, mejorando la calidad y el rendimiento productivo de los agriculturores, impactando de manera social y ambientalmente responsable."
       ]
     },
     "vision": {
       "title": "Nuestra visión",
       "paragraphs": [
-        "Brindar una solución mejorada integral en la agricultura protegida que sea económica y rentable para el productor.",
-        "Comercializar productos que requiera y que sean rentables para la organización."
+        "Impactar a través de nuestras acciones todas las comunidades agrícolas del mundo, sus colaboradores y medio ambiente."
+      ]
+    },
+    "values": {
+      "title": "Valores",
+      "paragraphs": [
+        "Compromiso, Congruencia, Colaboración, Honestidad, Innovación, Pasión"
       ]
     }
   },

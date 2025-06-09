@@ -60,18 +60,32 @@ export default function Home(props: { params: Promise<{ locale: string }> }) {
       <Divider />
 
       {/* texto centrado */}
-      <div className="flex items-center justify-center p-10">
+      <div className="flex flex-col items-center justify-center p-10">
         <h1
           className="
-            w-full max-w-8xl
-            text-center text-xl sm:text-3xl lg:text-5xl
-            font-bold leading-snug tracking-tight
-            text-white drop-shadow-lg
-          "
+      w-full max-w-7xl
+      text-center text-xl sm:text-3xl lg:text-5xl
+      font-bold leading-snug tracking-tight
+      text-green-500 drop-shadow-lg
+      whitespace-pre-line
+    "
         >
           {t("home.were")}
         </h1>
+        <br />
+        <h2
+          className="
+      w-full max-w-7xl
+      text-center text-lg sm:text-xl lg:text-4xl
+      font-bold leading-snug tracking-tight
+      text-white drop-shadow-lg
+      whitespace-pre-line
+    "
+        >
+          {t("home.summary")}
+        </h2>
       </div>
+
       <Divider />
 
       {/* HomeHighlight */}

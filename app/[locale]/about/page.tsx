@@ -43,6 +43,11 @@ export default function AboutPage({
       image: "/images/about/vision.webp",
       paragraphs: tArray(translations, "about.vision.paragraphs"),
     },
+    // {
+    //   title: t("about.vision.values"),
+    //   image: "/images/about/vision.webp",
+    //   paragraphs: tArray(translations, "about.vision.paragraphs"),
+    // },
   ];
 
   return (
