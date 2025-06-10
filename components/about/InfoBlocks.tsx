@@ -17,7 +17,7 @@ export default function InfoBlocks({ items }: Props) {
         return (
           <article
             key={item.title}
-            className="grid gap-10 rounded-sm bg-gray-100 p-10 shadow-sm md:grid-cols-2"
+            className="grid gap-10 rounded-sm bg-gray-100 p-10 shadow-sm md:grid-cols-2 items-center"
             // className="grid gap-10 rounded-md bg-white/5 p-10 shadow-sm ring-1 ring-white/10 md:grid-cols-2"
           >
             {/* Imagen */}
@@ -25,7 +25,7 @@ export default function InfoBlocks({ items }: Props) {
               //   className={`relative aspect-video w-full overflow-hidden rounded-sm ${
               //     isEven ? "" : "md:order-2"
               //   }`}
-              className={`relative aspect-video w-full overflow-hidden rounded-md bg-gray-700 ${
+              className={`relative aspect-video w-full overflow-hidden rounded-md bg-gray-700 flex items-center justify-center ${
                 idx % 2 ? "md:order-2" : ""
               }`}
             >
@@ -34,7 +34,7 @@ export default function InfoBlocks({ items }: Props) {
                 alt={item.title}
                 fill
                 sizes="(max-width: 768px) 100vw, 50vw"
-                className="object-cover object-center"
+                className="object-cover !object-center"
               />
             </div>
 

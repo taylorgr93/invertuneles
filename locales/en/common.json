@@ -28,13 +28,6 @@
     "rights": "All rights reserved."
   },
   "about": {
-    "who": {
-      "title": "Who we are",
-      "paragraphs": [
-        "We are a people-centered company, and our agricultural partners come first and foremost: our employee partners, farmers and producers, agricultural technicians, agronomists, field workers, operators, merchants, and consumers.",
-        "After people, the second most important thing is the quality of the service, products, and work we offer and develop day after day."
-      ]
-    },
     "mission": {
       "title": "Our mission",
       "paragraphs": [
@@ -45,6 +38,14 @@
       "title": "Our vision",
       "paragraphs": [
         "To impact all the world's agricultural communities, their collaborators, and the environment through our actions."
+      ]
+    },
+    "who": {
+      "title": "Who we are",
+      "paragraphs": [
+        "Continuous Improvement: Constantly improving to offer the best solution, eliminating waste and increasing customer value.",
+        "Sustainability: Strive to build a circular economic chain, respecting the environment and contributing positively to society.",
+        "Digital Transformation: Innovate and adopt technologies that improve profitability."
       ]
     },
     "values": {

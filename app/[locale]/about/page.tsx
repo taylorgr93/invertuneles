@@ -29,25 +29,20 @@ export default function AboutPage({
   /* ---------- Construimos los bloques ---------- */
   const blocks: InfoItem[] = [
     {
-      title: t("about.who.title"),
-      image: "/images/about/who_we_are.webp",
-      paragraphs: tArray(translations, "about.who.paragraphs"),
-    },
-    {
       title: t("about.mission.title"),
-      image: "/images/about/our_mission.webp",
+      image: "/images/about/Mision.webp",
       paragraphs: tArray(translations, "about.mission.paragraphs"),
     },
     {
       title: t("about.vision.title"),
-      image: "/images/about/vision.webp",
+      image: "/images/about/Vision.webp",
       paragraphs: tArray(translations, "about.vision.paragraphs"),
     },
-    // {
-    //   title: t("about.vision.values"),
-    //   image: "/images/about/vision.webp",
-    //   paragraphs: tArray(translations, "about.vision.paragraphs"),
-    // },
+    {
+      title: t("about.who.title"),
+      image: "/images/about/Who_we_are.webp",
+      paragraphs: tArray(translations, "about.who.paragraphs"),
+    },
   ];
 
   return (
