@@ -58,7 +58,7 @@ export default function Home(props: { params: Promise<{ locale: string }> }) {
           />
 
           {/* overlay global muy sutil */}
-          <div className="absolute inset-0 bg-black/10 pointer-events-none" />
+          <div className="absolute inset-0 bg-black/20 pointer-events-none" />
 
           {/* ---------- TEXTO DESKTOP (sobre el vídeo) ---------------- */}
           <div
@@ -71,8 +71,8 @@ export default function Home(props: { params: Promise<{ locale: string }> }) {
               whitespace-pre-line"
           >
             {/* tarjeta translúcida */}
-            <div className="bg-black/10 backdrop-blur-sm p-6 lg:mt-26 xl:mt-20 rounded-lg space-y-6">
-              {/* <div className="p-6 rounded-lg space-y-6"> */}
+            {/* <div className="bg-black/10 backdrop-blur-sm p-6 lg:mt-26 xl:mt-20 rounded-lg space-y-6"> */}
+            <div className="p-6 rounded-lg space-y-6">
               <h1 className="text-green-400 text-2xl lg:text-4xl text-center font-bold leading-snug">
                 {t("home.were")}
               </h1>

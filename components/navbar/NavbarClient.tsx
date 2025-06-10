@@ -20,8 +20,8 @@ const NAV_ITEMS = [
   { slug: "/about", labelKey: "pages.about" }, // /about
   { slug: "/products", labelKey: "pages.products" },
   { slug: "/contact", labelKey: "pages.contact" },
-  // { slug: "/blog", labelKey: "pages.blog" },
-  // { slug: "/careers", labelKey: "pages.careers" },
+  { slug: "/blog", labelKey: "pages.blog" },
+  { slug: "/careers", labelKey: "pages.careers" },
 ] as const;
 
 /* --------- 2. Componente Link estilizado reutilizable ----------- */
@@ -36,14 +36,14 @@ function NavItem({ href, onClick, children, active }: NavItemProps) {
   return (
     <Link href={href} onClick={onClick} className="group inline-block">
       <h2
-        className="
-        px-4 py-2 md:p-0
-        text-3xl md:text-2xl font-semibold
-        text-white
-        transition-all duration-200
-        [text-shadow:0_1px_4px_rgba(0,0,0,0.6)]
-        hover:text-green-500 hover:[text-shadow:0_0_8px_rgba(255,255,255,0.9)]
-      "
+        className={`
+          px-4 py-2 md:p-0 text-3xl md:text-2xl font-semibold
+          transition-all duration-200
+          ${active ? "text-green-500" : "text-white"}
+          group-hover:text-green-500
+          [text-shadow:none]
+          group-hover:[text-shadow:0_0_10px_rgba(255,255,255,0.9)]
+        `}
       >
         {children}
       </h2>
