@@ -12,7 +12,7 @@ type HeroProps = {
 export default function Hero({
   src,
   alt = "Hero image",
-  containerHeight = "h-[60vh]",
+  containerHeight = "h-[70vh]",
   objectPosition = "center 70%",
   priority = false,
   ...rest // p. ej. sizes
