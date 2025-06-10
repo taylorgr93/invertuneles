@@ -20,8 +20,8 @@ const NAV_ITEMS = [
   { slug: "/about", labelKey: "pages.about" }, // /about
   { slug: "/products", labelKey: "pages.products" },
   { slug: "/contact", labelKey: "pages.contact" },
-  { slug: "/blog", labelKey: "pages.blog" },
-  { slug: "/careers", labelKey: "pages.careers" },
+  // { slug: "/blog", labelKey: "pages.blog" },
+  // { slug: "/careers", labelKey: "pages.careers" },
 ] as const;
 
 /* --------- 2. Componente Link estilizado reutilizable ----------- */
@@ -29,17 +29,18 @@ interface NavItemProps {
   href: string;
   onClick?: () => void;
   children: React.ReactNode;
-  active?: boolean;
+  isActive?: boolean;
 }
 
-function NavItem({ href, onClick, children, active }: NavItemProps) {
+/* --- componente --- */
+function NavItem({ href, onClick, children, isActive }: NavItemProps) {
   return (
     <Link href={href} onClick={onClick} className="group inline-block">
       <h2
         className={`
           px-4 py-2 md:p-0 text-3xl md:text-2xl font-semibold
           transition-all duration-200
-          ${active ? "text-green-500" : "text-white"}
+          ${isActive ? "text-green-500" : "text-white"}
           group-hover:text-green-500
           [text-shadow:none]
           group-hover:[text-shadow:0_0_10px_rgba(255,255,255,0.9)]
@@ -75,7 +76,7 @@ export default function NavbarClient({ locale, translations }: Props) {
       <NavItem
         key={slug}
         href={`/${locale}${slug}`}
-        active={pathname === `/${locale}${slug}`}
+        isActive={pathname === `/${locale}${slug}`}
         onClick={closeOnClick ? () => setOpen(false) : undefined}
       >
         {t(labelKey)}

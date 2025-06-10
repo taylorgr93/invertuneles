@@ -2,12 +2,12 @@
 import Image, { ImageProps, StaticImageData } from "next/image";
 
 type HeroProps = {
-  src: StaticImageData | string; // imagen obligatoria
-  alt?: string; // alt opcional → “Hero image” por defecto
-  containerHeight?: string; // alto tailwind: "h-[60vh]" (default)
-  objectPosition?: string; // p.ej. "center 70%" (default como antes)
-  priority?: boolean; // pasar a <Image>
-} & Omit<ImageProps, "src" | "alt">; // permite `sizes`, etc.
+  src: StaticImageData | string;
+  alt?: string;
+  containerHeight?: string; // default 60 vh
+  objectPosition?: string; // default "center 70%"
+  priority?: boolean;
+} & Omit<ImageProps, "src" | "alt">;
 
 export default function Hero({
   src,
@@ -15,10 +15,11 @@ export default function Hero({
   containerHeight = "h-[60vh]",
   objectPosition = "center 70%",
   priority = false,
-  ...rest // p. ej. sizes
+  ...rest
 }: HeroProps) {
   return (
-    <div className={`relative w-full ${containerHeight} overflow-hidden`}>
+    <div className={`relative w-full overflow-hidden ${containerHeight}`}>
+      {/* Imagen de fondo */}
       <Image
         src={src}
         alt={alt}
@@ -26,6 +27,19 @@ export default function Hero({
         priority={priority}
         className={`object-cover object-[${objectPosition}]`}
         {...rest}
+      />
+
+      {/* Overlay degradado 40 % → 0 % (encima de la imagen) */}
+      <div
+        aria-hidden
+        className="
+          absolute inset-0
+          z-10                     /* ← ¡pone el overlay por encima! */
+          pointer-events-none
+          bg-gradient-to-b
+          from-black/40
+          to-transparent
+        "
       />
     </div>
   );

@@ -45,14 +45,6 @@ export default function RootLayout({ children, params }: Props) {
           antialiased
         `}
       >
-        {/* gradiente solo arriba */}
-        <div
-          className="
-            absolute top-0 left-0 w-full h-32
-            bg-gradient-to-b from-black/80 via-black/40 to-transparent
-            pointer-events-none z-10   /* por debajo del navbar, encima del vídeo */
-          "
-        />
         <Navbar locale={locale} />
         {children}
         <Footer locale={locale} />

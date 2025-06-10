@@ -53,7 +53,7 @@ export default function Home(props: { params: Promise<{ locale: string }> }) {
         {/* vídeo */}
         <div className="relative h-[60vh] md:h-screen">
           <VideoBackground
-            src="/videos/VideoHome.mp4"
+            src="/videos/videoHome.mp4"
             className="absolute inset-0 h-full w-full object-cover"
           />
 
