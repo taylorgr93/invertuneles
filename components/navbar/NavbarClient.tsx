@@ -93,7 +93,10 @@ export default function NavbarClient({ locale, translations }: Props) {
   );
 
   return (
-    <header className="w-full sticky top-0 z-50 bg-black shadow-md">
+    <header
+      className="fixed top-0 left-0 z-30 w-full backdrop-blur
+                   transition-colors duration-300"
+    >
       <nav className="flex items-center justify-between px-4 py-2 md:px-8">
         {/* Logo */}
         <Link

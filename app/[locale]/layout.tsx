@@ -37,11 +37,10 @@ export default function RootLayout({ children, params }: Props) {
   const { locale } = use(params);
 
   return (
-    <html lang={locale} className="bg-black">
+    <html lang={locale}>
       <body
         className={`
           min-h-screen flex flex-col      /* llena la altura y apila */
-          bg-black text-white             /* ← fondo y texto   */
           ${geistSans.variable} ${geistMono.variable}
           antialiased
         `}

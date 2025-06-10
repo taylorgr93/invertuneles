@@ -11,20 +11,16 @@ const VideoBackground: React.FC<VideoBackgroundProps> = ({
   className,
 }) => {
   return (
-    <div className={`relative w-full h-[50vh] sm:h-[60vh] ${className}`}>
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover"
-      >
-        <source src={src} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-      {/* Optional: overlay semitransparente encima del video */}
-      <div className="absolute inset-0 bg-black/30" />
-    </div>
+    <video
+      autoPlay
+      muted
+      loop
+      playsInline
+      className={`absolute inset-0 h-full w-full object-cover ${className}`}
+    >
+      <source src={src} type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
   );
 };
 

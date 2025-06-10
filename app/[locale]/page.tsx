@@ -48,47 +48,57 @@ export default function Home(props: { params: Promise<{ locale: string }> }) {
   const title = t("homeHighlight.title");
 
   return (
-    <div
-      // className="relative min-h-screen"
-      className="relative bg-black"
-    >
-      {/* video de fondo */}
-      <VideoBackground
-        src="/videos/videoHome.mp4"
-        className="absolute inset-0 z-10"
-      />
+    <>
+      <section className="relative w-full isolate">
+        {/* vídeo */}
+        <div className="relative h-[60vh] md:h-screen">
+          <VideoBackground
+            src="/videos/VideoHome.mp4"
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+
+          {/* overlay global muy sutil */}
+          <div className="absolute inset-0 bg-black/10 pointer-events-none" />
+
+          {/* ---------- TEXTO DESKTOP (sobre el vídeo) ---------------- */}
+          <div
+            className="
+              hidden lg:flex
+              absolute inset-0 z-30
+              lg:w-[34%] xl:w-[30%]                    /* >⅓ <½ */
+              items-center
+              px-6
+              whitespace-pre-line"
+          >
+            {/* tarjeta translúcida */}
+            <div className="bg-black/10 backdrop-blur-sm p-6 lg:mt-26 xl:mt-20 rounded-lg space-y-6">
+              {/* <div className="p-6 rounded-lg space-y-6"> */}
+              <h1 className="text-green-400 text-2xl lg:text-4xl text-center font-bold leading-snug">
+                {t("home.were")}
+              </h1>
+              <h2 className="text-white lg:text-lg xl:text-xl font-semibold leading-snug">
+                {t("home.summary")}
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        {/* ---------- TEXTO MOBILE (bajo el vídeo) ------------------- */}
+        <div className="block lg:hidden px-6 py-8">
+          <div className="bg-black/60 backdrop-blur-sm p-6 rounded-lg space-y-4 whitespace-pre-line">
+            <h1 className="text-green-400 text-4xl text-center font-bold leading-snug">
+              {t("home.were")}
+            </h1>
+            <h2 className="text-white sm:text-xl md:text-2xl text-center font-medium leading-snug">
+              {t("home.summary")}
+            </h2>
+          </div>
+        </div>
+      </section>
+
+      {/* -------- RESTO DEL CONTENIDO (scroll) ----------------------- */}
       <Divider />
 
-      {/* texto centrado */}
-      <div className="flex flex-col items-center justify-center p-10">
-        <h1
-          className="
-      w-full max-w-7xl
-      text-center text-xl sm:text-3xl lg:text-5xl
-      font-bold leading-snug tracking-tight
-      text-green-500 drop-shadow-lg
-      whitespace-pre-line
-    "
-        >
-          {t("home.were")}
-        </h1>
-        <br />
-        <h2
-          className="
-      w-full max-w-7xl
-      text-center text-lg sm:text-xl lg:text-4xl
-      font-bold leading-snug tracking-tight
-      text-white drop-shadow-lg
-      whitespace-pre-line
-    "
-        >
-          {t("home.summary")}
-        </h2>
-      </div>
-
-      <Divider />
-
-      {/* HomeHighlight */}
       <HomeHighlight
         locale={locale}
         kicker={kicker}
@@ -118,11 +128,12 @@ export default function Home(props: { params: Promise<{ locale: string }> }) {
           },
         ]}
       />
+
       <Divider />
 
-      {/* UpcomingEvents */}
       <UpcomingEvents title={t("UpcomingEvents.next_events")} events={events} />
+
       <Divider />
-    </div>
+    </>
   );
 }
