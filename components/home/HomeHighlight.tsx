@@ -32,7 +32,8 @@ export default function HomeHighlight({
       <p className="mb-4 text-lg font-medium text-gray-300">{kicker}</p>
 
       {/* Headline con degradado verde */}
-      <h2 className="mb-16 bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-4xl font-extrabold leading-tight text-transparent sm:text-6xl">
+      {/* <h2 className="mb-16 bg-gradient-to-r from-emerald-400 to-teal-400 bg-clip-text text-4xl font-extrabold leading-tight text-transparent sm:text-6xl"> */}
+      <h2 className="mb-16 bg-gradient-to-r text-green-400 bg-clip-text text-4xl font-extrabold leading-tight sm:text-6xl">
         {headline}
       </h2>
 
