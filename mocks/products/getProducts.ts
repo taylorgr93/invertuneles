@@ -155,27 +155,34 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       // ------------------- Tights -----------------------
       {
         id: 31,
-        title: "Shade Netting",
+        title: "Shade Net",
         // range: "GAMA ADVANTAGE",
         image: "/images/products/tights/MALLA SOMBRA.webp",
         category: "tights",
-        bulletPoints: ["Shade Netting"],
+        bulletPoints: [
+          "Protects from excessive solar radiation and light, reducing thermal stress.",
+        ],
       },
       {
         id: 32,
-        title: "Anti-bird netting",
+        title: "Bird Net",
         // range: "GAMA ADVANTAGE",
         image: "/images/products/tights/MALLA ANTIPAJARO.webp",
         category: "tights",
-        bulletPoints: ["Anti-bird netting"],
+        bulletPoints: [
+          "Prevents birds from damaging crops without affecting growth.",
+          "Lightweight, durable and easy to install.",
+        ],
       },
       {
         id: 33,
-        title: "Anti-hail net",
+        title: "Anti-hail Net",
         // range: "GAMA ADVANTAGE",
         image: "/images/products/tights/MALLA ANTIGRANIZO.webp",
         category: "tights",
-        bulletPoints: ["Anti-hail net"],
+        bulletPoints: [
+          "Resistant, it protects crops from damage caused by hail, without impeding the passage of air and light.",
+        ],
       },
       {
         id: 34,
@@ -191,15 +198,32 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         // range: "GAMA ADVANTAGE",
         image: "/images/products/tights/GROUND COVER.webp",
         category: "tights",
-        bulletPoints: ["Ground Cover Mesh"],
+        bulletPoints: [
+          "Soil use, used for weed control, drainage and road maintenance.",
+          "In black and white colors.",
+        ],
       },
       {
         id: 36,
-        title: "Ground Cover Mesh",
+        title: "Hail Net",
         // range: "GAMA ADVANTAGE",
         image: "/images/products/tights/ANTIAFIDO.webp",
         category: "tights",
-        bulletPoints: ["Ground Cover Mesh"],
+        bulletPoints: [
+          "Designed to prevent the entry of aphids and other small pests.",
+          "Reduces the need for agrochemicals.",
+        ],
+      },
+      {
+        id: 37,
+        title: "Bee Net",
+        // range: "GAMA ADVANTAGE",
+        image: "/images/products/tights/PELICULA ATRAPA INSECTOS_3_11zon.webp",
+        category: "tights",
+        bulletPoints: [
+          "Prevents the entry of unwanted insects without affecting ventilation.",
+          "Useful for protecting crops from specific pests and vector-borne diseases.",
+        ],
       },
       // ------------------- plastic films ----------------------
       {
@@ -208,7 +232,10 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         // range: "GAMA ADVANTAGE",
         image: "/images/products/plastic-films/Acolchado_1_11zon.webp",
         category: "plastic films",
-        bulletPoints: ["Padded"],
+        bulletPoints: [
+          "Placed on the soil, they conserve moisture, control weeds and regulate the temperature of the substrate.",
+          "Available in different colors depending on the cultivation objective (black, silver, two-tone, etc.)",
+        ],
       },
       {
         id: 42,
@@ -217,16 +244,10 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         image:
           "/images/products/plastic-films/Recurso 6@350x-100_10_11zon.webp",
         category: "plastic films",
-        bulletPoints: ["Hydroponics Bag"],
-      },
-      {
-        id: 43,
-        title: "Bug Catcher Movie",
-        // range: "GAMA ADVANTAGE",
-        image:
-          "/images/products/plastic-films/PELICULA ATRAPA INSECTOS_3_11zon.webp",
-        category: "plastic films",
-        bulletPoints: ["Bug Catcher Movie"],
+        bulletPoints: [
+          "Sturdy, reusable stand designed to keep grow bags in a stable, elevated position.",
+          "It facilitates drainage, improves root aeration and optimizes the management of the hydroponic system.",
+        ],
       },
       // ---------------------- Greenhouses -------------------------
       {
@@ -252,7 +273,10 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         image:
           "/images/products/greenhouses/MACROTUNEL TRADICIONAL_13_11zon.webp",
         category: "greenhouse",
-        bulletPoints: ["Traditional Macrotunnel"],
+        bulletPoints: [
+          "Tunnel-shaped steel structure with a plastic or mesh cover, capable of creating a semi-controlled microclimate.",
+          "Economical, mobile and quick-assembly system.",
+        ],
       },
       {
         id: 54,
@@ -260,7 +284,9 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         // range: "GAMA ADVANTAGE",
         image: "/images/products/greenhouses/Macrotunel_Apertura.webp",
         category: "greenhouse",
-        bulletPoints: ["Macrotunnel with Opening"],
+        bulletPoints: [
+          "Designed for greater ventilation control, this structure offers the option of opening from the side, front, or top.",
+        ],
       },
     ],
     es: [
@@ -416,7 +442,9 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         // range: "GAMA ADVANTAGE",
         image: "/images/products/tights/MALLA SOMBRA.webp",
         category: "tights",
-        bulletPoints: ["Malla Sombra"],
+        bulletPoints: [
+          "Protege de la radiación solar excesiva y la luz, reduciendo el estrés térmico.",
+        ],
       },
       {
         id: 32,
@@ -424,7 +452,10 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         // range: "GAMA ADVANTAGE",
         image: "/images/products/tights/MALLA ANTIPAJARO.webp",
         category: "tights",
-        bulletPoints: ["Malla Antipájaro"],
+        bulletPoints: [
+          "Evita que aves dañen los cultivos, sin afectar el crecimiento.",
+          "Liviana, duradera y de fácil instalación.",
+        ],
       },
       {
         id: 33,
@@ -432,7 +463,9 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         // range: "GAMA ADVANTAGE",
         image: "/images/products/tights/MALLA ANTIGRANIZO.webp",
         category: "tights",
-        bulletPoints: ["Malla Antigranizo"],
+        bulletPoints: [
+          "Resistente que protege los cultivos del daño causado por la caída de granizo, sin impedir el paso del aire y la luz.",
+        ],
       },
       {
         id: 34,
@@ -448,7 +481,10 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         // range: "GAMA ADVANTAGE",
         image: "/images/products/tights/GROUND COVER.webp",
         category: "tights",
-        bulletPoints: ["Malla Ground Cover"],
+        bulletPoints: [
+          "Uso en suelo, utilizado para control de maleza, drenaje y mantenimiento de caminos.",
+          "En colores blanco y negro.",
+        ],
       },
       {
         id: 36,
@@ -456,7 +492,21 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         // range: "GAMA ADVANTAGE",
         image: "/images/products/tights/ANTIAFIDO.webp",
         category: "tights",
-        bulletPoints: ["Malla Antiafido"],
+        bulletPoints: [
+          "Diseñada para evitar la entrada de áfidos y otras plagas pequeñas.",
+          "Reduce la necesidad de agroquímicos.",
+        ],
+      },
+      {
+        id: 37,
+        title: "Malla Atrapa Insectos",
+        // range: "GAMA ADVANTAGE",
+        image: "/images/products/tights/PELICULA ATRAPA INSECTOS_3_11zon.webp",
+        category: "tights",
+        bulletPoints: [
+          "Impide el ingreso de insectos no deseados sin afectar la ventilación.",
+          "Útil para proteger cultivos de plagas específicas y enfermedades transmitidas por vectores.",
+        ],
       },
       // -------------------- plastic films ----------------------
       {
@@ -465,7 +515,10 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         // range: "GAMA ADVANTAGE",
         image: "/images/products/plastic-films/Acolchado_1_11zon.webp",
         category: "plastic films",
-        bulletPoints: ["Acolchado"],
+        bulletPoints: [
+          "Colocadas sobre el suelo, conservan la humedad, controlan malezas y regulan la temperatura del sustrato.",
+          "Disponible en diferentes colores según el objetivo del cultivo (negro, plata, bicolor, etc.)",
+        ],
       },
       {
         id: 42,
@@ -474,16 +527,10 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         image:
           "/images/products/plastic-films/Recurso 6@350x-100_10_11zon.webp",
         category: "plastic films",
-        bulletPoints: ["Bolsa de Hidroponia"],
-      },
-      {
-        id: 43,
-        title: "Pelicula Atrapa Insectos",
-        // range: "GAMA ADVANTAGE",
-        image:
-          "/images/products/plastic-films/PELICULA ATRAPA INSECTOS_3_11zon.webp",
-        category: "plastic films",
-        bulletPoints: ["Pelicula Atrapa Insectos"],
+        bulletPoints: [
+          "Soporte resistente y reutilizable diseñado para mantener las bolsas de cultivo en posición estable y elevada.",
+          "Facilita el drenaje, mejora la aireación de las raíces y optimiza el manejo del sistema hidropónico.",
+        ],
       },
       // ----------------------- Greenhouses -----------------
       {
@@ -509,7 +556,10 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         image:
           "/images/products/greenhouses/MACROTUNEL TRADICIONAL_13_11zon.webp",
         category: "greenhouse",
-        bulletPoints: ["Macrotunel Tradicional"],
+        bulletPoints: [
+          "Estructura de acero en forma de túnel con cubierta plástica o malla, capaz de crear un microclima semicontrolado.",
+          "Sistema económico, móvil y de armado rápido.",
+        ],
       },
       {
         id: 54,
@@ -517,7 +567,9 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         // range: "GAMA ADVANTAGE",
         image: "/images/products/greenhouses/Macrotunel_Apertura.webp",
         category: "greenhouse",
-        bulletPoints: ["Macrotunel con Apertura"],
+        bulletPoints: [
+          "Solución diseñada para mayor control de ventilación, es una estructura con opción de apertura latera, frontal o superior.",
+        ],
       },
     ],
   };
