@@ -7,6 +7,142 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
 
   const data: Record<string, ProductDTO[]> = {
     en: [
+      // ---------------------- Greenhouses -------------------------
+      {
+        id: 51,
+        title: "Plastic Covers",
+        // range: "GAMA ADVANTAGE",
+        image: "/images/products/greenhouses/cubiertas plasticas_11_11zon.webp",
+        category: "greenhouse",
+        bulletPoints: ["Plastic Covers"],
+      },
+      {
+        id: 52,
+        title: "Macrotunnel Mesh",
+        // range: "GAMA ADVANTAGE",
+        image: "/images/products/greenhouses/MACROTUNEL MALLA_12_11zon.webp",
+        category: "greenhouse",
+        bulletPoints: ["Macrotunnel Mesh"],
+      },
+      {
+        id: 53,
+        title: "Traditional Macrotunnel",
+        // range: "GAMA ADVANTAGE",
+        image:
+          "/images/products/greenhouses/MACROTUNEL TRADICIONAL_13_11zon.webp",
+        category: "greenhouse",
+        bulletPoints: [
+          "Tunnel-shaped steel structure with a plastic or mesh cover, capable of creating a semi-controlled microclimate.",
+          "Economical, mobile and quick-assembly system.",
+        ],
+      },
+      {
+        id: 54,
+        title: "Macrotunnel with Opening",
+        // range: "GAMA ADVANTAGE",
+        image: "/images/products/greenhouses/Macrotunel_Apertura.webp",
+        category: "greenhouse",
+        bulletPoints: [
+          "Designed for greater ventilation control, this structure offers the option of opening from the side, front, or top.",
+        ],
+      },
+      // ------------------- plastic films ----------------------
+      {
+        id: 41,
+        title: "Padded",
+        // range: "GAMA ADVANTAGE",
+        image: "/images/products/plastic-films/Acolchado_1_11zon.webp",
+        category: "plastic films",
+        bulletPoints: [
+          "Placed on the soil, they conserve moisture, control weeds and regulate the temperature of the substrate.",
+          "Available in different colors depending on the cultivation objective (black, silver, two-tone, etc.)",
+        ],
+      },
+      {
+        id: 42,
+        title: "Hydroponics Bag",
+        // range: "GAMA ADVANTAGE",
+        image:
+          "/images/products/plastic-films/Recurso 6@350x-100_10_11zon.webp",
+        category: "plastic films",
+        bulletPoints: [
+          "Sturdy, reusable stand designed to keep grow bags in a stable, elevated position.",
+          "It facilitates drainage, improves root aeration and optimizes the management of the hydroponic system.",
+        ],
+      },
+      // ------------------- Tights -----------------------
+      {
+        id: 31,
+        title: "Shade Net",
+        // range: "GAMA ADVANTAGE",
+        image: "/images/products/tights/MALLA SOMBRA.webp",
+        category: "tights",
+        bulletPoints: [
+          "Protects from excessive solar radiation and light, reducing thermal stress.",
+        ],
+      },
+      {
+        id: 32,
+        title: "Bird Net",
+        // range: "GAMA ADVANTAGE",
+        image: "/images/products/tights/MALLA ANTIPAJARO.webp",
+        category: "tights",
+        bulletPoints: [
+          "Prevents birds from damaging crops without affecting growth.",
+          "Lightweight, durable and easy to install.",
+        ],
+      },
+      {
+        id: 33,
+        title: "Anti-hail Net",
+        // range: "GAMA ADVANTAGE",
+        image: "/images/products/tights/MALLA ANTIGRANIZO.webp",
+        category: "tights",
+        bulletPoints: [
+          "Resistant, it protects crops from damage caused by hail, without impeding the passage of air and light.",
+        ],
+      },
+      {
+        id: 34,
+        title: "Raschel mesh",
+        // range: "GAMA ADVANTAGE",
+        image: "/images/products/tights/raschel.webp",
+        category: "tights",
+        bulletPoints: ["Raschel mesh"],
+      },
+      {
+        id: 35,
+        title: "Ground Cover Mesh",
+        // range: "GAMA ADVANTAGE",
+        image: "/images/products/tights/GROUND COVER.webp",
+        category: "tights",
+        bulletPoints: [
+          "Soil use, used for weed control, drainage and road maintenance.",
+          "In black and white colors.",
+        ],
+      },
+      {
+        id: 36,
+        title: "Hail Net",
+        // range: "GAMA ADVANTAGE",
+        image: "/images/products/tights/ANTIAFIDO.webp",
+        category: "tights",
+        bulletPoints: [
+          "Designed to prevent the entry of aphids and other small pests.",
+          "Reduces the need for agrochemicals.",
+        ],
+      },
+      {
+        id: 37,
+        title: "Bee Net",
+        // range: "GAMA ADVANTAGE",
+        image: "/images/products/tights/PELICULA ATRAPA INSECTOS_3_11zon.webp",
+        category: "tights",
+        bulletPoints: [
+          "Prevents the entry of unwanted insects without affecting ventilation.",
+          "Useful for protecting crops from specific pests and vector-borne diseases.",
+        ],
+      },
       // ----------------- Accesories----------------------
       {
         id: 1,
@@ -152,144 +288,144 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         category: "accessories",
         bulletPoints: [""],
       },
-      // ------------------- Tights -----------------------
-      {
-        id: 31,
-        title: "Shade Net",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/tights/MALLA SOMBRA.webp",
-        category: "tights",
-        bulletPoints: [
-          "Protects from excessive solar radiation and light, reducing thermal stress.",
-        ],
-      },
-      {
-        id: 32,
-        title: "Bird Net",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/tights/MALLA ANTIPAJARO.webp",
-        category: "tights",
-        bulletPoints: [
-          "Prevents birds from damaging crops without affecting growth.",
-          "Lightweight, durable and easy to install.",
-        ],
-      },
-      {
-        id: 33,
-        title: "Anti-hail Net",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/tights/MALLA ANTIGRANIZO.webp",
-        category: "tights",
-        bulletPoints: [
-          "Resistant, it protects crops from damage caused by hail, without impeding the passage of air and light.",
-        ],
-      },
-      {
-        id: 34,
-        title: "Raschel mesh",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/tights/raschel.webp",
-        category: "tights",
-        bulletPoints: ["Raschel mesh"],
-      },
-      {
-        id: 35,
-        title: "Ground Cover Mesh",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/tights/GROUND COVER.webp",
-        category: "tights",
-        bulletPoints: [
-          "Soil use, used for weed control, drainage and road maintenance.",
-          "In black and white colors.",
-        ],
-      },
-      {
-        id: 36,
-        title: "Hail Net",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/tights/ANTIAFIDO.webp",
-        category: "tights",
-        bulletPoints: [
-          "Designed to prevent the entry of aphids and other small pests.",
-          "Reduces the need for agrochemicals.",
-        ],
-      },
-      {
-        id: 37,
-        title: "Bee Net",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/tights/PELICULA ATRAPA INSECTOS_3_11zon.webp",
-        category: "tights",
-        bulletPoints: [
-          "Prevents the entry of unwanted insects without affecting ventilation.",
-          "Useful for protecting crops from specific pests and vector-borne diseases.",
-        ],
-      },
-      // ------------------- plastic films ----------------------
-      {
-        id: 41,
-        title: "Padded",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/plastic-films/Acolchado_1_11zon.webp",
-        category: "plastic films",
-        bulletPoints: [
-          "Placed on the soil, they conserve moisture, control weeds and regulate the temperature of the substrate.",
-          "Available in different colors depending on the cultivation objective (black, silver, two-tone, etc.)",
-        ],
-      },
-      {
-        id: 42,
-        title: "Hydroponics Bag",
-        // range: "GAMA ADVANTAGE",
-        image:
-          "/images/products/plastic-films/Recurso 6@350x-100_10_11zon.webp",
-        category: "plastic films",
-        bulletPoints: [
-          "Sturdy, reusable stand designed to keep grow bags in a stable, elevated position.",
-          "It facilitates drainage, improves root aeration and optimizes the management of the hydroponic system.",
-        ],
-      },
-      // ---------------------- Greenhouses -------------------------
+    ],
+    es: [
+      // ----------------------- Greenhouses -----------------
       {
         id: 51,
-        title: "Plastic Covers",
+        title: "Cubiertas Plasticas",
         // range: "GAMA ADVANTAGE",
         image: "/images/products/greenhouses/cubiertas plasticas_11_11zon.webp",
         category: "greenhouse",
-        bulletPoints: ["Plastic Covers"],
+        bulletPoints: ["Cubiertas Plasticas"],
       },
       {
         id: 52,
-        title: "Macrotunnel Mesh",
+        title: "Macrotunel Malla",
         // range: "GAMA ADVANTAGE",
         image: "/images/products/greenhouses/MACROTUNEL MALLA_12_11zon.webp",
         category: "greenhouse",
-        bulletPoints: ["Macrotunnel Mesh"],
+        bulletPoints: ["Macrotunel Malla"],
       },
       {
         id: 53,
-        title: "Traditional Macrotunnel",
+        title: "Macrotunel Tradicional",
         // range: "GAMA ADVANTAGE",
         image:
           "/images/products/greenhouses/MACROTUNEL TRADICIONAL_13_11zon.webp",
         category: "greenhouse",
         bulletPoints: [
-          "Tunnel-shaped steel structure with a plastic or mesh cover, capable of creating a semi-controlled microclimate.",
-          "Economical, mobile and quick-assembly system.",
+          "Estructura de acero en forma de túnel con cubierta plástica o malla, capaz de crear un microclima semicontrolado.",
+          "Sistema económico, móvil y de armado rápido.",
         ],
       },
       {
         id: 54,
-        title: "Macrotunnel with Opening",
+        title: "Macrotunel con Apertura",
         // range: "GAMA ADVANTAGE",
         image: "/images/products/greenhouses/Macrotunel_Apertura.webp",
         category: "greenhouse",
         bulletPoints: [
-          "Designed for greater ventilation control, this structure offers the option of opening from the side, front, or top.",
+          "Solución diseñada para mayor control de ventilación, es una estructura con opción de apertura latera, frontal o superior.",
         ],
       },
-    ],
-    es: [
+      // -------------------- plastic films ----------------------
+      {
+        id: 41,
+        title: "Acolchado",
+        // range: "GAMA ADVANTAGE",
+        image: "/images/products/plastic-films/Acolchado_1_11zon.webp",
+        category: "plastic films",
+        bulletPoints: [
+          "Colocadas sobre el suelo, conservan la humedad, controlan malezas y regulan la temperatura del sustrato.",
+          "Disponible en diferentes colores según el objetivo del cultivo (negro, plata, bicolor, etc.)",
+        ],
+      },
+      {
+        id: 42,
+        title: "Bolsa de Hidroponia",
+        // range: "GAMA ADVANTAGE",
+        image:
+          "/images/products/plastic-films/Recurso 6@350x-100_10_11zon.webp",
+        category: "plastic films",
+        bulletPoints: [
+          "Soporte resistente y reutilizable diseñado para mantener las bolsas de cultivo en posición estable y elevada.",
+          "Facilita el drenaje, mejora la aireación de las raíces y optimiza el manejo del sistema hidropónico.",
+        ],
+      },
+      // ------------------------- Mallas -------------------------
+      {
+        id: 31,
+        title: "Malla Sombra",
+        // range: "GAMA ADVANTAGE",
+        image: "/images/products/tights/MALLA SOMBRA.webp",
+        category: "tights",
+        bulletPoints: [
+          "Protege de la radiación solar excesiva y la luz, reduciendo el estrés térmico.",
+        ],
+      },
+      {
+        id: 32,
+        title: "Malla Antipájaro",
+        // range: "GAMA ADVANTAGE",
+        image: "/images/products/tights/MALLA ANTIPAJARO.webp",
+        category: "tights",
+        bulletPoints: [
+          "Evita que aves dañen los cultivos, sin afectar el crecimiento.",
+          "Liviana, duradera y de fácil instalación.",
+        ],
+      },
+      {
+        id: 33,
+        title: "Malla Antigranizo",
+        // range: "GAMA ADVANTAGE",
+        image: "/images/products/tights/MALLA ANTIGRANIZO.webp",
+        category: "tights",
+        bulletPoints: [
+          "Resistente que protege los cultivos del daño causado por la caída de granizo, sin impedir el paso del aire y la luz.",
+        ],
+      },
+      {
+        id: 34,
+        title: "Malla Raschel",
+        // range: "GAMA ADVANTAGE",
+        image: "/images/products/tights/raschel.webp",
+        category: "tights",
+        bulletPoints: ["Malla Raschel"],
+      },
+      {
+        id: 35,
+        title: "Malla Ground Cover",
+        // range: "GAMA ADVANTAGE",
+        image: "/images/products/tights/GROUND COVER.webp",
+        category: "tights",
+        bulletPoints: [
+          "Uso en suelo, utilizado para control de maleza, drenaje y mantenimiento de caminos.",
+          "En colores blanco y negro.",
+        ],
+      },
+      {
+        id: 36,
+        title: "Malla Antiafido",
+        // range: "GAMA ADVANTAGE",
+        image: "/images/products/tights/ANTIAFIDO.webp",
+        category: "tights",
+        bulletPoints: [
+          "Diseñada para evitar la entrada de áfidos y otras plagas pequeñas.",
+          "Reduce la necesidad de agroquímicos.",
+        ],
+      },
+      {
+        id: 37,
+        title: "Malla Atrapa Insectos",
+        // range: "GAMA ADVANTAGE",
+        image: "/images/products/tights/PELICULA ATRAPA INSECTOS_3_11zon.webp",
+        category: "tights",
+        bulletPoints: [
+          "Impide el ingreso de insectos no deseados sin afectar la ventilación.",
+          "Útil para proteger cultivos de plagas específicas y enfermedades transmitidas por vectores.",
+        ],
+      },
       // ----------------- Accesorios----------------------
       {
         id: 1,
@@ -434,142 +570,6 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         image: "/images/products/accesories/Tubos galvanizado.webp",
         category: "accessories",
         bulletPoints: [""],
-      },
-      // ------------------------- Mallas -------------------------
-      {
-        id: 31,
-        title: "Malla Sombra",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/tights/MALLA SOMBRA.webp",
-        category: "tights",
-        bulletPoints: [
-          "Protege de la radiación solar excesiva y la luz, reduciendo el estrés térmico.",
-        ],
-      },
-      {
-        id: 32,
-        title: "Malla Antipájaro",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/tights/MALLA ANTIPAJARO.webp",
-        category: "tights",
-        bulletPoints: [
-          "Evita que aves dañen los cultivos, sin afectar el crecimiento.",
-          "Liviana, duradera y de fácil instalación.",
-        ],
-      },
-      {
-        id: 33,
-        title: "Malla Antigranizo",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/tights/MALLA ANTIGRANIZO.webp",
-        category: "tights",
-        bulletPoints: [
-          "Resistente que protege los cultivos del daño causado por la caída de granizo, sin impedir el paso del aire y la luz.",
-        ],
-      },
-      {
-        id: 34,
-        title: "Malla Raschel",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/tights/raschel.webp",
-        category: "tights",
-        bulletPoints: ["Malla Raschel"],
-      },
-      {
-        id: 35,
-        title: "Malla Ground Cover",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/tights/GROUND COVER.webp",
-        category: "tights",
-        bulletPoints: [
-          "Uso en suelo, utilizado para control de maleza, drenaje y mantenimiento de caminos.",
-          "En colores blanco y negro.",
-        ],
-      },
-      {
-        id: 36,
-        title: "Malla Antiafido",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/tights/ANTIAFIDO.webp",
-        category: "tights",
-        bulletPoints: [
-          "Diseñada para evitar la entrada de áfidos y otras plagas pequeñas.",
-          "Reduce la necesidad de agroquímicos.",
-        ],
-      },
-      {
-        id: 37,
-        title: "Malla Atrapa Insectos",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/tights/PELICULA ATRAPA INSECTOS_3_11zon.webp",
-        category: "tights",
-        bulletPoints: [
-          "Impide el ingreso de insectos no deseados sin afectar la ventilación.",
-          "Útil para proteger cultivos de plagas específicas y enfermedades transmitidas por vectores.",
-        ],
-      },
-      // -------------------- plastic films ----------------------
-      {
-        id: 41,
-        title: "Acolchado",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/plastic-films/Acolchado_1_11zon.webp",
-        category: "plastic films",
-        bulletPoints: [
-          "Colocadas sobre el suelo, conservan la humedad, controlan malezas y regulan la temperatura del sustrato.",
-          "Disponible en diferentes colores según el objetivo del cultivo (negro, plata, bicolor, etc.)",
-        ],
-      },
-      {
-        id: 42,
-        title: "Bolsa de Hidroponia",
-        // range: "GAMA ADVANTAGE",
-        image:
-          "/images/products/plastic-films/Recurso 6@350x-100_10_11zon.webp",
-        category: "plastic films",
-        bulletPoints: [
-          "Soporte resistente y reutilizable diseñado para mantener las bolsas de cultivo en posición estable y elevada.",
-          "Facilita el drenaje, mejora la aireación de las raíces y optimiza el manejo del sistema hidropónico.",
-        ],
-      },
-      // ----------------------- Greenhouses -----------------
-      {
-        id: 51,
-        title: "Cubiertas Plasticas",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/greenhouses/cubiertas plasticas_11_11zon.webp",
-        category: "greenhouse",
-        bulletPoints: ["Cubiertas Plasticas"],
-      },
-      {
-        id: 52,
-        title: "Macrotunel Malla",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/greenhouses/MACROTUNEL MALLA_12_11zon.webp",
-        category: "greenhouse",
-        bulletPoints: ["Macrotunel Malla"],
-      },
-      {
-        id: 53,
-        title: "Macrotunel Tradicional",
-        // range: "GAMA ADVANTAGE",
-        image:
-          "/images/products/greenhouses/MACROTUNEL TRADICIONAL_13_11zon.webp",
-        category: "greenhouse",
-        bulletPoints: [
-          "Estructura de acero en forma de túnel con cubierta plástica o malla, capaz de crear un microclima semicontrolado.",
-          "Sistema económico, móvil y de armado rápido.",
-        ],
-      },
-      {
-        id: 54,
-        title: "Macrotunel con Apertura",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/greenhouses/Macrotunel_Apertura.webp",
-        category: "greenhouse",
-        bulletPoints: [
-          "Solución diseñada para mayor control de ventilación, es una estructura con opción de apertura latera, frontal o superior.",
-        ],
       },
     ],
   };
