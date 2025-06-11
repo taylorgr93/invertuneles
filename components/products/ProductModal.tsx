@@ -28,7 +28,7 @@ export default function ProductModal({ src, alt, onClose }: Props) {
           src={src}
           alt={alt}
           fill
-          className="object-contain rounded-md shadow-2xl"
+          className="object-contain rounded-2xl shadow-2xl"
           sizes="70vw"
           priority
         />

@@ -56,7 +56,7 @@ export default function ProductCard({
                         group-hover:opacity-100 group-hover:translate-y-0
                         transition-all duration-300"
         >
-          <ul className="mb-4 list-disc space-y-1 pl-5 text-sm text-white">
+          <ul className="mb-6 list-disc space-y-1 pl-5 text-md text-white font-bold">
             {bulletPoints.map((p) => (
               <li key={p}>{p}</li>
             ))}
