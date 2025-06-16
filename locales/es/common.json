@@ -42,9 +42,13 @@
     },
     "who": {
       "title": "Quiénes somos",
-      "paragraphs": [
+      "subtitle_left": "Los pilares de nuestra institución",
+      "subtitle_right": "Ejes estratégicos",
+      "paragraphsLeft": [
         "Somos una empresa centralizada en las personas, lo más primero más importante son nuestros colaboradores agrícolas: Socios trabajadores, Agricultores y productores, técnicos agrícolas, ingenieros agrónomos, trabajadores del campo, Operadores, Comerciantes y Consumidores.",
-        "Después de las personas, lo segundo más importante es la calidad en el servicio, los productos, y el trabajo que ofrecemos y desarrollamos día tras día.",
+        "Después de las personas, lo segundo más importante es la calidad en el servicio, los productos, y el trabajo que ofrecemos y desarrollamos día tras día."
+      ],
+      "paragraphsRight": [
         "Mejora Continua: Mejorar constantemente para ofrecer la mejor solución, eliminando desperdicios y aumentando el valor para el cliente.",
         "Sostenibilidad: Luchar por construir una cadena económica circular, respetando al medio ambiente y contribuyendo positivamente a la sociedad.",
         "Transformación Digital: Innovar y adoptar tecnologías que mejoran la rentabilidad."

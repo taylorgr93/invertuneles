@@ -11,7 +11,7 @@ type Props = { items: InfoItem[] };
 
 export default function InfoBlocks({ items }: Props) {
   return (
-    <section className="mx-auto max-w-6xl px-4 py-16 space-y-8">
+    <section className="mx-auto max-w-6xl sm:px-4 sm:py-16 space-y-8">
       {items.map((item, idx) => {
         // const isEven = idx % 2 === 0;
         return (

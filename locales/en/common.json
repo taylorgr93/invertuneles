@@ -42,9 +42,13 @@
     },
     "who": {
       "title": "Who we are",
-      "paragraphs": [
+      "subtitle_left": "The pillars of our institution",
+      "subtitle_right": "Strategic axes",
+      "paragraphsLeft": [
         "We are a people-centered company, and our agricultural collaborators are the most important thing: our working partners, farmers and producers, agricultural technicians, agronomists, field workers, operators, merchants, and consumers.",
-        "After people, the second most important thing is the quality of the service, the products, and the work we offer and carry out day after day.",
+        "After people, the second most important thing is the quality of the service, the products, and the work we offer and carry out day after day."
+      ],
+      "paragraphsRight": [
         "Continuous Improvement: Constantly improving to offer the best solution, eliminating waste and increasing customer value.",
         "Sustainability: Strive to build a circular economic chain, respecting the environment and contributing positively to society.",
         "Digital Transformation: Innovate and adopt technologies that improve profitability."
