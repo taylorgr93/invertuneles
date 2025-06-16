@@ -10,24 +10,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       // ---------------------- Greenhouses -------------------------
       {
         id: 51,
-        title: "Plastic Covers",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/greenhouses/cubiertas plasticas_11_11zon.webp",
-        category: "greenhouse",
-        bulletPoints: ["Plastic Covers"],
-      },
-      {
-        id: 52,
-        title: "Macrotunnel Mesh",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/greenhouses/MACROTUNEL MALLA_12_11zon.webp",
-        category: "greenhouse",
-        bulletPoints: ["Macrotunnel Mesh"],
-      },
-      {
-        id: 53,
         title: "Traditional Macrotunnel",
-        // range: "GAMA ADVANTAGE",
         image:
           "/images/products/greenhouses/MACROTUNEL TRADICIONAL_13_11zon.webp",
         category: "greenhouse",
@@ -37,15 +20,33 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         ],
       },
       {
-        id: 54,
+        id: 52,
+        title: "Reinforced Macrotunnel",
+        image: "/images/products/greenhouses/cubiertas plasticas_11_11zon.webp",
+        category: "greenhouse",
+        bulletPoints: [
+          "Reinforced structure with steel crossbars, designed to provide greater resistance against wind forces.",
+        ],
+      },
+      {
+        id: 53,
         title: "Macrotunnel with Opening",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/greenhouses/Macrotunel_Apertura.webp",
         category: "greenhouse",
         bulletPoints: [
           "Designed for greater ventilation control, this structure offers the option of opening from the side, front, or top.",
         ],
       },
+      {
+        id: 52,
+        title: "Macrotunnel OV-M",
+        image: "/images/products/greenhouses/MACROTUNEL MALLA_12_11zon.webp",
+        category: "greenhouse",
+        bulletPoints: [
+          "Structure made with 40 x 30 mm oval tubes, tension-resistant, with a wider cross-section, generating a 30% stronger and more robust system.",
+        ],
+      },
+
       // ------------------- plastic films ----------------------
       {
         id: 41,
@@ -293,24 +294,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       // ----------------------- Greenhouses -----------------
       {
         id: 51,
-        title: "Cubiertas Plasticas",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/greenhouses/cubiertas plasticas_11_11zon.webp",
-        category: "greenhouse",
-        bulletPoints: ["Cubiertas Plasticas"],
-      },
-      {
-        id: 52,
-        title: "Macrotunel Malla",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/greenhouses/MACROTUNEL MALLA_12_11zon.webp",
-        category: "greenhouse",
-        bulletPoints: ["Macrotunel Malla"],
-      },
-      {
-        id: 53,
         title: "Macrotunel Tradicional",
-        // range: "GAMA ADVANTAGE",
         image:
           "/images/products/greenhouses/MACROTUNEL TRADICIONAL_13_11zon.webp",
         category: "greenhouse",
@@ -320,13 +304,30 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         ],
       },
       {
-        id: 54,
+        id: 52,
+        title: "Macrotunel Reforzado",
+        image: "/images/products/greenhouses/cubiertas plasticas_11_11zon.webp",
+        category: "greenhouse",
+        bulletPoints: [
+          "Estructura reforzada con crucetas de acero, diseñada para brindar mayor resistencia contra la fuerza del viento.",
+        ],
+      },
+      {
+        id: 53,
         title: "Macrotunel con Apertura",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/greenhouses/Macrotunel_Apertura.webp",
         category: "greenhouse",
         bulletPoints: [
           "Solución diseñada para mayor control de ventilación, es una estructura con opción de apertura latera, frontal o superior.",
+        ],
+      },
+      {
+        id: 54,
+        title: "Macrotunel OV-M",
+        image: "/images/products/greenhouses/MACROTUNEL MALLA_12_11zon.webp",
+        category: "greenhouse",
+        bulletPoints: [
+          "Estructura fabricada con tubos ovalados de 40 x 30 mm, resistente a la tensión, con sección transversal más ancha, generando un sistema 30% más fuerte y robusto.",
         ],
       },
       // -------------------- plastic films ----------------------
