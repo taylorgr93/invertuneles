@@ -6,11 +6,12 @@ import { getTranslations, Dict } from "@/lib/getTranslations";
 import { tArray } from "@/lib/tArray";
 import Hero from "@/components/common/Hero";
 import Divider from "@/components/common/Divider";
-import DualImages from "@/components/about/DualImages";
+// import DualImages from "@/components/about/DualImages";
 import InfoBlocks, { InfoItem } from "@/components/about/InfoBlocks";
 import heroAbout from "@/public/images/about/hero_about.webp";
 import ImageWithColumns from "@/components/about/ImageWithColumns";
 import ValuesSection from "@/components/about/ValuesSection";
+import CtaChip from "@/components/about/CtaChip";
 
 export const metadata: Metadata = {
   title: "Página Acerca de",
@@ -85,6 +86,10 @@ export default function AboutPage({
           alt: "Nuestros valores",
         }}
       /> */}
+      <CtaChip
+        message={t("about.cta_chip.text")}
+        emoji="🚀" /* o imgSrc="/icons/ccchip.png" */
+      />
       <Divider />
     </div>
   );

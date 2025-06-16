@@ -86,7 +86,7 @@ export default function WelcomeGate() {
 
         {/* opciones */}
         <div className="grid grid-cols-1 sm:grid-cols-2 justify-items-center">
-          {OPTIONS.map(({ locale, label, flagSrc, href, gradient }) => (
+          {OPTIONS.map(({ locale, label, flagSrc, href }) => (
             <Link
               key={locale}
               href={href}
