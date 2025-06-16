@@ -6,6 +6,7 @@ import "../globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Footer from "@/components/footer/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import WelcomeGate from "@/components/common/WelcomeGate";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -54,6 +55,7 @@ export default function RootLayout({ children, params }: Props) {
           "
         />
         <Navbar locale={locale} />
+        <WelcomeGate />
         {children}
         <Footer locale={locale} />
         <WhatsAppButton />
