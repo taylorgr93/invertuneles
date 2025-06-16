@@ -1,7 +1,7 @@
 /* components/home/UpcomingEvents.tsx */
 "use client";
 
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -12,14 +12,18 @@ type Props = { title: string; events: EventCard[] };
 export default function UpcomingEvents({ title, events }: Props) {
   const [idx, setIdx] = useState(0);
 
-  /* autoplay */
-  useEffect(() => {
-    const id = setInterval(() => next(), 4000);
-    return () => clearInterval(id);
-  }, [idx]);
+  /* autoplay */ const next = useCallback(() => {
+    setIdx((i) => (i + 1) % events.length);
+  }, [events.length]);
 
-  const next = () => setIdx((i) => (i + 1) % events.length);
-  const prev = () => setIdx((i) => (i - 1 + events.length) % events.length);
+  const prev = useCallback(() => {
+    setIdx((i) => (i - 1 + events.length) % events.length);
+  }, [events.length]);
+
+  useEffect(() => {
+    const id = setInterval(next, 4000); // ya no recreas la función aquí
+    return () => clearInterval(id);
+  }, [next]); // ← dependencia correcta
 
   return (
     <section className="mx-auto mt-16 max-w-5xl p-10 text-center">

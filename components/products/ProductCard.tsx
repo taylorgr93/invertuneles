@@ -12,6 +12,7 @@ export default function ProductCard({
   title,
   range,
   image,
+  category,
   bulletPoints,
 }: Product) {
   const [open, setOpen] = useState(false);
@@ -38,7 +39,7 @@ export default function ProductCard({
         />
 
         {/* etiqueta */}
-        <div className="absolute top-0 left-0 rounded-br-md bg-[#37b4bd] px-3 py-1.5 sm:px-4 text-white">
+        <div className="absolute top-0 left-0 rounded-br-md bg-green-400 px-3 py-1.5 sm:px-4 text-black">
           <h3 className="text-base sm:text-lg font-semibold leading-tight">
             {title}
           </h3>
@@ -66,7 +67,13 @@ export default function ProductCard({
 
       {/* --------- Modal --------- */}
       {open && (
-        <ProductModal src={image} alt={title} onClose={() => setOpen(false)} />
+        <ProductModal
+          src={image}
+          alt={title}
+          category={category}
+          bulletPoints={bulletPoints}
+          onClose={() => setOpen(false)}
+        />
       )}
     </>
   );
