@@ -10,6 +10,7 @@ import DualImages from "@/components/about/DualImages";
 import InfoBlocks, { InfoItem } from "@/components/about/InfoBlocks";
 import heroAbout from "@/public/images/about/hero_about.webp";
 import ImageWithColumns from "@/components/about/ImageWithColumns";
+import ValuesSection from "@/components/about/ValuesSection";
 
 export const metadata: Metadata = {
   title: "Página Acerca de",
@@ -59,6 +60,7 @@ export default function AboutPage({
       />
       <Divider />
       <InfoBlocks items={blocks} />;
+      <Divider />
       <ImageWithColumns
         src="/images/about/Who_we_are.webp"
         alt="Strategy diagram"
@@ -69,7 +71,11 @@ export default function AboutPage({
         paragraphsRight={tArray(translations, "about.who.paragraphsRight")}
       />
       <Divider />
-      <DualImages
+      <ValuesSection
+        title={t("about.values.title")}
+        values={tArray(translations, "about.values.items")}
+      />
+      {/* <DualImages
         left={{
           src: "/images/about/compromiso-y-experiencia.webp",
           alt: "Compromiso y experiencia",
@@ -78,7 +84,7 @@ export default function AboutPage({
           src: "/images/about/valores-mesa-de-trabajo.webp",
           alt: "Nuestros valores",
         }}
-      />
+      /> */}
       <Divider />
     </div>
   );

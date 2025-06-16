@@ -56,8 +56,13 @@
     },
     "values": {
       "title": "Values",
-      "paragraphs": [
-        "Commitment, Consistency, Collaboration, Honesty, Innovation, Passion"
+      "items": [
+        "Commitment",
+        "Consistency",
+        "Collaboration",
+        "Honesty",
+        "Innovation",
+        "Passion"
       ]
     }
   },

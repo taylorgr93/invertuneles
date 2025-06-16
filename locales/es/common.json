@@ -56,8 +56,13 @@
     },
     "values": {
       "title": "Valores",
-      "paragraphs": [
-        "Compromiso, Congruencia, Colaboración, Honestidad, Innovación, Pasión"
+      "items": [
+        "Compromiso",
+        "Congruencia",
+        "Colaboración",
+        "Honestidad",
+        "Innovación",
+        "Pasión"
       ]
     }
   },
