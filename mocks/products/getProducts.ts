@@ -46,12 +46,38 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
           "Structure made with 40 x 30 mm oval tubes, tension-resistant, with a wider cross-section, generating a 30% stronger and more robust system.",
         ],
       },
-
-      // ------------------- plastic films ----------------------
+      // ------------------- plastic-films ----------------------
       {
         id: 41,
+        title: "Translucent",
+        image: "/images/products/plastic-films/Acolchado_1_11zon.webp",
+        category: "plastic films",
+        bulletPoints: [
+          "High transparency that allows optimal passage of sunlight, promoting photosynthesis.",
+          "Ideal for low-light areas.",
+        ],
+      },
+      {
+        id: 42,
+        title: "Milky plastic covers",
+        image: "/images/products/plastic-films/Acolchado_1_11zon.webp",
+        category: "plastic films",
+        bulletPoints: [
+          "Films with special additives (anti-drip, anti-UV, thermal, etc.) that optimize the growing environment, improve yield, and extend the life of the plastic.",
+        ],
+      },
+      {
+        id: 43,
+        title: "High technology",
+        image: "/images/products/plastic-films/Acolchado_1_11zon.webp",
+        category: "plastic films",
+        bulletPoints: [
+          "Films with special additives (anti-drip, anti-UV, thermal, etc.) that optimize the growing environment, improve yield, and extend the life of the plastic.",
+        ],
+      },
+      {
+        id: 44,
         title: "Padded",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/plastic-films/Acolchado_1_11zon.webp",
         category: "plastic films",
         bulletPoints: [
@@ -59,23 +85,21 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
           "Available in different colors depending on the cultivation objective (black, silver, two-tone, etc.)",
         ],
       },
-      {
-        id: 42,
-        title: "Hydroponics Bag",
-        // range: "GAMA ADVANTAGE",
-        image:
-          "/images/products/plastic-films/Recurso 6@350x-100_10_11zon.webp",
-        category: "plastic films",
-        bulletPoints: [
-          "Sturdy, reusable stand designed to keep grow bags in a stable, elevated position.",
-          "It facilitates drainage, improves root aeration and optimizes the management of the hydroponic system.",
-        ],
-      },
+      // {
+      //   id: 42,
+      //   title: "Hydroponics Bag",
+      //   image:
+      //     "/images/products/plastic-films/Recurso 6@350x-100_10_11zon.webp",
+      //   category: "plastic films",
+      //   bulletPoints: [
+      //     "Sturdy, reusable stand designed to keep grow bags in a stable, elevated position.",
+      //     "It facilitates drainage, improves root aeration and optimizes the management of the hydroponic system.",
+      //   ],
+      // },
       // ------------------- Tights -----------------------
       {
         id: 31,
         title: "Shade Net",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/tights/MALLA SOMBRA.webp",
         category: "tights",
         bulletPoints: [
@@ -84,48 +108,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       },
       {
         id: 32,
-        title: "Bird Net",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/tights/MALLA ANTIPAJARO.webp",
-        category: "tights",
-        bulletPoints: [
-          "Prevents birds from damaging crops without affecting growth.",
-          "Lightweight, durable and easy to install.",
-        ],
-      },
-      {
-        id: 33,
-        title: "Anti-hail Net",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/tights/MALLA ANTIGRANIZO.webp",
-        category: "tights",
-        bulletPoints: [
-          "Resistant, it protects crops from damage caused by hail, without impeding the passage of air and light.",
-        ],
-      },
-      {
-        id: 34,
-        title: "Raschel mesh",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/tights/raschel.webp",
-        category: "tights",
-        bulletPoints: ["Raschel mesh"],
-      },
-      {
-        id: 35,
-        title: "Ground Cover Mesh",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/tights/GROUND COVER.webp",
-        category: "tights",
-        bulletPoints: [
-          "Soil use, used for weed control, drainage and road maintenance.",
-          "In black and white colors.",
-        ],
-      },
-      {
-        id: 36,
         title: "Hail Net",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/tights/ANTIAFIDO.webp",
         category: "tights",
         bulletPoints: [
@@ -134,9 +117,17 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         ],
       },
       {
-        id: 37,
+        id: 33,
+        title: "Anti-hail Net",
+        image: "/images/products/tights/MALLA ANTIGRANIZO.webp",
+        category: "tights",
+        bulletPoints: [
+          "Resistant, it protects crops from damage caused by hail, without impeding the passage of air and light.",
+        ],
+      },
+      {
+        id: 34,
         title: "Bee Net",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/tights/PELICULA ATRAPA INSECTOS_3_11zon.webp",
         category: "tights",
         bulletPoints: [
@@ -144,6 +135,33 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
           "Useful for protecting crops from specific pests and vector-borne diseases.",
         ],
       },
+      {
+        id: 35,
+        title: "Bird Net",
+        image: "/images/products/tights/MALLA ANTIPAJARO.webp",
+        category: "tights",
+        bulletPoints: [
+          "Prevents birds from damaging crops without affecting growth.",
+          "Lightweight, durable and easy to install.",
+        ],
+      },
+      {
+        id: 36,
+        title: "Ground Cover",
+        image: "/images/products/tights/GROUND COVER.webp",
+        category: "tights",
+        bulletPoints: [
+          "Soil use, used for weed control, drainage and road maintenance.",
+          "In black and white colors.",
+        ],
+      },
+      // {
+      //   id: 34,
+      //   title: "Raschel mesh",
+      //   image: "/images/products/tights/raschel.webp",
+      //   category: "tights",
+      //   bulletPoints: ["Raschel mesh"],
+      // },
       // ----------------- Accesories----------------------
       {
         id: 1,
@@ -330,11 +348,39 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
           "Estructura fabricada con tubos ovalados de 40 x 30 mm, resistente a la tensión, con sección transversal más ancha, generando un sistema 30% más fuerte y robusto.",
         ],
       },
-      // -------------------- plastic films ----------------------
+      // -------------------- plastic-films ----------------------
       {
         id: 41,
+        title: "Traslucidas",
+        image: "/images/products/plastic-films/Acolchado_1_11zon.webp",
+        category: "plastic films",
+        bulletPoints: [
+          "Alta transparencia que permiten un óptimo paso de luz solar, favoreciendo la fotosíntesis.",
+          "Ideales para zonas de baja luminosidad.",
+        ],
+      },
+      {
+        id: 42,
+        title: "Lechosas",
+        image: "/images/products/plastic-films/Acolchado_1_11zon.webp",
+        category: "plastic films",
+        bulletPoints: [
+          "Con efecto difusor que distribuyen la luz de forma uniforme, reduciendo sombras y quemaduras solares.",
+          "Mantienen una temperatura más estable.",
+        ],
+      },
+      {
+        id: 43,
+        title: "Alta tecnología",
+        image: "/images/products/plastic-films/Acolchado_1_11zon.webp",
+        category: "plastic films",
+        bulletPoints: [
+          "Películas con aditivos especiales (antigoteo, anti UV, térmicos, etc.) que optimizan el ambiente de cultivo, mejoran el rendimiento y prolongan la vida útil del plástico.",
+        ],
+      },
+      {
+        id: 44,
         title: "Acolchado",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/plastic-films/Acolchado_1_11zon.webp",
         category: "plastic films",
         bulletPoints: [
@@ -342,23 +388,21 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
           "Disponible en diferentes colores según el objetivo del cultivo (negro, plata, bicolor, etc.)",
         ],
       },
-      {
-        id: 42,
-        title: "Bolsa de Hidroponia",
-        // range: "GAMA ADVANTAGE",
-        image:
-          "/images/products/plastic-films/Recurso 6@350x-100_10_11zon.webp",
-        category: "plastic films",
-        bulletPoints: [
-          "Soporte resistente y reutilizable diseñado para mantener las bolsas de cultivo en posición estable y elevada.",
-          "Facilita el drenaje, mejora la aireación de las raíces y optimiza el manejo del sistema hidropónico.",
-        ],
-      },
+      // {
+      //   id: 42,
+      //   title: "Bolsa de Hidroponia",
+      //   image:
+      //     "/images/products/plastic-films/Recurso 6@350x-100_10_11zon.webp",
+      //   category: "plastic films",
+      //   bulletPoints: [
+      //     "Soporte resistente y reutilizable diseñado para mantener las bolsas de cultivo en posición estable y elevada.",
+      //     "Facilita el drenaje, mejora la aireación de las raíces y optimiza el manejo del sistema hidropónico.",
+      //   ],
+      // },
       // ------------------------- Mallas -------------------------
       {
         id: 31,
         title: "Malla Sombra",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/tights/MALLA SOMBRA.webp",
         category: "tights",
         bulletPoints: [
@@ -367,48 +411,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       },
       {
         id: 32,
-        title: "Malla Antipájaro",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/tights/MALLA ANTIPAJARO.webp",
-        category: "tights",
-        bulletPoints: [
-          "Evita que aves dañen los cultivos, sin afectar el crecimiento.",
-          "Liviana, duradera y de fácil instalación.",
-        ],
-      },
-      {
-        id: 33,
-        title: "Malla Antigranizo",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/tights/MALLA ANTIGRANIZO.webp",
-        category: "tights",
-        bulletPoints: [
-          "Resistente que protege los cultivos del daño causado por la caída de granizo, sin impedir el paso del aire y la luz.",
-        ],
-      },
-      {
-        id: 34,
-        title: "Malla Raschel",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/tights/raschel.webp",
-        category: "tights",
-        bulletPoints: ["Malla Raschel"],
-      },
-      {
-        id: 35,
-        title: "Malla Ground Cover",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/tights/GROUND COVER.webp",
-        category: "tights",
-        bulletPoints: [
-          "Uso en suelo, utilizado para control de maleza, drenaje y mantenimiento de caminos.",
-          "En colores blanco y negro.",
-        ],
-      },
-      {
-        id: 36,
         title: "Malla Antiafido",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/tights/ANTIAFIDO.webp",
         category: "tights",
         bulletPoints: [
@@ -417,9 +420,17 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         ],
       },
       {
-        id: 37,
-        title: "Malla Atrapa Insectos",
-        // range: "GAMA ADVANTAGE",
+        id: 33,
+        title: "Malla Antigranizo",
+        image: "/images/products/tights/MALLA ANTIGRANIZO.webp",
+        category: "tights",
+        bulletPoints: [
+          "Resistente que protege los cultivos del daño causado por la caída de granizo, sin impedir el paso del aire y la luz.",
+        ],
+      },
+      {
+        id: 34,
+        title: "Malla Anti-Insectos",
         image: "/images/products/tights/PELICULA ATRAPA INSECTOS_3_11zon.webp",
         category: "tights",
         bulletPoints: [
@@ -427,6 +438,33 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
           "Útil para proteger cultivos de plagas específicas y enfermedades transmitidas por vectores.",
         ],
       },
+      {
+        id: 35,
+        title: "Malla Antipájaro",
+        image: "/images/products/tights/MALLA ANTIPAJARO.webp",
+        category: "tights",
+        bulletPoints: [
+          "Evita que aves dañen los cultivos, sin afectar el crecimiento.",
+          "Liviana, duradera y de fácil instalación.",
+        ],
+      },
+      {
+        id: 36,
+        title: "Malla Ground Cover",
+        image: "/images/products/tights/GROUND COVER.webp",
+        category: "tights",
+        bulletPoints: [
+          "Uso en suelo, utilizado para control de maleza, drenaje y mantenimiento de caminos.",
+          "En colores blanco y negro.",
+        ],
+      },
+      // {
+      //   id: 34,
+      //   title: "Malla Raschel",
+      //   image: "/images/products/tights/raschel.webp",
+      //   category: "tights",
+      //   bulletPoints: ["Malla Raschel"],
+      // },
       // ----------------- Accesorios----------------------
       {
         id: 1,

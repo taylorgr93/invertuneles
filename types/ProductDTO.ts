@@ -4,6 +4,11 @@ export interface ProductDTO {
   title: string;
   range?: string;
   image: string;
-  category: "accessories" | "greenhouse" | "tights" | "plastic films";
+  category:
+    | "accessories"
+    | "greenhouse"
+    | "tights"
+    | "covers"
+    | "plastic films";
   bulletPoints: string[];
 }
