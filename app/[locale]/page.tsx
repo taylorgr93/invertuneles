@@ -53,24 +53,49 @@ export default function Home(props: { params: Promise<{ locale: string }> }) {
         {/* vídeo */}
         <div className="relative h-[60vh] md:h-screen">
           <VideoBackground
-            src="/videos/videoHome.mp4"
+            src="/videos/VideoHome2.mp4"
             className="absolute inset-0 h-full w-full object-cover"
           />
+
+          {/* overlay global muy sutil */}
+          <div className="absolute inset-0 bg-black/20 pointer-events-none" />
+
+          {/* ---------- TEXTO DESKTOP (sobre el vídeo) ---------------- */}
+          <div
+            className="
+              hidden lg:flex
+              absolute inset-0 z-30
+              lg:w-[34%] xl:w-[30%]                    /* >⅓ <½ */
+              items-center
+              px-6
+              whitespace-pre-line"
+          >
+            {/* tarjeta translúcida */}
+            <div className="bg-black/10 backdrop-blur-sm p-6 lg:mt-26 xl:mt-20 rounded-lg space-y-6">
+              <h1 className="text-green-400 text-2xl lg:text-4xl text-center font-bold leading-snug">
+                {t("home.were")}
+              </h1>
+              <h2 className="text-white lg:text-lg xl:text-xl font-semibold leading-snug">
+                {t("home.summary")}
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        {/* ---------- TEXTO MOBILE (bajo el vídeo) ------------------- */}
+        <div className="block lg:hidden px-6 py-8">
+          <div className="bg-black/60 backdrop-blur-sm p-6 rounded-lg space-y-4 whitespace-pre-line">
+            <h1 className="text-green-400 text-4xl text-center font-bold leading-snug">
+              {t("home.were")}
+            </h1>
+            <h2 className="text-white sm:text-xl md:text-2xl text-center font-medium leading-snug">
+              {t("home.summary")}
+            </h2>
+          </div>
         </div>
       </section>
 
-      <Divider />
-
-      {/* ---------- TEXTO MOBILE (bajo el vídeo) ------------------- */}
-      <div className="min-w-lg px-12 rounded-lg space-y-4 whitespace-pre-line">
-        <h1 className="text-green-400 text-4xl lg:text-6xl text-center font-bold leading-snug">
-          {t("home.were")}
-        </h1>
-        <h2 className="text-white sm:text-2xl lg:text-3xl text-center font-medium leading-snug">
-          {t("home.summary")}
-        </h2>
-      </div>
-
+      {/* -------- RESTO DEL CONTENIDO (scroll) ----------------------- */}
       <Divider />
 
       <HomeHighlight
