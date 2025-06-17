@@ -11,8 +11,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 51,
         title: "Traditional Macrotunnel",
-        image:
-          "/images/products/greenhouses/MACROTUNEL TRADICIONAL_13_11zon.webp",
+        image: "/images/products/greenhouses/MacrotunelTradicional.webp",
         category: "greenhouse",
         bulletPoints: [
           "Tunnel-shaped steel structure with a plastic or mesh cover, capable of creating a semi-controlled microclimate.",
@@ -38,9 +37,9 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         ],
       },
       {
-        id: 52,
+        id: 54,
         title: "Macrotunnel OV-M",
-        image: "/images/products/greenhouses/MACROTUNEL MALLA_12_11zon.webp",
+        image: "/images/products/greenhouses/MACROTUNEL OV-M.webp",
         category: "greenhouse",
         bulletPoints: [
           "Structure made with 40 x 30 mm oval tubes, tension-resistant, with a wider cross-section, generating a 30% stronger and more robust system.",
@@ -154,15 +153,19 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       // ---------------- substrates -------------------
       {
         id: 81,
-        title: "Raschel mesh",
-        image: "/images/products/substrates/raschel.webp",
+        title: "National coconut substrate",
+        image: "/images/products/substrates/SustratoDeCoco.webp",
         category: "substrates",
-        bulletPoints: ["Raschel mesh"],
+        bulletPoints: [
+          "100% natural and organic, made from coconut fiber.",
+          "It offers water retention, good aeration and an ideal pH for root development.",
+          "Perfect for hydroponic crops, seedbeds and nurseries.",
+        ],
       },
       {
         id: 82,
         title: "Base for Hydroponic Bag",
-        image: "/images/products/substrates/Recurso 6@350x-100_10_11zon.webp",
+        image: "/images/products/substrates/BolsasHidroponia.webp",
         category: "substrates",
         bulletPoints: [
           "Sturdy, reusable stand designed to keep grow bags in a stable, elevated position.",
@@ -172,7 +175,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 83,
         title: "Flowerpot",
-        image: "/images/products/substrates/raschel.webp",
+        image: "/images/products/substrates/BaseParaMaceta.webp",
         category: "substrates",
         bulletPoints: [
           "Rigid container, its perforated structure facilitates the flow of water and nutrients, preventing waterlogging and improving root oxygenation.",
@@ -188,42 +191,44 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         ],
       },
       // ----------------- Accesories----------------------
-      {
-        id: 1,
-        title: "Small Clamp",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/accesories/abrazadera-chica.webp",
-        category: "accessories",
-        bulletPoints: ["Small Clamp"],
-      },
-      {
-        id: 2,
-        title: "Large Clamp",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/accesories/abrazadera-grande.webp",
-        category: "accessories",
-        bulletPoints: ["Large Clamp"],
-      },
+      // {
+      //   id: 1,
+      //   title: "Small Clamp",
+      //   image: "/images/products/accesories/abrazadera-chica.webp",
+      //   category: "accessories",
+      //   bulletPoints: ["Small Clamp"],
+      // },
+      // {
+      //   id: 2,
+      //   title: "Large Clamp",
+      //   image: "/images/products/accesories/abrazadera-grande.webp",
+      //   category: "accessories",
+      //   bulletPoints: ["Large Clamp"],
+      // },
       {
         id: 3,
         title: "Galvanized Wire",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/accesories/alambre-galvanizado.webp",
         category: "accessories",
         bulletPoints: ["Galvanized Wire"],
       },
+      // {
+      //   id: 4,
+      //   title: "Galvanized Steel Cable",
+      //   image: "/images/products/accesories/cable-de-acero-galvanizado.webp",
+      //   category: "accessories",
+      //   bulletPoints: ["Galvanized Steel Cable"],
+      // },
       {
         id: 4,
-        title: "Galvanized Steel Cable",
-        // range: "GAMA ADVANTAGE",
+        title: "Microwire",
         image: "/images/products/accesories/cable-de-acero-galvanizado.webp",
         category: "accessories",
-        bulletPoints: ["Galvanized Steel Cable"],
+        bulletPoints: ["Microwire"],
       },
       {
         id: 5,
         title: "Navitek Gray Tape",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/accesories/cinta-gris-naviteck.webp",
         category: "accessories",
         bulletPoints: ["Navitek Gray Tape"],
@@ -231,23 +236,20 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 6,
         title: "Ribbon",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/accesories/cintilla.webp",
         category: "accessories",
         bulletPoints: ["Ribbon"],
       },
       {
         id: 7,
-        title: "Plastic Clip",
-        // range: "GAMA ADVANTAGE",
+        title: "Retaining clip",
         image: "/images/products/accesories/Clip-para-sujetar-plástico.webp",
         category: "accessories",
-        bulletPoints: ["Plastic Clip"],
+        bulletPoints: [""],
       },
       {
         id: 8,
         title: "Gripple",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/accesories/gripple.webp",
         category: "accessories",
         bulletPoints: ["Gripple"],
@@ -263,31 +265,27 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 10,
         title: "Posh",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/accesories/pijas.webp",
         category: "accessories",
-        bulletPoints: ["Posh"],
+        bulletPoints: [""],
       },
       {
         id: 11,
         title: "Black Pipeline",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/accesories/poliducto negro.webp",
         category: "accessories",
         bulletPoints: ["Black Pipeline"],
       },
       {
         id: 12,
-        title: "Raffia Tomato",
-        // range: "GAMA ADVANTAGE",
+        title: "Raffia (Tomato, Toyo, C3)",
         image: "/images/products/accesories/RAFIA TOMATERA.webp",
         category: "accessories",
-        bulletPoints: ["Raffia Tomato"],
+        bulletPoints: ["Raffia"],
       },
       {
         id: 13,
         title: "Agricultural Rope",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/accesories/SOGA AGRICOLA.webp",
         category: "accessories",
         bulletPoints: ["Agricultural Rope"],
@@ -295,7 +293,6 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 14,
         title: "Spanish Cut Rope",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/accesories/soga cortada carrete española.webp",
         category: "accessories",
         bulletPoints: ["Spanish Cut Rope"],
@@ -303,7 +300,6 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 15,
         title: "Cut Rope",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/accesories/soga cortada.webp",
         category: "accessories",
         bulletPoints: ["Cut Rope"],
@@ -311,23 +307,20 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 16,
         title: "Rope on a Reel",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/accesories/soga en carrete.webp",
         category: "accessories",
         bulletPoints: ["Rope on a Reel"],
       },
-      {
-        id: 17,
-        title: "Gripple Pliers",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/accesories/tenaza gripple.webp",
-        category: "accessories",
-        bulletPoints: ["Gripple Pliers"],
-      },
+      // {
+      //   id: 17,
+      //   title: "Gripple Pliers",
+      //   image: "/images/products/accesories/tenaza gripple.webp",
+      //   category: "accessories",
+      //   bulletPoints: ["Gripple Pliers"],
+      // },
       {
         id: 18,
         title: "Galvanized Pipes",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/accesories/Tubos galvanizado.webp",
         category: "accessories",
         bulletPoints: [""],
@@ -338,8 +331,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 51,
         title: "Macrotunel Tradicional",
-        image:
-          "/images/products/greenhouses/MACROTUNEL TRADICIONAL_13_11zon.webp",
+        image: "/images/products/greenhouses/MacrotunelTradicional.webp",
         category: "greenhouse",
         bulletPoints: [
           "Estructura de acero en forma de túnel con cubierta plástica o malla, capaz de crear un microclima semicontrolado.",
@@ -367,7 +359,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 54,
         title: "Macrotunel OV-M",
-        image: "/images/products/greenhouses/MACROTUNEL MALLA_12_11zon.webp",
+        image: "/images/products/greenhouses/MACROTUNEL OV-M.webp",
         category: "greenhouse",
         bulletPoints: [
           "Estructura fabricada con tubos ovalados de 40 x 30 mm, resistente a la tensión, con sección transversal más ancha, generando un sistema 30% más fuerte y robusto.",
@@ -483,7 +475,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 81,
         title: "Sustrato de coco nacional",
-        image: "/images/products/substrates/raschel.webp",
+        image: "/images/products/substrates/SustratoDeCoco.webp",
         category: "substrates",
         bulletPoints: [
           "100% natural y ecológico, elaborado a partir de la fibra del coco.",
@@ -494,7 +486,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 82,
         title: "Base para Bolsa de Hidroponia",
-        image: "/images/products/substrates/Recurso 6@350x-100_10_11zon.webp",
+        image: "/images/products/substrates/BolsasHidroponia.webp",
         category: "substrates",
         bulletPoints: [
           "Soporte resistente y reutilizable diseñado para mantener las bolsas de cultivo en posición estable y elevada.",
@@ -504,7 +496,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 83,
         title: "Maceta",
-        image: "/images/products/substrates/raschel.webp",
+        image: "/images/products/substrates/BaseParaMaceta.webp",
         category: "substrates",
         bulletPoints: [
           "Contenedor rígido, su estructura perforada facilita el flujo de agua y nutrientes, evitando el encharcamiento y mejorando la oxigenación radicular.",
@@ -520,42 +512,44 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         ],
       },
       // ----------------- Accesorios----------------------
-      {
-        id: 1,
-        title: "Abrazadera Chica",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/accesories/abrazadera-chica.webp",
-        category: "accessories",
-        bulletPoints: ["Abrazadera Chica"],
-      },
-      {
-        id: 2,
-        title: "Abrazadera Grande",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/accesories/abrazadera-grande.webp",
-        category: "accessories",
-        bulletPoints: ["Abrazadera Grande"],
-      },
+      // {
+      //   id: 1,
+      //   title: "Abrazadera Chica",
+      //   image: "/images/products/accesories/abrazadera-chica.webp",
+      //   category: "accessories",
+      //   bulletPoints: ["Abrazadera Chica"],
+      // },
+      // {
+      //   id: 2,
+      //   title: "Abrazadera Grande",
+      //   image: "/images/products/accesories/abrazadera-grande.webp",
+      //   category: "accessories",
+      //   bulletPoints: ["Abrazadera Grande"],
+      // },
       {
         id: 3,
         title: "Alambre Galvanizado",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/accesories/alambre-galvanizado.webp",
         category: "accessories",
         bulletPoints: ["Alambre Galvanizado"],
       },
+      // {
+      //   id: 4,
+      //   title: "Cable de Acero Galvanizado",
+      //   image: "/images/products/accesories/cable-de-acero-galvanizado.webp",
+      //   category: "accessories",
+      //   bulletPoints: ["Cable de Acero Galvanizado"],
+      // },
       {
         id: 4,
-        title: "Cable de Acero Galvanizado",
-        // range: "GAMA ADVANTAGE",
+        title: "Microalambre",
         image: "/images/products/accesories/cable-de-acero-galvanizado.webp",
         category: "accessories",
-        bulletPoints: ["Cable de Acero Galvanizado"],
+        bulletPoints: ["Microalambre"],
       },
       {
         id: 5,
         title: "Cinta Gris Naviteck",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/accesories/cinta-gris-naviteck.webp",
         category: "accessories",
         bulletPoints: ["Cinta Gris Naviteck"],
@@ -563,15 +557,13 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 6,
         title: "Cintilla",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/accesories/cintilla.webp",
         category: "accessories",
         bulletPoints: ["Cintilla"],
       },
       {
         id: 7,
-        title: "Clip para Sujetar Plastico",
-        // range: "GAMA ADVANTAGE",
+        title: "Clip de sujeción",
         image: "/images/products/accesories/Clip-para-sujetar-plástico.webp",
         category: "accessories",
         bulletPoints: ["Clip para Sujetar Plastico"],
@@ -579,7 +571,6 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 8,
         title: "Gripple",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/accesories/gripple.webp",
         category: "accessories",
         bulletPoints: ["Gripple"],
@@ -587,7 +578,6 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       // {
       //   id: 9,
       //   title: "Gripple 2",
-      //   // range: "GAMA ADVANTAGE",
       //   image: "/images/products/accesories/gripple2.webp",
       //   category: "accessories",
       //   bulletPoints: ["Gripple 2"],
@@ -595,7 +585,6 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 10,
         title: "Pijas",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/accesories/pijas.webp",
         category: "accessories",
         bulletPoints: ["Pijas"],
@@ -603,15 +592,13 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 11,
         title: "Poliducto Negro",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/accesories/poliducto negro.webp",
         category: "accessories",
         bulletPoints: ["Poliducto Negro"],
       },
       {
         id: 12,
-        title: "Rafia Tomatera",
-        // range: "GAMA ADVANTAGE",
+        title: "Rafia (Tomatera, Toyo, C3)",
         image: "/images/products/accesories/RAFIA TOMATERA.webp",
         category: "accessories",
         bulletPoints: [""],
@@ -619,7 +606,6 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 13,
         title: "Soga Agricola",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/accesories/SOGA AGRICOLA.webp",
         category: "accessories",
         bulletPoints: [""],
@@ -627,7 +613,6 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 14,
         title: "Soga Cortada Española",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/accesories/soga cortada carrete española.webp",
         category: "accessories",
         bulletPoints: [""],
@@ -635,7 +620,6 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 15,
         title: "Soga Cortada",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/accesories/soga cortada.webp",
         category: "accessories",
         bulletPoints: [""],
@@ -643,23 +627,20 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 16,
         title: "Soga en Carrete",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/accesories/soga en carrete.webp",
         category: "accessories",
         bulletPoints: [""],
       },
-      {
-        id: 17,
-        title: "Tenaza Gripple",
-        // range: "GAMA ADVANTAGE",
-        image: "/images/products/accesories/tenaza gripple.webp",
-        category: "accessories",
-        bulletPoints: [""],
-      },
+      // {
+      //   id: 17,
+      //   title: "Tenaza Gripple",
+      //   image: "/images/products/accesories/tenaza gripple.webp",
+      //   category: "accessories",
+      //   bulletPoints: [""],
+      // },
       {
         id: 18,
         title: "Tubos Galvanizados",
-        // range: "GAMA ADVANTAGE",
         image: "/images/products/accesories/Tubos galvanizado.webp",
         category: "accessories",
         bulletPoints: [""],
