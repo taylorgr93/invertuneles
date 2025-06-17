@@ -14,11 +14,18 @@ type Props = {
 export default function ProductsTabsClient({ items, translations }: Props) {
   const t = makeT(translations);
 
-  const categories = ["all", ...new Set(items.map((p) => p.category))] as const;
-  const [active, setActive] = useState<(typeof categories)[number]>("all");
+  // 1. Sólo las categorías reales
+  const categories = [
+    ...new Set(items.map((p) => p.category)),
+  ] as unknown as readonly string[];
 
-  const filtered =
-    active === "all" ? items : items.filter((p) => p.category === active);
+  // 2. Estado inicial: "greenhouses" o la primera categoría disponible
+  const [active, setActive] = useState<string>(
+    categories.includes("greenhouses") ? "greenhouses" : categories[0]
+  );
+
+  // 3. Filtrado directo
+  const filtered = items.filter((p) => p.category === active);
 
   return (
     <>
