@@ -49,7 +49,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 41,
         title: "Translucent",
-        image: "/images/products/plastic-films/Acolchado_1_11zon.webp",
+        image: "/images/products/plastic-films/MACROTUNEL TRASLUCIDO.webp",
         category: "plastic films",
         bulletPoints: [
           "High transparency that allows optimal passage of sunlight, promoting photosynthesis.",
@@ -59,7 +59,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 42,
         title: "Milky plastic covers",
-        image: "/images/products/plastic-films/Acolchado_1_11zon.webp",
+        image: "/images/products/plastic-films/PLASTICO BLANCO LECHOSO.webp",
         category: "plastic films",
         bulletPoints: [
           "Films with special additives (anti-drip, anti-UV, thermal, etc.) that optimize the growing environment, improve yield, and extend the life of the plastic.",
@@ -68,7 +68,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 43,
         title: "High technology",
-        image: "/images/products/plastic-films/Acolchado_1_11zon.webp",
+        image: "/images/products/plastic-films/PLASTICO ALTA TECNOLOGIA.webp",
         category: "plastic films",
         bulletPoints: [
           "Films with special additives (anti-drip, anti-UV, thermal, etc.) that optimize the growing environment, improve yield, and extend the life of the plastic.",
@@ -77,7 +77,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 44,
         title: "Padded",
-        image: "/images/products/plastic-films/Acolchado_1_11zon.webp",
+        image: "/images/products/plastic-films/ACOLCHADO.webp",
         category: "plastic films",
         bulletPoints: [
           "Placed on the soil, they conserve moisture, control weeds and regulate the temperature of the substrate.",
@@ -369,7 +369,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 41,
         title: "Traslucidas",
-        image: "/images/products/plastic-films/Acolchado_1_11zon.webp",
+        image: "/images/products/plastic-films/MACROTUNEL TRASLUCIDO.webp",
         category: "plastic films",
         bulletPoints: [
           "Alta transparencia que permiten un óptimo paso de luz solar, favoreciendo la fotosíntesis.",
@@ -379,7 +379,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 42,
         title: "Lechosas",
-        image: "/images/products/plastic-films/Acolchado_1_11zon.webp",
+        image: "/images/products/plastic-films/PLASTICO BLANCO LECHOSO.webp",
         category: "plastic films",
         bulletPoints: [
           "Con efecto difusor que distribuyen la luz de forma uniforme, reduciendo sombras y quemaduras solares.",
@@ -389,7 +389,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 43,
         title: "Alta tecnología",
-        image: "/images/products/plastic-films/Acolchado_1_11zon.webp",
+        image: "/images/products/plastic-films/PLASTICO ALTA TECNOLOGIA.webp",
         category: "plastic films",
         bulletPoints: [
           "Películas con aditivos especiales (antigoteo, anti UV, térmicos, etc.) que optimizan el ambiente de cultivo, mejoran el rendimiento y prolongan la vida útil del plástico.",
@@ -398,7 +398,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 44,
         title: "Acolchado",
-        image: "/images/products/plastic-films/Acolchado_1_11zon.webp",
+        image: "/images/products/plastic-films/ACOLCHADO.webp",
         category: "plastic films",
         bulletPoints: [
           "Colocadas sobre el suelo, conservan la humedad, controlan malezas y regulan la temperatura del sustrato.",
