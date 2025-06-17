@@ -85,17 +85,6 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
           "Available in different colors depending on the cultivation objective (black, silver, two-tone, etc.)",
         ],
       },
-      // {
-      //   id: 42,
-      //   title: "Hydroponics Bag",
-      //   image:
-      //     "/images/products/plastic-films/Recurso 6@350x-100_10_11zon.webp",
-      //   category: "plastic films",
-      //   bulletPoints: [
-      //     "Sturdy, reusable stand designed to keep grow bags in a stable, elevated position.",
-      //     "It facilitates drainage, improves root aeration and optimizes the management of the hydroponic system.",
-      //   ],
-      // },
       // ------------------- Tights -----------------------
       {
         id: 31,
@@ -162,6 +151,42 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       //   category: "tights",
       //   bulletPoints: ["Raschel mesh"],
       // },
+      // ---------------- substrates -------------------
+      {
+        id: 81,
+        title: "Raschel mesh",
+        image: "/images/products/substrates/raschel.webp",
+        category: "substrates",
+        bulletPoints: ["Raschel mesh"],
+      },
+      {
+        id: 82,
+        title: "Base for Hydroponic Bag",
+        image: "/images/products/substrates/Recurso 6@350x-100_10_11zon.webp",
+        category: "substrates",
+        bulletPoints: [
+          "Sturdy, reusable stand designed to keep grow bags in a stable, elevated position.",
+          "It facilitates drainage, improves root aeration and optimizes the management of the hydroponic system.",
+        ],
+      },
+      {
+        id: 83,
+        title: "Flowerpot",
+        image: "/images/products/substrates/raschel.webp",
+        category: "substrates",
+        bulletPoints: [
+          "Rigid container, its perforated structure facilitates the flow of water and nutrients, preventing waterlogging and improving root oxygenation.",
+        ],
+      },
+      {
+        id: 84,
+        title: "Gutter",
+        image: "/images/products/substrates/raschel.webp",
+        category: "substrates",
+        bulletPoints: [
+          "System designed to collect and conduct drainage of nutrient solutions in hydroponic crops.",
+        ],
+      },
       // ----------------- Accesories----------------------
       {
         id: 1,
@@ -388,17 +413,6 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
           "Disponible en diferentes colores según el objetivo del cultivo (negro, plata, bicolor, etc.)",
         ],
       },
-      // {
-      //   id: 42,
-      //   title: "Bolsa de Hidroponia",
-      //   image:
-      //     "/images/products/plastic-films/Recurso 6@350x-100_10_11zon.webp",
-      //   category: "plastic films",
-      //   bulletPoints: [
-      //     "Soporte resistente y reutilizable diseñado para mantener las bolsas de cultivo en posición estable y elevada.",
-      //     "Facilita el drenaje, mejora la aireación de las raíces y optimiza el manejo del sistema hidropónico.",
-      //   ],
-      // },
       // ------------------------- Mallas -------------------------
       {
         id: 31,
@@ -465,6 +479,46 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       //   category: "tights",
       //   bulletPoints: ["Malla Raschel"],
       // },
+      // ---------------- substrates -------------------
+      {
+        id: 81,
+        title: "Sustrato de coco nacional",
+        image: "/images/products/substrates/raschel.webp",
+        category: "substrates",
+        bulletPoints: [
+          "100% natural y ecológico, elaborado a partir de la fibra del coco.",
+          "Ofrece retención de agua, buena aireación y un pH ideal para el desarrollo de raíces.",
+          "Perfecto para cultivos hidropónicos, semilleros y viveros.",
+        ],
+      },
+      {
+        id: 82,
+        title: "Base para Bolsa de Hidroponia",
+        image: "/images/products/substrates/Recurso 6@350x-100_10_11zon.webp",
+        category: "substrates",
+        bulletPoints: [
+          "Soporte resistente y reutilizable diseñado para mantener las bolsas de cultivo en posición estable y elevada.",
+          "Facilita el drenaje, mejora la aireación de las raíces y optimiza el manejo del sistema hidropónico.",
+        ],
+      },
+      {
+        id: 83,
+        title: "Maceta",
+        image: "/images/products/substrates/raschel.webp",
+        category: "substrates",
+        bulletPoints: [
+          "Contenedor rígido, su estructura perforada facilita el flujo de agua y nutrientes, evitando el encharcamiento y mejorando la oxigenación radicular.",
+        ],
+      },
+      {
+        id: 84,
+        title: "Canaleta",
+        image: "/images/products/substrates/raschel.webp",
+        category: "substrates",
+        bulletPoints: [
+          "Sistema diseñado para recolectar y conducir el drenaje de soluciones nutritivas en cultivos hidropónicos.",
+        ],
+      },
       // ----------------- Accesorios----------------------
       {
         id: 1,

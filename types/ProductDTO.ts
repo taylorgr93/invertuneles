@@ -8,7 +8,7 @@ export interface ProductDTO {
     | "accessories"
     | "greenhouse"
     | "tights"
-    | "covers"
+    | "substrates"
     | "plastic films";
   bulletPoints: string[];
 }
