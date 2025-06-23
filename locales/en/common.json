@@ -70,11 +70,10 @@
     }
   },
   "categories": {
-    "all": "All",
     "accessories": "Accessories",
-    "greenhouse": "Greenhouse",
+    "greenhouses": "Greenhouses",
     "tights": "Tights",
-    "plastic films": "Plastic films",
+    "plastic-films": "Plastic films",
     "substrates": "Substrates"
   },
   "homeHighlight": {

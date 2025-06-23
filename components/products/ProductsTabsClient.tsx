@@ -30,7 +30,7 @@ export default function ProductsTabsClient({ items, translations }: Props) {
   return (
     <>
       {/* pestañas */}
-      <div className="mb-10 flex flex-wrap justify-center gap-10">
+      {/* <div className="mb-10 flex flex-wrap justify-center gap-10">
         {categories.map((cat) => (
           <button
             key={cat}
@@ -49,7 +49,7 @@ export default function ProductsTabsClient({ items, translations }: Props) {
             {t(`categories.${cat}`)}
           </button>
         ))}
-      </div>
+      </div> */}
 
       {/* grid de cards */}
       <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">

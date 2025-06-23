@@ -34,7 +34,7 @@ export default function ProductCard({
           sizes="(max-width:768px) 100vw,
                  (max-width:1024px) 50vw,
                  33vw"
-          className="object-contain bg-black
+          className="object-cover bg-black
                      transition-transform duration-300 group-hover:scale-105"
         />
 

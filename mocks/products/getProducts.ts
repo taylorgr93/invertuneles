@@ -12,7 +12,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         id: 51,
         title: "Traditional Macrotunnel",
         image: "/images/products/greenhouses/MacrotunelTradicional.webp",
-        category: "greenhouse",
+        category: "greenhouses",
         bulletPoints: [
           "Tunnel-shaped steel structure with a plastic or mesh cover, capable of creating a semi-controlled microclimate.",
           "Economical, mobile and quick-assembly system.",
@@ -22,7 +22,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         id: 52,
         title: "Reinforced Macrotunnel",
         image: "/images/products/greenhouses/cubiertas plasticas_11_11zon.webp",
-        category: "greenhouse",
+        category: "greenhouses",
         bulletPoints: [
           "Reinforced structure with steel crossbars, designed to provide greater resistance against wind forces.",
         ],
@@ -31,7 +31,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         id: 53,
         title: "Macrotunnel with Opening",
         image: "/images/products/greenhouses/Macrotunel_Apertura.webp",
-        category: "greenhouse",
+        category: "greenhouses",
         bulletPoints: [
           "Designed for greater ventilation control, this structure offers the option of opening from the side, front, or top.",
         ],
@@ -40,7 +40,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         id: 54,
         title: "Macrotunnel OV-M",
         image: "/images/products/greenhouses/MACROTUNEL OV-M.webp",
-        category: "greenhouse",
+        category: "greenhouses",
         bulletPoints: [
           "Structure made with 40 x 30 mm oval tubes, tension-resistant, with a wider cross-section, generating a 30% stronger and more robust system.",
         ],
@@ -50,7 +50,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         id: 41,
         title: "Translucent",
         image: "/images/products/plastic-films/MACROTUNEL TRASLUCIDO.webp",
-        category: "plastic films",
+        category: "plastic-films",
         bulletPoints: [
           "High transparency that allows optimal passage of sunlight, promoting photosynthesis.",
           "Ideal for low-light areas.",
@@ -60,7 +60,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         id: 42,
         title: "Milky plastic covers",
         image: "/images/products/plastic-films/PLASTICO BLANCO LECHOSO.webp",
-        category: "plastic films",
+        category: "plastic-films",
         bulletPoints: [
           "Films with special additives (anti-drip, anti-UV, thermal, etc.) that optimize the growing environment, improve yield, and extend the life of the plastic.",
         ],
@@ -69,7 +69,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         id: 43,
         title: "High technology",
         image: "/images/products/plastic-films/PLASTICO ALTA TECNOLOGIA.webp",
-        category: "plastic films",
+        category: "plastic-films",
         bulletPoints: [
           "Films with special additives (anti-drip, anti-UV, thermal, etc.) that optimize the growing environment, improve yield, and extend the life of the plastic.",
         ],
@@ -78,7 +78,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         id: 44,
         title: "Padded",
         image: "/images/products/plastic-films/ACOLCHADO.webp",
-        category: "plastic films",
+        category: "plastic-films",
         bulletPoints: [
           "Placed on the soil, they conserve moisture, control weeds and regulate the temperature of the substrate.",
           "Available in different colors depending on the cultivation objective (black, silver, two-tone, etc.)",
@@ -143,13 +143,15 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
           "In black and white colors.",
         ],
       },
-      // {
-      //   id: 34,
-      //   title: "Raschel mesh",
-      //   image: "/images/products/tights/raschel.webp",
-      //   category: "tights",
-      //   bulletPoints: ["Raschel mesh"],
-      // },
+      {
+        id: 37,
+        title: "Raschel mesh",
+        image: "/images/products/tights/raschel.webp",
+        category: "tights",
+        bulletPoints: [
+          "Raschel fabric system, resistant, flexible and light, with ventilation capacity",
+        ],
+      },
       // ---------------- substrates -------------------
       {
         id: 81,
@@ -184,7 +186,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 84,
         title: "Gutter",
-        image: "/images/products/substrates/raschel.webp",
+        image: "/images/products/substrates/CANALETA.webp",
         category: "substrates",
         bulletPoints: [
           "System designed to collect and conduct drainage of nutrient solutions in hydroponic crops.",
@@ -332,7 +334,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         id: 51,
         title: "Macrotunel Tradicional",
         image: "/images/products/greenhouses/MacrotunelTradicional.webp",
-        category: "greenhouse",
+        category: "greenhouses",
         bulletPoints: [
           "Estructura de acero en forma de túnel con cubierta plástica o malla, capaz de crear un microclima semicontrolado.",
           "Sistema económico, móvil y de armado rápido.",
@@ -342,7 +344,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         id: 52,
         title: "Macrotunel Reforzado",
         image: "/images/products/greenhouses/cubiertas plasticas_11_11zon.webp",
-        category: "greenhouse",
+        category: "greenhouses",
         bulletPoints: [
           "Estructura reforzada con crucetas de acero, diseñada para brindar mayor resistencia contra la fuerza del viento.",
         ],
@@ -351,7 +353,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         id: 53,
         title: "Macrotunel con Apertura",
         image: "/images/products/greenhouses/Macrotunel_Apertura.webp",
-        category: "greenhouse",
+        category: "greenhouses",
         bulletPoints: [
           "Solución diseñada para mayor control de ventilación, es una estructura con opción de apertura latera, frontal o superior.",
         ],
@@ -360,7 +362,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         id: 54,
         title: "Macrotunel OV-M",
         image: "/images/products/greenhouses/MACROTUNEL OV-M.webp",
-        category: "greenhouse",
+        category: "greenhouses",
         bulletPoints: [
           "Estructura fabricada con tubos ovalados de 40 x 30 mm, resistente a la tensión, con sección transversal más ancha, generando un sistema 30% más fuerte y robusto.",
         ],
@@ -370,7 +372,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         id: 41,
         title: "Traslucidas",
         image: "/images/products/plastic-films/MACROTUNEL TRASLUCIDO.webp",
-        category: "plastic films",
+        category: "plastic-films",
         bulletPoints: [
           "Alta transparencia que permiten un óptimo paso de luz solar, favoreciendo la fotosíntesis.",
           "Ideales para zonas de baja luminosidad.",
@@ -380,7 +382,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         id: 42,
         title: "Lechosas",
         image: "/images/products/plastic-films/PLASTICO BLANCO LECHOSO.webp",
-        category: "plastic films",
+        category: "plastic-films",
         bulletPoints: [
           "Con efecto difusor que distribuyen la luz de forma uniforme, reduciendo sombras y quemaduras solares.",
           "Mantienen una temperatura más estable.",
@@ -390,7 +392,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         id: 43,
         title: "Alta tecnología",
         image: "/images/products/plastic-films/PLASTICO ALTA TECNOLOGIA.webp",
-        category: "plastic films",
+        category: "plastic-films",
         bulletPoints: [
           "Películas con aditivos especiales (antigoteo, anti UV, térmicos, etc.) que optimizan el ambiente de cultivo, mejoran el rendimiento y prolongan la vida útil del plástico.",
         ],
@@ -399,7 +401,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         id: 44,
         title: "Acolchado",
         image: "/images/products/plastic-films/ACOLCHADO.webp",
-        category: "plastic films",
+        category: "plastic-films",
         bulletPoints: [
           "Colocadas sobre el suelo, conservan la humedad, controlan malezas y regulan la temperatura del sustrato.",
           "Disponible en diferentes colores según el objetivo del cultivo (negro, plata, bicolor, etc.)",
@@ -464,13 +466,15 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
           "En colores blanco y negro.",
         ],
       },
-      // {
-      //   id: 34,
-      //   title: "Malla Raschel",
-      //   image: "/images/products/tights/raschel.webp",
-      //   category: "tights",
-      //   bulletPoints: ["Malla Raschel"],
-      // },
+      {
+        id: 37,
+        title: "Malla Raschel",
+        image: "/images/products/tights/raschel.webp",
+        category: "tights",
+        bulletPoints: [
+          "Sistema de tejido Raschel, resistente, flexible y ligera, con capacidad de ventilación",
+        ],
+      },
       // ---------------- substrates -------------------
       {
         id: 81,
@@ -505,7 +509,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 84,
         title: "Canaleta",
-        image: "/images/products/substrates/raschel.webp",
+        image: "/images/products/substrates/CANALETA.webp",
         category: "substrates",
         bulletPoints: [
           "Sistema diseñado para recolectar y conducir el drenaje de soluciones nutritivas en cultivos hidropónicos.",

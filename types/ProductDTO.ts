@@ -6,9 +6,9 @@ export interface ProductDTO {
   image: string;
   category:
     | "accessories"
-    | "greenhouse"
+    | "greenhouses"
     | "tights"
     | "substrates"
-    | "plastic films";
+    | "plastic-films";
   bulletPoints: string[];
 }

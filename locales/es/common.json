@@ -70,11 +70,10 @@
     }
   },
   "categories": {
-    "all": "Todo",
     "accessories": "Accesorios",
-    "greenhouse": "Invernaderos",
+    "greenhouses": "Invernaderos",
     "tights": "Mallas",
-    "plastic films": "Peliculas plasticas",
+    "plastic-films": "Peliculas plasticas",
     "substrates": "Sustratos"
   },
   "homeHighlight": {
