@@ -1,18 +1,11 @@
-/* components/products/Products.tsx (server) */
-import ProductsTabsClient from "./ProductsTabsClient";
-import { Product } from "./ProductCard";
-import { Dict } from "@/lib/getTranslations";
+/* components/products/Products.tsx  (server) */
+import ProductsGrid from "./ProductsGrid";
+import type { Product } from "./ProductCard";
 
-export default function Products({
-  items,
-  translations,
-}: {
-  items: Product[];
-  translations: Dict;
-}) {
+export default function Products({ items }: { items: Product[] }) {
   return (
     <section className="mx-auto max-w-7xl px-4 py-16">
-      <ProductsTabsClient items={items} translations={translations} />
+      <ProductsGrid items={items} /> {/* 👈 solo items */}
     </section>
   );
 }
