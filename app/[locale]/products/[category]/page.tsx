@@ -46,7 +46,7 @@ export default function CategoryPage({
         placeholder="blur"
       />
       <Divider />
-      <Products items={products} translations={translations} />
+      <Products items={products} />
       <Divider />
     </div>
   );
