@@ -54,13 +54,13 @@ export default function LanguageSwitcher() {
         <div className="absolute right-0 mt-2 w-28 bg-black rounded">
           <button
             onClick={() => changeLocale("en")}
-            className="cursor-pointer w-full px-4 py-2 text-left rounded-t text-sm transition-colors hover:bg-gray-50 hover:text-green-600"
+            className="cursor-pointer w-full px-4 py-2 text-left rounded-t text-md text-white transition-colors hover:bg-gray-50 hover:text-green-600"
           >
             English
           </button>
           <button
             onClick={() => changeLocale("es")}
-            className="cursor-pointer w-full px-4 py-2 text-left rounded-b text-sm transition-colors hover:bg-gray-50 hover:text-green-600"
+            className="cursor-pointer w-full px-4 py-2 text-left rounded-b text-md text-white transition-colors hover:bg-gray-50 hover:text-green-600"
           >
             Español
           </button>
