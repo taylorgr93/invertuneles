@@ -23,9 +23,9 @@ const ALLOWED: readonly Category[] = [
 export default function CategoryPage({
   params,
 }: {
-  params: { locale: string; category: string };
+  params: Promise<{ locale: string; category: string }>;
 }) {
-  const { locale, category } = params;
+  const { locale, category } = use(params);
 
   // validar slug
   if (!ALLOWED.includes(category as Category)) notFound();
