@@ -55,7 +55,7 @@ export default function RootLayout({ children, params }: Props) {
           "
         />
         <Navbar locale={locale} />
-        <WelcomeGate />
+        <WelcomeGate locale={locale} />
         {children}
         <Footer locale={locale} />
         <WhatsAppButton />

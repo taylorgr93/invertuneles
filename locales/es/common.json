@@ -1,4 +1,13 @@
 {
+  "locals": { "es": "Español", "en": "Ingles" },
+  "welcome": {
+    "title": "¡Bienvenido!",
+    "subtitle": "Selecciona tu idioma para ver nuestros productos",
+    "more": "¿Te gustaría conocer más de nosotros?",
+    "aboutLink": "Acerca de",
+    "contactLink": "Contáctanos",
+    "or": "o"
+  },
   "pages": {
     "home": "Inicio",
     "about": "Acerca de",
