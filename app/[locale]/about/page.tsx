@@ -38,7 +38,7 @@ export default function AboutPage({
     },
     {
       title: t("about.vision.title"),
-      image: "/images/about/Vision.webp",
+      image: "/images/about/vision.webp",
       paragraphs: tArray(translations, "about.vision.paragraphs"),
     },
     // {
@@ -63,7 +63,7 @@ export default function AboutPage({
       <InfoBlocks items={blocks} />;
       <Divider />
       <ImageWithColumns
-        src="/images/about/Who_we_are.webp"
+        src="/images/about/who_we_are.webp"
         alt="Strategy diagram"
         title="WHO WE ARE"
         subtitleLeft={t("about.who.subtitle_left")} // ← columna izquierda

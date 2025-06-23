@@ -117,7 +117,7 @@ export default function Home(props: { params: Promise<{ locale: string }> }) {
           },
           {
             key: 3,
-            src: "/images/products/plastic-films/PELICULA ATRAPA INSECTOS_3_11zon.webp",
+            src: "/images/products/tights/PELICULA ATRAPA INSECTOS_3_11zon.webp",
             alt: "Interior",
           },
           {
