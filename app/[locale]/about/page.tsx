@@ -75,7 +75,12 @@ export default function AboutPage({
       <ValuesSection
         title={t("about.values.title")}
         values={tArray(translations, "about.values.items")}
-      />
+      >
+        <CtaChip
+          message={t("about.cta_chip.text")}
+          emoji="🚀" /* o imgSrc="/icons/ccchip.png" */
+        />
+      </ValuesSection>
       {/* <DualImages
         left={{
           src: "/images/about/compromiso-y-experiencia.webp",
@@ -86,10 +91,6 @@ export default function AboutPage({
           alt: "Nuestros valores",
         }}
       /> */}
-      <CtaChip
-        message={t("about.cta_chip.text")}
-        emoji="🚀" /* o imgSrc="/icons/ccchip.png" */
-      />
       <Divider />
     </div>
   );
