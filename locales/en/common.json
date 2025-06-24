@@ -36,6 +36,57 @@
     "message": "We will contact you",
     "rights": "All rights reserved."
   },
+  "products": {
+    "greenhouses": {
+      "title": "Greenhouses",
+      "description": "Our macrotunnels are cost-effective and functional systems that transform results…",
+      "benefits": [
+        "Higher profitability",
+        "Increased production",
+        "Increased harvests per year and outside of traditional seasons",
+        "Greater and faster plant development",
+        "Higher-quality fruit production",
+        "Reduced water use",
+        "Reduces fertilizer use",
+        "Reduces labor costs"
+      ],
+      "extra": ""
+    },
+    "plastic-films": {
+      "title": "Plastic Films - Polyethilene",
+      "description": "Multi-layer polyethylene that allows the use of additives and an appropriate selection of raw materials for each layer, properties:",
+      "benefits": [
+        "Optics: Light transmission and diffusion, Light quality filtering Photosynthetic.",
+        "Shading: Blocks a percentage of light transmission.",
+        "Dustproof: Prevents dust from adhering.",
+        "Thermal: Passes sunlight through and prevents heat dissipation.",
+        "Diffuse: Light diffused evenly in all directions of the plant.",
+        "Mechanical: Tensile strength, elongation, tearing."
+      ]
+    },
+    "tights": {
+      "title": "Tights",
+      "description": "Multi-layer polyethylene that allows the use of additives and an appropriate selection of raw materials for each layer, properties:",
+      "benefits": [
+        "Optical: Light transmission and diffusion, Quality filtering of photosynthetic light.",
+        "Shading: Blocks a percentage of light transmission.",
+        "Dustproof: Prevents dust from adhering.",
+        "Thermal: Passage of sunlight and prevents heat dissipation.",
+        "Diffuse: Light diffused evenly in all directions of the plant.",
+        "Mechanical: Resistance to tension, elongation, and tearing."
+      ]
+    },
+    "accessories": {
+      "title": "Accessories",
+      "description": "",
+      "benefits": []
+    },
+    "substrates": {
+      "title": "Substrates",
+      "description": "",
+      "benefits": []
+    }
+  },
   "about": {
     "mission": {
       "title": "Our mission",

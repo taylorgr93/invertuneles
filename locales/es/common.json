@@ -36,6 +36,57 @@
     "message": "Nos pondremos en contacto",
     "rights": "Todos los derechos reservados."
   },
+  "products": {
+    "greenhouses": {
+      "title": "Invernaderos",
+      "description": "Nuestros macrotuneles son sistemas rentables y funcionales que transforman los resultados…  ",
+      "benefits": [
+        "Mayor rentabilidad",
+        "Aumento de producción",
+        "Aumento de cosechas por año y fuera de épocas tradicionales",
+        "Desarrollo de las plantas mayor y acelerado",
+        "Producción de fruta de mayor calidad",
+        "Disminución del uso de agua",
+        "Reduce el uso de fertilizantes",
+        "Reduce el costo de mano de obra"
+      ],
+      "extra": ""
+    },
+    "plastic-films": {
+      "title": "Cubiertas Plasticas",
+      "description": "Polietileno multicapa que permiten el uso de aditivos y una selección adecuada de materias primas por cada capa, propiedades:",
+      "benefits": [
+        "Ópticas: Transmisión y Difusión de luz, Filtrado de calidad de luz fotosintética.",
+        "Sombreo: Bloqueo de un porcentaje de la transmisión de la luz.",
+        "Antipolvo: Impide adherencia de polvo.",
+        "Térmicas: Paso de los rayos solares y evita disipación de calor.",
+        "Difusas: Luz difundida uniforme en todas las direcciones de la planta.",
+        "Mecánicas: Resistencia Tensión, Elongación, Rasgado."
+      ]
+    },
+    "tights": {
+      "title": "Mallas",
+      "description": "Polietileno multicapa que permiten el uso de aditivos y una selección adecuada de materias primas por cada capa, propiedades:",
+      "benefits": [
+        "Ópticas: Transmisión y Difusión de luz, Filtrado de calidad de luz fotosintética.",
+        "Sombreo: Bloqueo de un porcentaje de la transmisión de la luz.",
+        "Antipolvo: Impide adherencia de polvo.",
+        "Térmicas: Paso de los rayos solares y evita disipación de calor.",
+        "Difusas: Luz difundida uniforme en todas las direcciones de la planta.",
+        "Mecánicas: Resistencia Tensión, Elongación, Rasgado."
+      ]
+    },
+    "accessories": {
+      "title": "Accessorios",
+      "description": "",
+      "benefits": []
+    },
+    "substrates": {
+      "title": "Sustratos",
+      "description": "",
+      "benefits": []
+    }
+  },
   "about": {
     "mission": {
       "title": "Nuestra misión",

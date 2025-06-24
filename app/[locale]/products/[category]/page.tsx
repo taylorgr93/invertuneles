@@ -9,6 +9,7 @@ import { makeT } from "@/lib/makeT";
 import { getTranslations, Dict } from "@/lib/getTranslations";
 import type { ProductDTO } from "@/types/ProductDTO";
 import { useProducts } from "@/hooks/useProducts";
+import ProductIntro from "@/components/products/ProductIntro";
 
 type Category = ProductDTO["category"];
 
@@ -45,6 +46,8 @@ export default function CategoryPage({
         sizes="(max-width:768px) 100vw, (max-width:1280px) 75vw, 1920px"
         placeholder="blur"
       />
+      <Divider />
+      <ProductIntro translations={translations} category={category} />
       <Divider />
       <Products items={products} />
       <Divider />
