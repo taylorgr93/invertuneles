@@ -22,12 +22,11 @@ export default function InfoBlocks({ items }: Props) {
           >
             {/* Imagen */}
             <div
-              //   className={`relative aspect-video w-full overflow-hidden rounded-sm ${
-              //     isEven ? "" : "md:order-2"
-              //   }`}
-              className={`relative aspect-video w-full overflow-hidden rounded-md bg-gray-700 flex items-center justify-center ${
-                idx % 2 ? "md:order-2" : ""
-              }`}
+              className={`
+                relative aspect-video w-full overflow-hidden 
+                rounded-md bg-gray-700 flex items-center justify-center 
+                border-6 border-[#194440] 
+                ${idx % 2 ? "md:order-2" : ""}`}
             >
               <Image
                 src={item.image}
