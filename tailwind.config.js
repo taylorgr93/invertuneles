@@ -3,10 +3,25 @@ module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx}", // ajusta a tu estructura
     "./components/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{ts,tsx,js,jsx}",
   ],
   theme: {
     extend: {
       // aquí tus colores, fuentes, etc.
+      colors: {
+        brand: {
+          carrot: "#c15b2e",
+          lime: "#9bc153",
+          forest: "#2d553e",
+          parchment: "#d8dccc",
+          olive: "#7b9856",
+          noir: "#040404",
+          cocoa: "#7e6a54",
+          earth: "#554222",
+          mist: "#93a39e",
+          teal: "#194440",
+        },
+      },
     },
   },
 
