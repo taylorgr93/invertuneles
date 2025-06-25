@@ -65,7 +65,7 @@ export default function AboutPage({
       <ImageWithColumns
         src="/images/about/who_we_are.webp"
         alt="Strategy diagram"
-        title="WHO WE ARE"
+        title={t("about.who.title")}
         subtitleLeft={t("about.who.subtitle_left")} // ← columna izquierda
         subtitleRight={t("about.who.subtitle_right")}
         paragraphsLeft={tArray(translations, "about.who.paragraphsLeft")}

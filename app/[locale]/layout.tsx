@@ -43,7 +43,7 @@ export default function RootLayout({ children, params }: Props) {
         className={`
           min-h-screen flex flex-col      /* llena la altura y apila */
           ${geistSans.variable} ${geistMono.variable}
-          antialiased
+          antialiased bg-black
         `}
       >
         {/* gradiente solo arriba */}
