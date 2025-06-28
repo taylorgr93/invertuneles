@@ -45,9 +45,15 @@ export default function ProductsPage({
         {/* barra */}
         <nav
           className="
-          absolute bottom-6 left-1/2 -translate-x-1/2 z-20
-          flex flex-wrap justify-center gap-4
-        "
+            /* --- móviles (< 640 px) --- */
+            absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2
+            flex flex-col gap-4 z-20
+        
+            /* --- >= sm (≥ 640 px)  se alinea a la izquierda --- */
+            sm:left-6 sm:translate-x-0         /* pegado 24 px al borde  */
+            md:left-10                        /* más margen en md       */
+            lg:left-16                        /* aún más en lg          */
+          "
         >
           {categoryKeys.map((key) => (
             <Link
@@ -55,13 +61,19 @@ export default function ProductsPage({
               href={`/${locale}/products/${key}`}
               className="
               flex items-center justify-center
-              rounded-lg bg-gradient-to-br from-green-600 to-green-500
-              shadow-lg transition hover:scale-105 hover:from-green-500 hover:to-green-400
-
-              min-w-[6rem] text-sm px-4 py-2
-              sm:min-w-[7rem] sm:text-base sm:px-5 sm:py-2.5
-              md:min-w-[8rem] md:text-lg md:px-6 md:py-3
-              lg:min-w-[9rem] lg:text-xl lg:px-8 lg:py-4
+              rounded-lg
+              bg-transparent
+              border-4 border-[#194440]           /* ⬅️ contorno verde oscuro  */
+              bg-white
+              text-[#194440]                           /* ⬅️ texto blanco           */
+              shadow-lg transition
+              hover:bg-[#194440] hover:text-white /* ⬅️ relleno al hover        */
+              hover:shadow-xl hover:scale-105
+          
+              min-w-[7rem] px-4 py-2 text-sm
+              sm:min-w-[8rem] sm:px-5 sm:py-2.5 sm:text-base
+              md:min-w-[9rem] md:px-6 md:py-3 md:text-lg
+              lg:min-w-[10rem] lg:px-8 lg:py-4 lg:text-xl
             "
             >
               {t(`categories.${key}`)}

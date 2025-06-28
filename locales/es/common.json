@@ -38,7 +38,7 @@
   },
   "products": {
     "greenhouses": {
-      "title": "Invernaderos",
+      "title": "Macrotuneles",
       "description": "Nuestros macrotuneles son sistemas rentables y funcionales que transforman los resultados…  ",
       "benefits": [
         "Mayor rentabilidad",
@@ -53,7 +53,7 @@
       "extra": ""
     },
     "plastic-films": {
-      "title": "Cubiertas Plasticas",
+      "title": "Películas Plásticas",
       "description": "Polietileno multicapa que permiten el uso de aditivos y una selección adecuada de materias primas por cada capa, propiedades:",
       "benefits": [
         "Ópticas: Transmisión y Difusión de luz, Filtrado de calidad de luz fotosintética.",
@@ -131,9 +131,9 @@
   },
   "categories": {
     "accessories": "Accesorios",
-    "greenhouses": "Invernaderos",
+    "greenhouses": "Macrotuneles",
     "tights": "Mallas",
-    "plastic-films": "Peliculas plasticas",
+    "plastic-films": "Películas Plásticas",
     "substrates": "Sustratos"
   },
   "homeHighlight": {

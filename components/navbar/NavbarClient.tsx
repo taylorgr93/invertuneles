@@ -40,8 +40,8 @@ function NavItem({ href, onClick, children, isActive }: NavItemProps) {
         className={`
           px-4 py-2 md:p-0 text-3xl md:text-2xl font-semibold
           transition-all duration-200
-          ${isActive ? "text-green-500" : "text-white"}
-          group-hover:text-green-500
+          ${isActive ? "text-green-600" : "text-white"}
+          group-hover:text-green-600
           [text-shadow:none]
           group-hover:[text-shadow:0_0_10px_rgba(255,255,255,0.9)]
         `}
