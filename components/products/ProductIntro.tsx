@@ -42,7 +42,7 @@ export default function ProductIntro({ translations, category }: Props) {
 
       {/* — descripción — */}
       {description && (
-        <p className="mx-auto mb-10 max-w-3xl text-center text-xl leading-relaxed">
+        <p className="mx-auto mb-10 max-w-4xl text-center text-xl leading-relaxed">
           {description}
         </p>
       )}
@@ -81,7 +81,7 @@ export default function ProductIntro({ translations, category }: Props) {
                     object-contain rounded-xl"
                   priority
                 />
-                {/* <span className="text-sm font-medium leading-snug">
+                {/* <span className="text-sm text-gray-100 font-medium leading-snug">
                   {label}
                 </span> */}
               </li>
