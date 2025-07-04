@@ -32,7 +32,7 @@ export default function ProductIntro({ translations, category }: Props) {
   if (!title && !description && benefits.length === 0) return null;
 
   return (
-    <section className="mx-auto max-w-6xl px-6 py-12 text-white">
+    <section className="mx-auto max-w-none px-6 py-12 text-white">
       {/* — título — */}
       {title && (
         <h2 className="mb-8 text-center text-5xl font-extrabold text-green-500">
@@ -49,7 +49,7 @@ export default function ProductIntro({ translations, category }: Props) {
 
       {/* — barra de beneficios — */}
       {benefits.length > 0 && (
-        <div className="rounded-2xl bg-white p-4 shadow-inner">
+        <div className="mx-auto w-full lg:w-[80%] rounded-2xl bg-white p-4 shadow-inner">
           {benefitsHeading && (
             <h3 className="p-4 text-center text-4xl text-green-500 font-extrabold text-brand-teal">
               {benefitsHeading}
@@ -76,7 +76,7 @@ export default function ProductIntro({ translations, category }: Props) {
                   /* sizes para que Next sirva la versión adecuada */
                   sizes="(max-width:768px) 144px, (max-width:1024px) 208px, 256px"
                   className="
-                    h-36 w-36               /* 144 × 144 en móvil */
+                    h-40 w-40               /* 144 × 144 en móvil */
                     md:h-52 md:w-52         /* 208 × 208 en tablet/desktop medio */
                     object-contain rounded-xl"
                   priority
