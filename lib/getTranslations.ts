@@ -27,7 +27,7 @@
 
 // lib/getTranslations.ts
 export interface Dict {
-  [key: string]: any;
+  [key: string]: unknown;
   products?: Record<
     string,
     {
