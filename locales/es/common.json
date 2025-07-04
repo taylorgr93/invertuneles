@@ -40,6 +40,7 @@
     "greenhouses": {
       "title": "Macrotuneles",
       "description": "Nuestros macrotuneles son sistemas rentables y funcionales que transforman los resultados…  ",
+      "benefitsHeading": "Beneficios",
       "benefits": [
         "Mayor rentabilidad",
         "Aumento de producción",
@@ -55,35 +56,99 @@
     "plastic-films": {
       "title": "Películas Plásticas",
       "description": "Polietileno multicapa que permiten el uso de aditivos y una selección adecuada de materias primas por cada capa, propiedades:",
+      "benefitsHeading": "Beneficios",
       "benefits": [
-        "Ópticas: Transmisión y Difusión de luz, Filtrado de calidad de luz fotosintética.",
-        "Sombreo: Bloqueo de un porcentaje de la transmisión de la luz.",
-        "Antipolvo: Impide adherencia de polvo.",
-        "Térmicas: Paso de los rayos solares y evita disipación de calor.",
-        "Difusas: Luz difundida uniforme en todas las direcciones de la planta.",
-        "Mecánicas: Resistencia Tensión, Elongación, Rasgado."
+        {
+          "label": "Ópticas: Transmisión y Difusión de luz, Filtrado de calidad de luz fotosintética.",
+          "icon": "/images/plastic-films/benefits/opticians.webp"
+        },
+        {
+          "label": "Sombreo: Bloqueo de un porcentaje de la transmisión de la luz.",
+          "icon": "/images/plastic-films/benefits/shadow.webp"
+        },
+        {
+          "label": "Antipolvo: Impide adherencia de polvo.",
+          "icon": "/images/plastic-films/benefits/anti-dust.webp"
+        },
+        {
+          "label": "Térmicas: Paso de los rayos solares y evita disipación de calor.",
+          "icon": "/images/plastic-films/benefits/thermal.webp"
+        },
+        {
+          "label": "Difusas: Luz difundida uniforme en todas las direcciones de la planta.",
+          "icon": "/images/plastic-films/benefits/diffuse.webp"
+        },
+        {
+          "label": "Mecánicas: Resistencia Tensión, Elongación, Rasgado.",
+          "icon": "/images/plastic-films/benefits/mechanics.webp"
+        },
+        {
+          "label": "Anti Goteo",
+          "icon": "/images/plastic-films/benefits/anti-drip.webp"
+        },
+        {
+          "label": "Compatible con Abejas",
+          "icon": "/images/plastic-films/benefits/bee-friendly.webp"
+        },
+        {
+          "label": "Tolerancia al Azufre y Cloro",
+          "icon": "/images/plastic-films/benefits/tolerance-to-sulfur-and-chlorine.webp"
+        }
       ]
     },
     "tights": {
       "title": "Mallas",
       "description": "Polietileno multicapa que permiten el uso de aditivos y una selección adecuada de materias primas por cada capa, propiedades:",
+      "benefitsHeading": "Beneficios",
       "benefits": [
-        "Ópticas: Transmisión y Difusión de luz, Filtrado de calidad de luz fotosintética.",
-        "Sombreo: Bloqueo de un porcentaje de la transmisión de la luz.",
-        "Antipolvo: Impide adherencia de polvo.",
-        "Térmicas: Paso de los rayos solares y evita disipación de calor.",
-        "Difusas: Luz difundida uniforme en todas las direcciones de la planta.",
-        "Mecánicas: Resistencia Tensión, Elongación, Rasgado."
+        {
+          "label": "Ópticas: Transmisión y Difusión de luz, Filtrado de calidad de luz fotosintética.",
+          "icon": "/images/tights/benefits/opticians.webp"
+        },
+        {
+          "label": "Sombreo: Bloqueo de un porcentaje de la transmisión de la luz.",
+          "icon": "/images/tights/benefits/shadow.webp"
+        },
+        {
+          "label": "Antipolvo: Impide adherencia de polvo.",
+          "icon": "/images/tights/benefits/anti-dust.webp"
+        },
+        {
+          "label": "Térmicas: Paso de los rayos solares y evita disipación de calor.",
+          "icon": "/images/tights/benefits/thermal.webp"
+        },
+        {
+          "label": "Difusas: Luz difundida uniforme en todas las direcciones de la planta.",
+          "icon": "/images/tights/benefits/diffuse.webp"
+        },
+        {
+          "label": "Mecánicas: Resistencia Tensión, Elongación, Rasgado.",
+          "icon": "/images/tights/benefits/mechanics.webp"
+        },
+        {
+          "label": "Anti Goteo",
+          "icon": "/images/tights/benefits/anti-drip.webp"
+        },
+        {
+          "label": "Compatible con Abejas",
+          "icon": "/images/tights/benefits/bee-friendly.webp"
+        },
+        {
+          "label": "Tolerancia al Azufre y Cloro",
+          "icon": "/images/tights/benefits/tolerance-to-sulfur-and-chloriney.webp"
+        }
       ]
     },
     "accessories": {
       "title": "Accessorios",
       "description": "",
+      "benefitsHeading": "",
       "benefits": []
     },
     "substrates": {
       "title": "Sustratos",
       "description": "",
+      "benefitsHeading": "",
       "benefits": []
     }
   },

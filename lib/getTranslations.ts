@@ -26,7 +26,20 @@
 // }
 
 // lib/getTranslations.ts
-export type Dict = Record<string, unknown>;
+export interface Dict {
+  [key: string]: any;
+  products?: Record<
+    string,
+    {
+      title?: string;
+      description?: string;
+      benefitsHeading?: string;
+      benefits?: { label: string; icon: string }[];
+    }
+  >;
+}
+
+// export type Dict = Record<string, unknown>;
 
 export async function getTranslations(locale: string, ns = "common") {
   const json = await import(`../locales/${locale}/${ns}.json`);
