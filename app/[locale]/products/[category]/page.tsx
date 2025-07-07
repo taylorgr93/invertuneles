@@ -13,6 +13,7 @@ import ProductIntro from "@/components/products/ProductIntro";
 import CaseStudies from "@/components/products/CaseStudies";
 import { CaseStudy } from "@/components/products/CaseStudies";
 import { macrotunnelStudies } from "@/components/case-studies/macrotunnelStudies";
+import InquiryForm from "@/components/products/InquiryForm";
 
 type Category = ProductDTO["category"];
 
@@ -56,12 +57,13 @@ export default function CategoryPage({
       <Divider />
       {category === "greenhouses" && (
         <>
-          {" "}
           <CaseStudies
             heading="Case Studies" /* opcional – se traduce si quieres */
             studies={macrotunnelStudies as CaseStudy[]}
             locale={locale}
           />
+          <Divider />
+          <InquiryForm /> {/* ← aquí aparece el formulario */}
           <Divider />
         </>
       )}
