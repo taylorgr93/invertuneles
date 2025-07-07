@@ -32,7 +32,7 @@ export default function InquiryForm({ translations }: Props) {
     /* … envía `data` … */
     try {
       // 2. Envía los datos a tu API / servicio
-      const res = await fetch("/api/send-inquiry", {
+      const res = await fetch("/api/inquiry", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
@@ -135,8 +135,7 @@ export default function InquiryForm({ translations }: Props) {
 
         {err && (
           <p className="pt-4 text-center text-red-600">
-            {/** traducción opcional */}
-            Ocurrió un error. Intenta de nuevo.
+            {t("inquiry.errorSend")}
           </p>
         )}
       </form>

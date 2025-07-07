@@ -264,6 +264,7 @@
     "fieldPhone": "Phone",
     "phPhone": "e.g. +1 555 123 4567",
 
-    "btnSend": "Send"
+    "btnSend": "Send",
+    "errorSend": "An error occurred. Please try again."
   }
 }
