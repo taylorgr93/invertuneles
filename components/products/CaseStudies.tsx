@@ -1,6 +1,6 @@
 /* components/case-studies/CaseStudies.tsx */
 import Image from "next/image";
-import Link from "next/link";
+// import Link from "next/link";
 
 export interface CaseStudy {
   slug: string;
@@ -16,8 +16,8 @@ interface Props {
 
 export default function CaseStudies({
   heading = "CASE STUDIES",
+  // locale,
   studies,
-  locale,
 }: Props) {
   if (studies.length === 0) return null;
 
@@ -37,8 +37,8 @@ export default function CaseStudies({
       </h2>
 
       <ul className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-        {safeStudies.map(({ key, slug, title, image }) => (
-          <li key={key}>
+        {safeStudies.map(({ slug, title, image }) => (
+          <li key={slug}>
             <figure className="relative aspect-[4/3] w-full overflow-hidden rounded-lg bg-gray-100 shadow">
               <Image
                 src={image} // nunca vacío
