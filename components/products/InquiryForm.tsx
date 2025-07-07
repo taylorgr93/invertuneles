@@ -11,10 +11,13 @@ export default function InquiryForm({ translations }: Props) {
 
   const [sent, setSent] = useState(false);
   const [load, setLoad] = useState(false);
-  const [err, setErr] = useState(false);
+  const [err, setErr] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setLoad(true);
+    setErr(null);
+
     const form = e.currentTarget;
 
     /* convierte inmediatamente a objeto */
@@ -27,6 +30,22 @@ export default function InquiryForm({ translations }: Props) {
     };
 
     /* … envía `data` … */
+    try {
+      // 2. Envía los datos a tu API / servicio
+      const res = await fetch("/api/send-inquiry", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+
+      if (!res.ok) throw new Error("Network error");
+
+      setSent(true); // ← mostrará el mensaje de “gracias”
+    } catch (err) {
+      setErr("Ocurrió un problema. Inténtalo de nuevo.");
+    } finally {
+      setLoad(false);
+    }
   };
 
   /* ─── estados de éxito / error ─── */
