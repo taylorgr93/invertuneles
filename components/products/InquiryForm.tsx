@@ -1,29 +1,45 @@
-/* components/products/InquiryForm.tsx */
 "use client";
 
 import { useState } from "react";
 import { Dict } from "@/lib/getTranslations";
 import { makeT } from "@/lib/makeT";
 
-type Props = {
-  translations: Dict; // ← se recibe
-};
+type Props = { translations: Dict };
 
 export default function InquiryForm({ translations }: Props) {
   const t = makeT(translations);
-  const [sent, setSent] = useState(false);
 
-  if (sent) {
+  const [sent, setSent] = useState(false);
+  const [load, setLoad] = useState(false);
+  const [err, setErr] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const form = e.currentTarget;
+
+    /* convierte inmediatamente a objeto */
+    const fd = new FormData(form);
+    const data = Object.fromEntries(fd) as {
+      crop: string;
+      location: string;
+      name: string;
+      phone: string;
+    };
+
+    /* … envía `data` … */
+  };
+
+  /* ─── estados de éxito / error ─── */
+  if (sent)
     return (
       <div className="my-16 rounded-xl bg-[#194440]/90 p-10 text-center text-white shadow-lg">
         <h3 className="mb-4 text-3xl font-extrabold">{t("inquiry.success")}</h3>
       </div>
     );
-  }
 
+  /* ─── formulario ─── */
   return (
     <section className="my-16 mx-auto max-w-xl rounded-xl bg-white/90 p-8 shadow-2xl ring-1 ring-[#194440]/20">
-      {/* título & descripción */}
       <h2 className="mb-6 text-center text-4xl font-extrabold text-[#194440]">
         {t("inquiry.title")}
       </h2>
@@ -32,14 +48,8 @@ export default function InquiryForm({ translations }: Props) {
         {t("inquiry.intro")}
       </p>
 
-      <form
-        className="space-y-6"
-        onSubmit={(e) => {
-          e.preventDefault();
-          /** TODO: enviar datos */
-          setSent(true);
-        }}
-      >
+      <form className="space-y-6" onSubmit={handleSubmit}>
+        {/* campos … (sin cambios) */}
         {/* cultivo */}
         <div>
           <label className="mb-2 block font-semibold text-gray-800">
@@ -66,7 +76,7 @@ export default function InquiryForm({ translations }: Props) {
           />
         </div>
 
-        {/* nombre - teléfono */}
+        {/* nombre-tel */}
         <div className="grid gap-4 sm:grid-cols-2">
           <div>
             <label className="mb-2 block font-semibold text-gray-800">
@@ -97,10 +107,18 @@ export default function InquiryForm({ translations }: Props) {
         {/* botón */}
         <button
           type="submit"
-          className="mt-6 w-full cursor-pointer rounded-md bg-[#194440] py-3 text-lg font-bold text-white transition hover:bg-[#194440]/90 active:scale-95"
+          disabled={load}
+          className="mt-6 w-full cursor-pointer rounded-md bg-[#194440] py-3 text-lg font-bold text-white transition hover:bg-[#194440]/90 active:scale-95 disabled:opacity-60"
         >
-          {t("inquiry.btnSend")}
+          {load ? "…" : t("inquiry.btnSend")}
         </button>
+
+        {err && (
+          <p className="pt-4 text-center text-red-600">
+            {/** traducción opcional */}
+            Ocurrió un error. Intenta de nuevo.
+          </p>
+        )}
       </form>
     </section>
   );
