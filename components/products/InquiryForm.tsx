@@ -59,7 +59,7 @@ export default function InquiryForm({ translations }: Props) {
             name="crop"
             required
             placeholder={t("inquiry.phCrop")}
-            className="w-full rounded-md border-2 border-[#194440] px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#194440]"
+            className="w-full rounded-md border-2 border-[#194440] px-4 py-2 text-[#194440] focus:outline-none focus:ring-2 focus:ring-[#194440]"
           />
         </div>
 
@@ -72,7 +72,7 @@ export default function InquiryForm({ translations }: Props) {
             name="location"
             required
             placeholder={t("inquiry.phZone")}
-            className="w-full rounded-md border-2 border-[#194440] px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#194440]"
+            className="w-full rounded-md border-2 border-[#194440] px-4 py-2 text-[#194440] focus:outline-none focus:ring-2 focus:ring-[#194440]"
           />
         </div>
 
@@ -86,7 +86,7 @@ export default function InquiryForm({ translations }: Props) {
               name="name"
               required
               placeholder={t("inquiry.phName")}
-              className="w-full rounded-md border-2 border-[#194440] px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#194440]"
+              className="w-full rounded-md border-2 border-[#194440] px-4 py-2 text-[#194440] focus:outline-none focus:ring-2 focus:ring-[#194440]"
             />
           </div>
 
@@ -99,7 +99,7 @@ export default function InquiryForm({ translations }: Props) {
               name="phone"
               required
               placeholder={t("inquiry.phPhone")}
-              className="w-full rounded-md border-2 border-[#194440] px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#194440]"
+              className="w-full rounded-md border-2 border-[#194440] px-4 py-2 text-[#194440] focus:outline-none focus:ring-2 focus:ring-[#194440]"
             />
           </div>
         </div>
