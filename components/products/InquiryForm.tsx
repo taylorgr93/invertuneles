@@ -129,7 +129,8 @@ export default function InquiryForm({ translations }: Props) {
           disabled={load}
           className="mt-6 w-full cursor-pointer rounded-md bg-[#194440] py-3 text-lg font-bold text-white transition hover:bg-[#194440]/90 active:scale-95 disabled:opacity-60"
         >
-          {load ? "…" : t("inquiry.btnSend")}
+          {/* {load ? "…" : t("inquiry.btnSend")} */}
+          {load ? "Enviando…" : "Enviar"}
         </button>
 
         {err && (
