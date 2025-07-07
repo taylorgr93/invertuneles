@@ -63,7 +63,8 @@ export default function CategoryPage({
             locale={locale}
           />
           <Divider />
-          <InquiryForm /> {/* ← aquí aparece el formulario */}
+          <InquiryForm translations={translations} />{" "}
+          {/* ← aquí aparece el formulario */}
           <Divider />
         </>
       )}

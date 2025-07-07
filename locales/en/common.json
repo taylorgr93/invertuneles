@@ -246,5 +246,24 @@
         "With experts in several areas, every query is handled professionally and with dedication. Our goal is to help you reach your targets, supporting you every step of the way."
       ]
     }
+  },
+  "inquiry": {
+    "title": "100 % customised projects!",
+    "intro": "We know every grower has different needs and external variables. Fill in the form so we can suggest the right system for you.",
+    "success": "Thanks! We'll contact you shortly.",
+
+    "fieldCrop": "1. What crop do you grow?",
+    "phCrop": "e.g. Strawberry, Tomato, Blueberry…",
+
+    "fieldZone": "2. Where is your farm located?",
+    "phZone": "e.g. Zamora, MX – Central Valley, CA…",
+
+    "fieldName": "3. Name",
+    "phName": "Your name",
+
+    "fieldPhone": "Phone",
+    "phPhone": "e.g. +1 555 123 4567",
+
+    "btnSend": "Send"
   }
 }

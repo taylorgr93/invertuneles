@@ -2,108 +2,104 @@
 "use client";
 
 import { useState } from "react";
+import { Dict } from "@/lib/getTranslations";
+import { makeT } from "@/lib/makeT";
 
-export default function InquiryForm() {
+type Props = {
+  translations: Dict; // ← se recibe
+};
+
+export default function InquiryForm({ translations }: Props) {
+  const t = makeT(translations);
   const [sent, setSent] = useState(false);
 
   if (sent) {
     return (
       <div className="my-16 rounded-xl bg-[#194440]/90 p-10 text-center text-white shadow-lg">
-        <h3 className="mb-4 text-3xl font-extrabold">
-          ¡Gracias, te contactaremos en seguida!
-        </h3>
+        <h3 className="mb-4 text-3xl font-extrabold">{t("inquiry.success")}</h3>
       </div>
     );
   }
 
   return (
-    <section
-      className="
-        my-16 max-w-xl mx-auto rounded-xl
-        bg-white/90 p-8 shadow-2xl ring-1 ring-[#194440]/20
-      "
-    >
+    <section className="my-16 mx-auto max-w-xl rounded-xl bg-white/90 p-8 shadow-2xl ring-1 ring-[#194440]/20">
+      {/* título & descripción */}
       <h2 className="mb-6 text-center text-4xl font-extrabold text-[#194440]">
-        ¡Proyectos 100 % personalizados!
+        {t("inquiry.title")}
       </h2>
 
-      <p className="mb-8 text-lg text-gray-700 leading-relaxed">
-        En Invertúneles sabemos que cada agricultor tiene diferentes necesidades
-        y variables externas. Completa el formulario para conocer cuál es el
-        sistema adecuado para ti.
+      <p className="mb-8 text-lg leading-relaxed text-gray-700">
+        {t("inquiry.intro")}
       </p>
 
       <form
         className="space-y-6"
         onSubmit={(e) => {
           e.preventDefault();
-          // Aquí podrías enviar los datos a una API / servicio externo.
+          /** TODO: enviar datos */
           setSent(true);
         }}
       >
-        {/* 1. Tipo de cultivo */}
+        {/* cultivo */}
         <div>
           <label className="mb-2 block font-semibold text-gray-800">
-            1. ¿Qué tipo de cultivo manejas?
+            {t("inquiry.fieldCrop")}
           </label>
           <input
             name="crop"
             required
+            placeholder={t("inquiry.phCrop")}
             className="w-full rounded-md border-2 border-[#194440] px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#194440]"
-            placeholder="Ej. Fresa, Tomate, Arándano…"
           />
         </div>
 
-        {/* 2. Zona / lugar */}
+        {/* zona */}
         <div>
           <label className="mb-2 block font-semibold text-gray-800">
-            2. ¿En qué zona o lugar se encuentra tu cultivo?
+            {t("inquiry.fieldZone")}
           </label>
           <input
             name="location"
             required
+            placeholder={t("inquiry.phZone")}
             className="w-full rounded-md border-2 border-[#194440] px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#194440]"
-            placeholder="Ej. Zamora, Mich.; Valle del Cauca…"
           />
         </div>
 
-        {/* 3. Nombre y teléfono */}
+        {/* nombre - teléfono */}
         <div className="grid gap-4 sm:grid-cols-2">
           <div>
             <label className="mb-2 block font-semibold text-gray-800">
-              3. Nombre
+              {t("inquiry.fieldName")}
             </label>
             <input
               name="name"
               required
+              placeholder={t("inquiry.phName")}
               className="w-full rounded-md border-2 border-[#194440] px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#194440]"
-              placeholder="Tu nombre"
             />
           </div>
 
           <div>
             <label className="mb-2 block font-semibold text-gray-800">
-              Teléfono
+              {t("inquiry.fieldPhone")}
             </label>
             <input
               type="tel"
               name="phone"
               required
+              placeholder={t("inquiry.phPhone")}
               className="w-full rounded-md border-2 border-[#194440] px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#194440]"
-              placeholder="Ej. +52 55 1234 5678"
             />
           </div>
         </div>
 
-        {/* botón enviar */}
+        {/* botón */}
         <button
           type="submit"
-          className="
-            mt-6 w-full rounded-md bg-[#194440] py-3 text-lg font-bold text-white
-            transition hover:bg-[#194440]/90 active:scale-95 cursor-pointer
-          "
+          className="mt-6 w-full cursor-pointer rounded-md bg-[#194440] py-3 text-lg font-bold text-white transition hover:bg-[#194440]/90 active:scale-95"
         >
-          Enviar
+          {t("inquiry.btnSend")}
         </button>
       </form>
     </section>

@@ -246,5 +246,24 @@
         "Contamos con expertos en diversas áreas, asegurando que cada consulta sea atendida con profesionalismo y dedicación. Nuestro objetivo es ayudarte a alcanzar tus metas, proporcionando el apoyo necesario en cada paso del camino."
       ]
     }
+  },
+  "inquiry": {
+    "title": "¡Proyectos 100 % personalizados!",
+    "intro": "En Invertúneles sabemos que cada agricultor tiene diferentes necesidades y variables externas. Completa el formulario para conocer cuál es el sistema adecuado para ti.",
+    "success": "¡Gracias, te contactaremos en seguida!",
+
+    "fieldCrop": "1. ¿Qué tipo de cultivo manejas?",
+    "phCrop": "Ej. Fresa, Tomate, Arándano…",
+
+    "fieldZone": "2. ¿En qué zona o lugar se encuentra tu cultivo?",
+    "phZone": "Ej. Zamora, Mich.; Valle del Cauca…",
+
+    "fieldName": "3. Nombre",
+    "phName": "Tu nombre",
+
+    "fieldPhone": "Teléfono",
+    "phPhone": "Ej. +52 55 1234 5678",
+
+    "btnSend": "Enviar"
   }
 }
