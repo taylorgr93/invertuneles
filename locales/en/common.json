@@ -42,14 +42,38 @@
       "description": "Our macrotunnels are cost-effective and functional systems that transform results…",
       "benefitsHeading": "Benefits",
       "benefits": [
-        "Higher profitability",
-        "Increased production",
-        "Increased harvests per year and outside of traditional seasons",
-        "Greater and faster plant development",
-        "Higher-quality fruit production",
-        "Reduced water use",
-        "Reduces fertilizer use",
-        "Reduces labor costs"
+        {
+          "label": "Higher profitability",
+          "icon": "/images/recurso-1-8.webp"
+        },
+        {
+          "label": "Increased production",
+          "icon": "/images/recurso-1-8.webp"
+        },
+        {
+          "label": "Increased harvests per year and outside of traditional seasons",
+          "icon": "/images/recurso-1-8.webp"
+        },
+        {
+          "label": "Greater and faster plant development",
+          "icon": "/images/recurso-1-8.webp"
+        },
+        {
+          "label": "Higher-quality fruit production",
+          "icon": "/images/recurso-1-8.webp"
+        },
+        {
+          "label": "Reduced water use",
+          "icon": "/images/recurso-1-8.webp"
+        },
+        {
+          "label": "Reduces fertilizer use",
+          "icon": "/images/recurso-1-8.webp"
+        },
+        {
+          "label": "Reduces labor costs",
+          "icon": "/images/recurso-1-8.webp"
+        }
       ],
       "extra": ""
     },

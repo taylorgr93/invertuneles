@@ -42,14 +42,38 @@
       "description": "Nuestros macrotuneles son sistemas rentables y funcionales que transforman los resultados…  ",
       "benefitsHeading": "Beneficios",
       "benefits": [
-        "Mayor rentabilidad",
-        "Aumento de producción",
-        "Aumento de cosechas por año y fuera de épocas tradicionales",
-        "Desarrollo de las plantas mayor y acelerado",
-        "Producción de fruta de mayor calidad",
-        "Disminución del uso de agua",
-        "Reduce el uso de fertilizantes",
-        "Reduce el costo de mano de obra"
+        {
+          "label": "Mayor rentabilidad",
+          "icon": "/images/recurso-1-8.webp"
+        },
+        {
+          "label": "Aumento de producción",
+          "icon": "/images/recurso-1-8.webp"
+        },
+        {
+          "label": "Aumento de cosechas por año y fuera de épocas tradicionales",
+          "icon": "/images/recurso-1-8.webp"
+        },
+        {
+          "label": "Desarrollo de las plantas mayor y acelerado",
+          "icon": "/images/recurso-1-8.webp"
+        },
+        {
+          "label": "Producción de fruta de mayor calidad",
+          "icon": "/images/recurso-1-8.webp"
+        },
+        {
+          "label": "Disminución del uso de agua",
+          "icon": "/images/recurso-1-8.webp"
+        },
+        {
+          "label": "Reduce el uso de fertilizantes",
+          "icon": "/images/recurso-1-8.webp"
+        },
+        {
+          "label": "Reduce el costo de mano de obra",
+          "icon": "/images/recurso-1-8.webp"
+        }
       ],
       "extra": ""
     },
