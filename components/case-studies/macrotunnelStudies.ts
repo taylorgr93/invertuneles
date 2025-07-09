@@ -5,13 +5,13 @@ export const macrotunnelStudies: CaseStudy[] = [
     slug: "Caso de Estudio Macrotuneles",
     title: "Caso de Estudio Macrotuneles",
     image: "/images/recurso-1-8.webp",
-    file: "/case-studies/CaseStudyMacrotuneles.docx",
+    doc: "/case-studies/CaseStudyMacrotuneles.docx",
   },
   {
     slug: "Caso de Estudio OV-M",
     title: "Caso de Estudio OV-M",
     image: "/images/recurso-1-8.webp",
-    file: "/case-studies/OV-MCaseStudy.docx",
+    doc: "/case-studies/OV-MCaseStudy.docx",
   },
   // {
   //   slug: "ez-vent-uk",
