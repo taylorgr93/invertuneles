@@ -118,7 +118,7 @@ export default function FooterClient({ translations }: Props) {
 
           {/* ──── WhatsApp ─────────────── */}
           <Link
-            href="https://wa.me/523511166243"
+            href="https://wa.me/523511212843"
             target="_blank"
             className="flex items-start gap-3 group hover:text-green-500 transition"
           >
