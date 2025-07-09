@@ -12,7 +12,6 @@ import { useProducts } from "@/hooks/useProducts";
 import ProductIntro from "@/components/products/ProductIntro";
 import CaseStudies from "@/components/products/CaseStudies";
 import { CaseStudy } from "@/components/products/CaseStudies";
-import { macrotunnelStudies } from "@/components/case-studies/macrotunnelStudies";
 import InquiryForm from "@/components/products/InquiryForm";
 
 type Category = ProductDTO["category"];
