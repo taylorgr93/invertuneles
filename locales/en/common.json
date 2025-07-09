@@ -102,39 +102,39 @@
       "benefits": [
         {
           "label": "Optical: Light transmission and diffusion, Quality filtering of photosynthetic light.",
-          "icon": "/images/tights/benefits/opticians.webp"
+          "icon": "/images/plastic-films/benefits/opticians.webp"
         },
         {
           "label": "Shading: Blocks a percentage of light transmission.",
-          "icon": "/images/tights/benefits/shadow.webp"
+          "icon": "/images/plastic-films/benefits/shadow.webp"
         },
         {
           "label": "Dustproof: Prevents dust from adhering.",
-          "icon": "/images/tights/benefits/anti-dust.webp"
+          "icon": "/images/plastic-films/benefits/anti-dust.webp"
         },
         {
           "label": "Thermal: Passage of sunlight and prevents heat dissipation.",
-          "icon": "/images/tights/benefits/thermal.webp"
+          "icon": "/images/plastic-films/benefits/thermal.webp"
         },
         {
           "label": "Diffuse: Light diffused evenly in all directions of the plant.",
-          "icon": "/images/tights/benefits/diffuse.webp"
+          "icon": "/images/plastic-films/benefits/diffuse.webp"
         },
         {
           "label": "Mechanical: Resistance to tension, elongation, and tearing.",
-          "icon": "/images/tights/benefits/mechanics.webp"
+          "icon": "/images/plastic-films/benefits/mechanics.webp"
         },
         {
           "label": "Anti-Drip",
-          "icon": "/images/tights/benefits/anti-drip.webp"
+          "icon": "/images/plastic-films/benefits/anti-drip.webp"
         },
         {
           "label": "Bee-Friendly",
-          "icon": "/images/tights/benefits/bee-friendly.webp"
+          "icon": "/images/plastic-films/benefits/bee-friendly.webp"
         },
         {
           "label": "Tolerance to Sulfur and Chlorine",
-          "icon": "/images/tights/benefits/tolerance-to-sulfur-and-chloriney.webp"
+          "icon": "/images/plastic-films/benefits/tolerance-to-sulfur-and-chlorine.webp"
         }
       ]
     },
@@ -177,7 +177,7 @@
         },
         {
           "label": "Tolerance to Sulfur and Chlorine",
-          "icon": "/images/tights/benefits/tolerance-to-sulfur-and-chloriney.webp"
+          "icon": "/images/tights/benefits/tolerance-to-sulfur-and-chlorine.webp"
         }
       ]
     },
