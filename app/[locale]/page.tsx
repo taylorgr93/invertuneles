@@ -9,21 +9,21 @@ import Divider from "@/components/common/Divider";
 import UpcomingEvents, { EventCard } from "@/components/home/UpcomingEvents";
 
 const events: EventCard[] = [
+  // {
+  //   id: 1,
+  //   poster: "/images/home/events/22_and_23_may_event.webp",
+  //   alt: "ExpoBerries 2025 Zamora-Jacona",
+  // },
   {
-    id: 1,
-    poster: "/images/home/events/22_and_23_may_event.webp",
-    alt: "ExpoBerries 2025 Zamora-Jacona",
+    id: 2,
+    poster: "/images/home/events/AgroExpoSQ.webp",
+    alt: "AgroExpoSQ 2025",
   },
-  // {
-  //   id: 2,
-  //   poster: "/images/home/events/22_and_23_may_event.webp",
-  //   alt: "Greentech México 2025",
-  // },
-  // {
-  //   id: 3,
-  //   poster: "/images/home/events/22_and_23_may_event.webp",
-  //   alt: "Congreso de plásticos agrícolas",
-  // },
+  {
+    id: 3,
+    poster: "/images/home/events/AneBerries.webp",
+    alt: "AneBerries",
+  },
   // {
   //   id: 4,
   //   poster: "/images/home/events/22_and_23_may_event.webp",
