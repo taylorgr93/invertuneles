@@ -75,7 +75,25 @@
           "icon": "/images/greenhouses/benefits/DisminucionCostoManoDeObra.webp"
         }
       ],
-      "extra": ""
+      "valueCropsHeading": "Cultivos de valor",
+      "valueCrops": [
+        {
+          "label": "Berries",
+          "icon": "/images/greenhouses/valuable-crops/Berries.webp"
+        },
+        {
+          "label": "Hortalizas",
+          "icon": "/images/greenhouses/valuable-crops/Hortalizas.webp"
+        },
+        {
+          "label": "Plantas Chinas",
+          "icon": "/images/greenhouses/valuable-crops/PlantasChinas.webp"
+        },
+        {
+          "label": "Floricultura",
+          "icon": "/images/greenhouses/valuable-crops/Floricultura.webp"
+        }
+      ]
     },
     "plastic-films": {
       "title": "Películas Plásticas",
@@ -270,6 +288,7 @@
     "btnSend": "Enviar",
     "errorSend": "Ocurrió un error. Intenta de nuevo."
   },
+  "caseStudiesHeading": "Casos de Estudio",
   "caseStudies": [
     {
       "slug": "Caso de Estudio Macrotuneles",

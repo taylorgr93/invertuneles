@@ -13,6 +13,7 @@ import ProductIntro from "@/components/products/ProductIntro";
 import CaseStudies from "@/components/products/CaseStudies";
 import { CaseStudy } from "@/components/products/CaseStudies";
 import InquiryForm from "@/components/products/InquiryForm";
+import ValueCropsBar from "@/components/products/ValueCropsBar";
 
 type Category = ProductDTO["category"];
 
@@ -53,6 +54,7 @@ export default function CategoryPage({
       />
       <Divider />
       <ProductIntro translations={translations} category={category} />
+      <ValueCropsBar translations={translations} category={category} />
       <Divider />
       <Products items={products} />
       <Divider />
@@ -64,9 +66,7 @@ export default function CategoryPage({
             locale={locale}
           />
           <Divider />
-          <InquiryForm translations={translations} />{" "}
-          {/* ← aquí aparece el formulario */}
-          <Divider />
+          <InquiryForm translations={translations} /> <Divider />
         </>
       )}
     </div>

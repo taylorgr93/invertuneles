@@ -51,7 +51,7 @@ export default function ProductIntro({ translations, category }: Props) {
       {benefits.length > 0 && (
         <div className="mx-auto w-full lg:w-[80%] rounded-2xl bg-white p-4 shadow-inner">
           {benefitsHeading && (
-            <h3 className="p-4 text-center text-4xl text-green-600 font-extrabold text-brand-teal">
+            <h3 className="p-4 text-center text-4xl text-[#194440] font-extrabold text-brand-teal">
               {benefitsHeading}
             </h3>
           )}
