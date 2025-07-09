@@ -41,6 +41,8 @@ export default function CategoryPage({
   const all = useProducts(locale);
   const products = all.filter((p) => p.category === category);
 
+  const studies = (translations.caseStudies ?? []) as CaseStudy[];
+
   return (
     <div className="bg-black">
       <Hero
@@ -58,8 +60,8 @@ export default function CategoryPage({
       {category === "greenhouses" && (
         <>
           <CaseStudies
-            heading="Case Studies" /* opcional – se traduce si quieres */
-            studies={macrotunnelStudies as CaseStudy[]}
+            heading={t("caseStudiesHeading")}
+            studies={studies}
             locale={locale}
           />
           <Divider />

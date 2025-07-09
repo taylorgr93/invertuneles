@@ -264,7 +264,24 @@
     "fieldPhone": "Teléfono",
     "phPhone": "Ej. +52 55 1234 5678",
 
+    "email": "Correo",
+    "phEmail": "Ej. correo@dominio.com",
+
     "btnSend": "Enviar",
     "errorSend": "Ocurrió un error. Intenta de nuevo."
-  }
+  },
+  "caseStudies": [
+    {
+      "slug": "Caso de Estudio Macrotuneles",
+      "title": "Caso de Estudio Macrotuneles",
+      "image": "/images/recurso-1-8.webp",
+      "doc": "/case-studies/CaseStudyMacrotuneles.docx"
+    },
+    {
+      "slug": "Caso de Estudio OV-M",
+      "title": "Caso de Estudio OV-M",
+      "image": "/images/recurso-1-8.webp",
+      "doc": "/case-studies/OV-MCaseStudy.docx"
+    }
+  ]
 }

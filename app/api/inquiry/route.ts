@@ -4,7 +4,7 @@ import nodemailer from "nodemailer";
 
 export async function POST(req: NextRequest) {
   try {
-    const { crop, location, name, phone } = await req.json();
+    const { crop, location, name, phone, email } = await req.json();
 
     /*  ─ SMTP transport ─  */
     const transporter = nodemailer.createTransport({
@@ -25,16 +25,26 @@ export async function POST(req: NextRequest) {
     /*  ─ mensaje ─  */
     await transporter.sendMail({
       from: `"Invertúneles 👩‍🌾" <${process.env.SMTP_USER}>`,
-      to: process.env.MAIL_TO, // tu correo destino
+      to: email, // tu correo destino
       subject: "Nuevo formulario de proyecto personalizado",
       html: `
-        <h2>Datos del agricultor</h2>
-        <ul>
-          <li><b>Cultivo:</b> ${crop}</li>
-          <li><b>Zona:</b> ${location}</li>
-          <li><b>Nombre:</b> ${name}</li>
-          <li><b>Teléfono:</b> ${phone}</li>
-        </ul>
+        <p>Hola <b>${name || "agricultor/a"}</b>,</p>
+
+        <p>
+          ¡Gracias por enviarnos la información sobre tu cultivo
+          <em>${crop}</em> en <em>${location}</em>!
+        </p>
+
+        <p>
+          Nuestro equipo analizará tus necesidades y se comunicará contigo lo antes
+          posible al número <b>${phone}</b>.  
+          Si necesitas contactarnos antes, responde a este correo o marca el
+          <a href="tel:${phone}">${phone}</a>.
+        </p>
+
+        <p>¡Muchas gracias y que tengas un excelente día!</p>
+
+        <p style="margin-top:2rem;">— El equipo de Invertúneles 🌱</p>
       `,
     });
 

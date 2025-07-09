@@ -123,6 +123,19 @@ export default function InquiryForm({ translations }: Props) {
           </div>
         </div>
 
+        {/* email */}
+        <div>
+          <label className="mb-2 block font-semibold text-gray-800">
+            {t("inquiry.email")}
+          </label>
+          <input
+            name="location"
+            required
+            placeholder={t("inquiry.phEmail")}
+            className="w-full rounded-md border-2 border-[#194440] px-4 py-2 text-[#194440] focus:outline-none focus:ring-2 focus:ring-[#194440]"
+          />
+        </div>
+
         {/* botón */}
         <button
           type="submit"

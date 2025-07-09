@@ -264,7 +264,24 @@
     "fieldPhone": "Phone",
     "phPhone": "e.g. +1 555 123 4567",
 
+    "email": "Email",
+    "phEmail": "e.g. email@domain.com",
+
     "btnSend": "Send",
     "errorSend": "An error occurred. Please try again."
-  }
+  },
+  "caseStudies": [
+    {
+      "slug": "Macrotunnels Case Study",
+      "title": "Macrotunnels Case Study",
+      "image": "/images/recurso-1-8.webp",
+      "doc": "/case-studies/CaseStudyMacrotuneles.docx"
+    },
+    {
+      "slug": "OV-M Case Study",
+      "title": "OV-M Case Study",
+      "image": "/images/recurso-1-8.webp",
+      "doc": "/case-studies/OV-MCaseStudy.docx"
+    }
+  ]
 }
