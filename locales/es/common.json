@@ -279,10 +279,10 @@
     "fieldName": "3. Nombre",
     "phName": "Tu nombre",
 
-    "fieldPhone": "Teléfono",
+    "fieldPhone": "4. Teléfono",
     "phPhone": "Ej. +52 55 1234 5678",
 
-    "email": "Correo",
+    "email": "5. Correo",
     "phEmail": "Ej. correo@dominio.com",
 
     "btnSend": "Enviar",
