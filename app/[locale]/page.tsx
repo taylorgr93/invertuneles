@@ -72,10 +72,10 @@ export default function Home(props: { params: Promise<{ locale: string }> }) {
           >
             {/* tarjeta translúcida */}
             <div className="bg-black/10 backdrop-blur-sm p-6 lg:mt-26 xl:mt-20 rounded-lg space-y-6">
-              <h1 className="text-green-400 text-2xl lg:text-4xl text-center font-bold leading-snug">
+              <h1 className="text-[#2d553e] text-2xl lg:text-4xl text-center font-bold leading-snug">
                 {t("home.were")}
               </h1>
-              <h2 className="text-white lg:text-lg xl:text-xl font-semibold leading-snug">
+              <h2 className="text-white lg:text-lg xl:text-xl font-semibold leading-snug text-justify">
                 {t("home.summary")}
               </h2>
             </div>

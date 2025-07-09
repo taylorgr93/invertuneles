@@ -63,7 +63,7 @@ export default function InquiryForm({ translations }: Props) {
         {t("inquiry.title")}
       </h2>
 
-      <p className="mb-8 text-lg leading-relaxed text-gray-700">
+      <p className="mb-8 text-lg leading-relaxed text-gray-700 text-justify">
         {t("inquiry.intro")}
       </p>
 

@@ -42,7 +42,7 @@ export default function ImageWithColumns({
       {/* Cuerpo en 2 columnas */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 px-8 pb-6">
         {/* Columna izquierda */}
-        <div className="space-y-4 text-lg leading-relaxed text-gray-800">
+        <div className="space-y-4 text-lg leading-relaxed text-gray-800 text-justify">
           {subtitleLeft && (
             <h3 className="text-xl font-semibold text-green-700">
               {subtitleLeft}
@@ -54,7 +54,7 @@ export default function ImageWithColumns({
         </div>
 
         {/* Columna derecha */}
-        <div className="space-y-5 text-lg leading-relaxed text-gray-800">
+        <div className="space-y-5 text-lg leading-relaxed text-gray-800 text-justify">
           {subtitleRight && (
             <h3 className="mb-2 text-xl font-semibold text-green-700">
               {subtitleRight}
