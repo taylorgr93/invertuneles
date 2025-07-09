@@ -2,22 +2,22 @@ import type { CaseStudy } from "../products/CaseStudies";
 
 export const macrotunnelStudies: CaseStudy[] = [
   {
-    slug: "why-macrotunnels",
-    title: "¿Por qué elegir nuestros macrotúneles?",
-    // image: "/case-studies/macrotunnels/why.webp",
+    slug: "Caso de Estudio Macrotuneles",
+    title: "Caso de Estudio Macrotuneles",
     image: "/images/recurso-1-8.webp",
+    file: "/case-studies/CaseStudyMacrotuneles.docx",
   },
   {
-    slug: "total-vent-",
-    title: "Total-Vent",
-    // image: "/case-studies/macrotunnels/total-vent.webp",
+    slug: "Caso de Estudio OV-M",
+    title: "Caso de Estudio OV-M",
     image: "/images/recurso-1-8.webp",
+    file: "/case-studies/OV-MCaseStudy.docx",
   },
-  {
-    slug: "ez-vent-uk",
-    title: "Example xxx",
-    // image: "/case-studies/macrotunnels/ezvent.webp",
-    image: "/images/recurso-1-8.webp",
-  },
+  // {
+  //   slug: "ez-vent-uk",
+  //   title: "Example xxx",
+  //   // image: "/case-studies/macrotunnels/ezvent.webp",
+  //   image: "/images/recurso-1-8.webp",
+  // },
   // …añade tantos como quieras
 ];

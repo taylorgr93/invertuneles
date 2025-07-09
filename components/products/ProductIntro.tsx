@@ -51,7 +51,7 @@ export default function ProductIntro({ translations, category }: Props) {
       {benefits.length > 0 && (
         <div className="mx-auto w-full lg:w-[80%] rounded-2xl bg-white p-4 shadow-inner">
           {benefitsHeading && (
-            <h3 className="p-4 text-center text-4xl text-green-500 font-extrabold text-brand-teal">
+            <h3 className="p-4 text-center text-4xl text-green-600 font-extrabold text-brand-teal">
               {benefitsHeading}
             </h3>
           )}
@@ -81,9 +81,17 @@ export default function ProductIntro({ translations, category }: Props) {
                     object-contain rounded-xl"
                   priority
                 />
-                {/* <span className="text-sm text-gray-100 font-medium leading-snug">
-                  {label}
-                </span> */}
+                {(title === "Macrotuneles" || title === "Greenhouses") && (
+                  <span
+                    className="
+                      max-w-40 md:max-w-52
+                      text-lg font-bold leading-snug text-[#194440]
+                      whitespace-normal break-words
+                    "
+                  >
+                    {label}
+                  </span>
+                )}
               </li>
             ))}
           </ul>

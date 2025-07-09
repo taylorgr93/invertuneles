@@ -6,6 +6,7 @@ export interface CaseStudy {
   slug: string;
   title: string;
   image?: string; // ← opcional
+  file?: string;
 }
 
 interface Props {

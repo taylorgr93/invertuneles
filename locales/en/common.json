@@ -44,35 +44,35 @@
       "benefits": [
         {
           "label": "Higher profitability",
-          "icon": "/images/recurso-1-8.webp"
+          "icon": "/images/greenhouses/benefits/Rentabilidad.webp"
         },
         {
           "label": "Increased production",
-          "icon": "/images/recurso-1-8.webp"
+          "icon": "/images/greenhouses/benefits/AumentoDeProduccion.webp"
         },
         {
           "label": "Increased harvests per year and outside of traditional seasons",
-          "icon": "/images/recurso-1-8.webp"
+          "icon": "/images/greenhouses/benefits/AumentoDeCosehasPorAño-.webp"
         },
         {
           "label": "Greater and faster plant development",
-          "icon": "/images/recurso-1-8.webp"
+          "icon": "/images/greenhouses/benefits/DesarolloDeLasPlantasMayor-.webp"
         },
         {
           "label": "Higher-quality fruit production",
-          "icon": "/images/recurso-1-8.webp"
+          "icon": "/images/greenhouses/benefits/FrutaDeMajorCalidad.webp"
         },
         {
           "label": "Reduced water use",
-          "icon": "/images/recurso-1-8.webp"
+          "icon": "/images/greenhouses/benefits/DisminucionUsoAgua.webp"
         },
         {
           "label": "Reduces fertilizer use",
-          "icon": "/images/recurso-1-8.webp"
+          "icon": "/images/greenhouses/benefits/DisminucionFertilizantes.webp"
         },
         {
           "label": "Reduces labor costs",
-          "icon": "/images/recurso-1-8.webp"
+          "icon": "/images/greenhouses/benefits/DisminucionCostoManoDeObra.webp"
         }
       ],
       "extra": ""
