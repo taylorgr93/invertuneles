@@ -32,7 +32,7 @@ export default function ProductIntro({ translations, category }: Props) {
   if (!title && !description && benefits.length === 0) return null;
 
   return (
-    <section className="mx-auto max-w-none px-6 py-12 text-white">
+    <section className="mx-auto max-w-none p-6 text-white">
       {/* — título — */}
       {title && (
         <h2 className="mb-8 text-center text-5xl font-extrabold text-green-500">

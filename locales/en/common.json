@@ -76,6 +76,7 @@
         }
       ],
       "valueCropsHeading": "Value crops",
+      "descriptiontwo": "ideal systems for valuable crops:",
       "valueCrops": [
         {
           "label": "Berries",
