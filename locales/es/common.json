@@ -143,44 +143,7 @@
       "title": "Mallas",
       "description": "Polietileno multicapa que permiten el uso de aditivos y una selección adecuada de materias primas por cada capa, propiedades:",
       "benefitsHeading": "Beneficios",
-      "benefits": [
-        {
-          "label": "Ópticas: Transmisión y Difusión de luz, Filtrado de calidad de luz fotosintética.",
-          "icon": "/images/tights/benefits/opticians.webp"
-        },
-        {
-          "label": "Sombreo: Bloqueo de un porcentaje de la transmisión de la luz.",
-          "icon": "/images/tights/benefits/shadow.webp"
-        },
-        {
-          "label": "Antipolvo: Impide adherencia de polvo.",
-          "icon": "/images/tights/benefits/anti-dust.webp"
-        },
-        {
-          "label": "Térmicas: Paso de los rayos solares y evita disipación de calor.",
-          "icon": "/images/tights/benefits/thermal.webp"
-        },
-        {
-          "label": "Difusas: Luz difundida uniforme en todas las direcciones de la planta.",
-          "icon": "/images/tights/benefits/diffuse.webp"
-        },
-        {
-          "label": "Mecánicas: Resistencia Tensión, Elongación, Rasgado.",
-          "icon": "/images/tights/benefits/mechanics.webp"
-        },
-        {
-          "label": "Anti Goteo",
-          "icon": "/images/tights/benefits/anti-drip.webp"
-        },
-        {
-          "label": "Compatible con Abejas",
-          "icon": "/images/tights/benefits/bee-friendly.webp"
-        },
-        {
-          "label": "Tolerancia al Azufre y Cloro",
-          "icon": "/images/tights/benefits/tolerance-to-sulfur-and-chlorine.webp"
-        }
-      ]
+      "benefits": []
     },
     "accessories": {
       "title": "Accessorios",

@@ -143,44 +143,7 @@
       "title": "Tights",
       "description": "Multi-layer polyethylene that allows the use of additives and an appropriate selection of raw materials for each layer, properties:",
       "benefitsHeading": "Benefits",
-      "benefits": [
-        {
-          "label": "Optical: Light transmission and diffusion, Quality filtering of photosynthetic light.",
-          "icon": "/images/tights/benefits/opticians.webp"
-        },
-        {
-          "label": "Shading: Blocks a percentage of light transmission.",
-          "icon": "/images/tights/benefits/shadow.webp"
-        },
-        {
-          "label": "Dustproof: Prevents dust from adhering.",
-          "icon": "/images/tights/benefits/anti-dust.webp"
-        },
-        {
-          "label": "Thermal: Passage of sunlight and prevents heat dissipation.",
-          "icon": "/images/tights/benefits/thermal.webp"
-        },
-        {
-          "label": "Diffuse: Light diffused evenly in all directions of the plant.",
-          "icon": "/images/tights/benefits/diffuse.webp"
-        },
-        {
-          "label": "Mechanical: Resistance to tension, elongation, and tearing.",
-          "icon": "/images/tights/benefits/mechanics.webp"
-        },
-        {
-          "label": "Anti-Drip",
-          "icon": "/images/tights/benefits/anti-drip.webp"
-        },
-        {
-          "label": "Bee-Friendly",
-          "icon": "/images/tights/benefits/bee-friendly.webp"
-        },
-        {
-          "label": "Tolerance to Sulfur and Chlorine",
-          "icon": "/images/tights/benefits/tolerance-to-sulfur-and-chlorine.webp"
-        }
-      ]
+      "benefits": []
     },
     "accessories": {
       "title": "Accessories",
