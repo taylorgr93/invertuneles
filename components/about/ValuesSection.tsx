@@ -25,7 +25,12 @@ export default function ValuesSection({
   });
 
   return (
-    <section className="mx-auto my-20 max-w-6xl rounded-xl bg-gray-100 px-6 py-16 shadow-2xl">
+    <section
+      className="
+    relative mx-auto my-20 max-w-6xl rounded-xl px-6 py-16 shadow-2xl
+    bg-[url('/images/greenhouses/background_values.webp')] bg-cover bg-center
+  "
+    >
       {/* --- vista móvil: grid tradicional -------------------------------- */}
       <div className="sm:hidden grid place-items-center gap-6">
         {values.map((v) => (
@@ -43,7 +48,7 @@ export default function ValuesSection({
       <div className="relative hidden sm:block h-[520px]">
         {/* línea circular (opcional) */}
         <div
-          className="absolute inset-0 m-auto h-[calc(2*var(--r))] w-[calc(2*var(--r))] rounded-full border-3 border-dashed border-green-400/40"
+          className="absolute inset-0 m-auto h-[calc(2*var(--r))] w-[calc(2*var(--r))] rounded-full border-4 border-dashed border-green-400/40"
           style={{ "--r": `${RADIUS}px` } as React.CSSProperties}
         />
 
