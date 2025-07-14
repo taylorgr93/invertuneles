@@ -48,7 +48,7 @@ export default function Home(props: { params: Promise<{ locale: string }> }) {
   const title = t("homeHighlight.title");
 
   return (
-    <>
+    <div className="bg-black">
       <section className="relative w-full isolate">
         {/* vídeo */}
         <div className="relative h-[60vh] md:h-screen">
@@ -112,12 +112,12 @@ export default function Home(props: { params: Promise<{ locale: string }> }) {
           },
           {
             key: 2,
-            src: "/images/products/tights/MALLA SOMBRA.webp",
+            src: "/images/products/greenhouses/MacrotunelTradicional.webp",
             alt: "Invernadero tipo B",
           },
           {
             key: 3,
-            src: "/images/products/tights/PELICULA ATRAPA INSECTOS_3_11zon.webp",
+            src: "/images/products/greenhouses/cubiertas plasticas_11_11zon.webp",
             alt: "Interior",
           },
           {
@@ -133,6 +133,6 @@ export default function Home(props: { params: Promise<{ locale: string }> }) {
       <UpcomingEvents title={t("UpcomingEvents.next_events")} events={events} />
 
       <Divider />
-    </>
+    </div>
   );
 }
