@@ -104,27 +104,38 @@ export default function Home(props: { params: Promise<{ locale: string }> }) {
         headline={headline}
         benefits={benefits}
         title={title}
-        productImages={[
+        videos={[
           {
             key: 1,
-            src: "/images/products/products_hero.webp",
-            alt: "Invernadero tipo A",
+            src: "/videos/Prospección.mp4",
+            poster: "/images/posters/PosterProspeccion.webp",
+            alt: "Domo A",
           },
           {
             key: 2,
-            src: "/images/products/greenhouses/MacrotunelTradicional.webp",
-            alt: "Invernadero tipo B",
+            src: "/videos/Arandano.mp4",
+            poster: "/images/posters/PosterArandano.webp",
+            alt: "Domo B",
           },
           {
             key: 3,
-            src: "/images/products/greenhouses/MacrotunelReforzado.webp",
-            alt: "Interior",
+            src: "/videos/Frambuesa.mp4",
+            poster: "/images/posters/PosterFrambuesa.webp",
+            alt: "Domo A",
           },
           {
             key: 4,
-            src: "/images/products/greenhouses/Macrotunel_Apertura.webp",
-            alt: "Sustratos",
+            src: "/videos/Fresa.mp4",
+            poster: "/images/posters/PosterFresa.webp",
+            alt: "Domo B",
           },
+          {
+            key: 5,
+            src: "/videos/Zarzamora.mp4",
+            poster: "/images/posters/PosterZarzamora.webp",
+            alt: "Domo A",
+          },
+          /* … */
         ]}
       />
 
