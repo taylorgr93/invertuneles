@@ -37,7 +37,7 @@ export default function ProductsPage({
     <>
       <section className="relative h-screen w-full isolate overflow-hidden">
         <VideoBackground
-          src="/videos/videoHome.mp4"
+          src="/videos/IMG_8788.mov"
           className="absolute inset-0 h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-black/30 pointer-events-none" />
