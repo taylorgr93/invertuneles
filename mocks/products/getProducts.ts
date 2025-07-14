@@ -21,7 +21,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 52,
         title: "Reinforced Macrotunnel",
-        image: "/images/products/greenhouses/cubiertas plasticas_11_11zon.webp",
+        image: "/images/products/greenhouses/MacrotunelReforzado.webp",
         category: "greenhouses",
         bulletPoints: [
           "Reinforced structure with steel crossbars, designed to provide greater resistance against wind forces.",
@@ -343,7 +343,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 52,
         title: "Macrotunel Reforzado",
-        image: "/images/products/greenhouses/cubiertas plasticas_11_11zon.webp",
+        image: "/images/products/greenhouses/MacrotunelReforzado.webp",
         category: "greenhouses",
         bulletPoints: [
           "Estructura reforzada con crucetas de acero, diseñada para brindar mayor resistencia contra la fuerza del viento.",

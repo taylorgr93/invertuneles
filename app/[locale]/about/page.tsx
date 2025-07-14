@@ -50,7 +50,7 @@ export default function AboutPage({
   ];
 
   return (
-    <>
+    <div className="bg-black">
       <section className="relative h-screen w-full isolate overflow-hidden">
         {/* <span className="text-7xl">{t("pages.about")}</span> */}
         <VideoBackground
@@ -99,6 +99,6 @@ export default function AboutPage({
         }}
       /> */}
       <Divider />
-    </>
+    </div>
   );
 }

@@ -117,7 +117,7 @@ export default function Home(props: { params: Promise<{ locale: string }> }) {
           },
           {
             key: 3,
-            src: "/images/products/greenhouses/cubiertas plasticas_11_11zon.webp",
+            src: "/images/products/greenhouses/MacrotunelReforzado.webp",
             alt: "Interior",
           },
           {

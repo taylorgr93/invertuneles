@@ -10,7 +10,7 @@
   },
   "pages": {
     "home": "Inicio",
-    "about": "Acerca de",
+    "about": "Acerca De",
     "contact": "Contacto",
     "products": "Productos",
     "careers": "Carreras",
@@ -18,7 +18,7 @@
   },
   "greeting": "Hola mundo!",
   "home": {
-    "were": "¡Cultivando el futuro!",
+    "were": "¡Protegiendo tu futuro!",
     "summary": "Somos una empresa líder en el desarrollo de soluciones innovadoras para la agricultura protegida. Nuestro compromiso es brindar tecnologías que impulsen la productividad, optimicen recursos y cuiden el medio ambiente, asegurando el éxito de los agricultores alrededor del mundo. \n\nDescubre cómo nuestra tecnología, experiencia y enfoque humano están cambiando la agricultura desde la raíz..."
   },
   "footer": {
@@ -99,7 +99,7 @@
     "plastic-films": {
       "title": "Películas Plásticas",
       "description": "Polietileno multicapa que permiten el uso de aditivos y una selección adecuada de materias primas por cada capa, propiedades:",
-      "benefitsHeading": "Beneficios",
+      "benefitsHeading": "Propiedades",
       "benefits": [
         {
           "label": "Ópticas: Transmisión y Difusión de luz, Filtrado de calidad de luz fotosintética.",
@@ -252,7 +252,7 @@
     "btnSend": "Enviar",
     "errorSend": "Ocurrió un error. Intenta de nuevo."
   },
-  "caseStudiesHeading": "Casos de Estudio",
+  "caseStudiesHeading": "Ficha Informativa",
   "caseStudies": [
     {
       "slug": "Caso de Estudio Macrotuneles",
