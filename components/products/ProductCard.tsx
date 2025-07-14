@@ -45,6 +45,11 @@ export default function ProductCard({
                              text-sm sm:text-base md:text-lg lg:text-xl"
         >
           {title}
+          {range && (
+            <span className="text-[10px] tracking-widest uppercase">
+              {range}
+            </span>
+          )}
         </figcaption>
         {/* <div className="absolute top-0 left-0 rounded-br-md bg-[#194440] px-3 py-1.5 sm:px-4 text-white">
           <h3 className="text-base sm:text-lg font-semibold leading-tight">
