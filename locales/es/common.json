@@ -293,13 +293,13 @@
     {
       "slug": "Caso de Estudio Macrotuneles",
       "title": "Caso de Estudio Macrotuneles",
-      "image": "/images/recurso-1-8.webp",
+      "image": "/images/case-studies/caso_de_estudio_sistemas_invertuneles.webp",
       "doc": "/case-studies/CaseStudyMacrotuneles.docx"
     },
     {
       "slug": "Caso de Estudio OV-M",
       "title": "Caso de Estudio OV-M",
-      "image": "/images/recurso-1-8.webp",
+      "image": "/images/case-studies/caso_de_estudio_ov_m.webp",
       "doc": "/case-studies/OV-MCaseStudy.docx"
     }
   ]
