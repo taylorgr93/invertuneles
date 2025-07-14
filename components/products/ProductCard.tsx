@@ -39,7 +39,14 @@ export default function ProductCard({
         />
 
         {/* etiqueta */}
-        <div className="absolute top-0 left-0 rounded-br-md bg-[#194440] px-3 py-1.5 sm:px-4 text-white">
+        <figcaption
+          className="absolute bottom-0 left-0 w-full bg-[#194440]/95
+                             px-4 py-2 text-center font-bold text-white tracking-wide
+                             text-sm sm:text-base md:text-lg lg:text-xl"
+        >
+          {title}
+        </figcaption>
+        {/* <div className="absolute top-0 left-0 rounded-br-md bg-[#194440] px-3 py-1.5 sm:px-4 text-white">
           <h3 className="text-base sm:text-lg font-semibold leading-tight">
             {title}
           </h3>
@@ -48,7 +55,7 @@ export default function ProductCard({
               {range}
             </span>
           )}
-        </div>
+        </div> */}
 
         {/* overlay hover */}
         <div
