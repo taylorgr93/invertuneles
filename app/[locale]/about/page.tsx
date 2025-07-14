@@ -12,6 +12,7 @@ import heroAbout from "@/public/images/about/hero_about.webp";
 import ImageWithColumns from "@/components/about/ImageWithColumns";
 import ValuesSection from "@/components/about/ValuesSection";
 import CtaChip from "@/components/about/CtaChip";
+import VideoBackground from "@/components/home/VideoBackground";
 
 export const metadata: Metadata = {
   title: "Página Acerca de",
@@ -49,16 +50,22 @@ export default function AboutPage({
   ];
 
   return (
-    <div className="bg-black">
-      {/* <span className="text-7xl">{t("pages.about")}</span> */}
-      <Hero
+    <>
+      <section className="relative h-screen w-full isolate overflow-hidden">
+        {/* <span className="text-7xl">{t("pages.about")}</span> */}
+        <VideoBackground
+          src="/videos/AcercaDe.MP4"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+      </section>
+      {/* <Hero
         src={heroAbout}
         alt={t("pages.about_hero_alt")}
         priority
         // sizes="100vw"
         sizes="(max-width:768px) 100vw, (max-width:1280px) 75vw, 1920px"
         placeholder="blur"
-      />
+      /> */}
       <Divider />
       <InfoBlocks items={blocks} />;
       <Divider />
@@ -92,6 +99,6 @@ export default function AboutPage({
         }}
       /> */}
       <Divider />
-    </div>
+    </>
   );
 }
