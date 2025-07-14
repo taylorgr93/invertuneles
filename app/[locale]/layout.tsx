@@ -1,4 +1,4 @@
-// app/layout.tsx
+// app/[locale]/layout.tsx
 import { use } from "react";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";

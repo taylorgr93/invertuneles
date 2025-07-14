@@ -97,7 +97,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 32,
         title: "Hail Net",
-        image: "/images/products/tights/ANTIAFIDO.webp",
+        image: "/images/products/tights/MALLA ANTIAFIDO.webp",
         category: "tights",
         bulletPoints: [
           "Designed to prevent the entry of aphids and other small pests.",
@@ -107,7 +107,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 33,
         title: "Anti-hail Net",
-        image: "/images/products/tights/MALLA ANTIGRANIZO.webp",
+        image: "/images/products/tights/MALLA ANTI GRANIZO.webp",
         category: "tights",
         bulletPoints: [
           "Resistant, it protects crops from damage caused by hail, without impeding the passage of air and light.",
@@ -116,7 +116,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 34,
         title: "Bee Net",
-        image: "/images/products/tights/PELICULA ATRAPA INSECTOS_3_11zon.webp",
+        image: "/images/products/tights/MALLA-ANTI-INSECTO.webp",
         category: "tights",
         bulletPoints: [
           "Prevents the entry of unwanted insects without affecting ventilation.",
@@ -126,7 +126,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 35,
         title: "Bird Net",
-        image: "/images/products/tights/MALLA ANTIPAJARO.webp",
+        image: "/images/products/tights/MALLA ANTI PAJARO.webp",
         category: "tights",
         bulletPoints: [
           "Prevents birds from damaging crops without affecting growth.",
@@ -136,7 +136,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 36,
         title: "Ground Cover",
-        image: "/images/products/tights/GROUND COVER.webp",
+        image: "/images/products/tights/MALLA GROUND COVER.webp",
         category: "tights",
         bulletPoints: [
           "Soil use, used for weed control, drainage and road maintenance.",
@@ -146,7 +146,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 37,
         title: "Raschel mesh",
-        image: "/images/products/tights/raschel.webp",
+        image: "/images/products/tights/MALLA-RASCHEL.webp",
         category: "tights",
         bulletPoints: [
           "Raschel fabric system, resistant, flexible and light, with ventilation capacity",
@@ -420,7 +420,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 32,
         title: "Malla Antiafido",
-        image: "/images/products/tights/ANTIAFIDO.webp",
+        image: "/images/products/tights/MALLA ANTIAFIDO.webp",
         category: "tights",
         bulletPoints: [
           "Diseñada para evitar la entrada de áfidos y otras plagas pequeñas.",
@@ -430,7 +430,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 33,
         title: "Malla Antigranizo",
-        image: "/images/products/tights/MALLA ANTIGRANIZO.webp",
+        image: "/images/products/tights/MALLA ANTI GRANIZO.webp",
         category: "tights",
         bulletPoints: [
           "Resistente que protege los cultivos del daño causado por la caída de granizo, sin impedir el paso del aire y la luz.",
@@ -439,7 +439,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 34,
         title: "Malla Anti-Insectos",
-        image: "/images/products/tights/PELICULA ATRAPA INSECTOS_3_11zon.webp",
+        image: "/images/products/tights/MALLA-ANTI-INSECTO.webp",
         category: "tights",
         bulletPoints: [
           "Impide el ingreso de insectos no deseados sin afectar la ventilación.",
@@ -449,7 +449,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 35,
         title: "Malla Antipájaro",
-        image: "/images/products/tights/MALLA ANTIPAJARO.webp",
+        image: "/images/products/tights/MALLA ANTI PAJARO.webp",
         category: "tights",
         bulletPoints: [
           "Evita que aves dañen los cultivos, sin afectar el crecimiento.",
@@ -459,7 +459,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 36,
         title: "Malla Ground Cover",
-        image: "/images/products/tights/GROUND COVER.webp",
+        image: "/images/products/tights/MALLA GROUND COVER.webp",
         category: "tights",
         bulletPoints: [
           "Uso en suelo, utilizado para control de maleza, drenaje y mantenimiento de caminos.",
@@ -469,7 +469,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
       {
         id: 37,
         title: "Malla Raschel",
-        image: "/images/products/tights/raschel.webp",
+        image: "/images/products/tights/MALLA-RASCHEL.webp",
         category: "tights",
         bulletPoints: [
           "Sistema de tejido Raschel, resistente, flexible y ligera, con capacidad de ventilación",
