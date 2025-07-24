@@ -34,7 +34,8 @@
     "sent": "Message sent!",
     "error": "Something went wrong",
     "message": "We will contact you",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "powered_by": "Powered by"
   },
   "products": {
     "greenhouses": {

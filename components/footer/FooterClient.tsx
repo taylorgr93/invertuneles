@@ -290,6 +290,21 @@ export default function FooterClient({ translations }: Props) {
       <div className="mt-12 text-center text-md text-gray-400">
         © {new Date().getFullYear()} Invertúneles. {t("footer.rights")}
       </div>
+
+      <div className="mt-1 text-center text-sm text-gray-400">
+        {t("footer.powered_by")}{" "}
+        <a
+          href="https://hivecoding.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-green-500 hover:underline"
+        >
+          HiveCoding
+          {/* Pinta Hive en naranja y Codgin en amarillo dentro del mismo enlace: */}
+          {/* <span className="text-orange-500">Hive</span>
+          <span className="text-yellow-400">Codgin</span> */}
+        </a>
+      </div>
     </footer>
   );
 }

@@ -34,7 +34,8 @@
     "sent": "¡Mensaje enviado!",
     "error": "Algo salió mal",
     "message": "Nos pondremos en contacto",
-    "rights": "Todos los derechos reservados."
+    "rights": "Todos los derechos reservados.",
+    "powered_by": "Desarrollado por"
   },
   "products": {
     "greenhouses": {
