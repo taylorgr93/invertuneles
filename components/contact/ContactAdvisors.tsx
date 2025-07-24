@@ -29,10 +29,10 @@ export default function ContactAdvisors({
   useEffect(() => {
     const id = setInterval(
       () => setIdx((i) => (i + 1) % advisors.length),
-      3200
+      3300
     );
     return () => clearInterval(id);
-  }, [advisors.length]);
+  }, [idx, advisors.length]);
 
   const next = () => setIdx((i) => (i + 1) % advisors.length);
   const prev = () => setIdx((i) => (i - 1 + advisors.length) % advisors.length);
