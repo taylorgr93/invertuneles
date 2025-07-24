@@ -70,7 +70,7 @@ export default function ProductsPage({
               hover:bg-[#194440] hover:text-white /* ⬅️ relleno al hover        */
               hover:shadow-xl hover:scale-105
           
-              min-w-[7rem] px-4 py-2 text-sm
+              min-w-[8rem] px-5 py-2.5 text-sm
               sm:min-w-[8rem] sm:px-5 sm:py-2.5 sm:text-base
               md:min-w-[9rem] md:px-6 md:py-3 md:text-lg
               lg:min-w-[10rem] lg:px-8 lg:py-4 lg:text-xl
