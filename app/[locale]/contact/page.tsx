@@ -52,34 +52,34 @@ export default function ContactPage({
           },
           {
             id: 2,
-            name: "Francisco Guillén",
-            role: "Asesor de Ventas / Instalación",
-            card: "/images/contact/sellers/vendedores-qr-03.webp",
-          },
-          {
-            id: 3,
             name: "Francisco Prado",
             role: "Operaciones / Diseño de Proyectos",
             card: "/images/contact/sellers/vendedores-qr-04.webp",
           },
           {
-            id: 4,
+            id: 3,
             name: "Salvador Flores",
             role: "Ventas",
             card: "/images/contact/sellers/vendedores-qr-06.webp",
           },
           {
-            id: 5,
+            id: 4,
             name: "José Vega",
             role: "Ventas",
             card: "/images/contact/sellers/vendedores-qr-07.webp",
           },
           {
-            id: 6,
+            id: 5,
             name: "Oscar Servín",
             role: "Ventas",
             card: "/images/contact/sellers/vendedores-qr-08.webp",
           },
+          // {
+          //   id: 6,
+          //   name: "Francisco Guillén",
+          //   role: "Asesor de Ventas / Instalación",
+          //   card: "/images/contact/sellers/vendedores-qr-03.webp",
+          // },
         ]}
       />
       <Divider />
