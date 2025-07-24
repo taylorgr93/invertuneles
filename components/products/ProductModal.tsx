@@ -35,13 +35,13 @@ export default function ProductModal({
         onClick={(e) => e.stopPropagation()}
         className="
           relative flex flex-col md:flex-row gap-6
-          w-[80vw] max-w-5xl h-[75vh]
+          w-[80vw] max-w-5xl h-[80vh]
           p-4 md:p-6
           rounded-2xl shadow-2xl bg-transparent
         "
       >
         {/* Imagen (≈ 65 %) */}
-        <div className="relative flex-[85]">
+        <div className="relative flex-[80]">
           <Image
             src={src}
             alt={alt}
@@ -67,7 +67,7 @@ export default function ProductModal({
             px-4 md:px-6 overflow-y-auto
           "
         >
-          <ul className="list-disc list-inside space-y-3 text-lg leading-relaxed text-white">
+          <ul className="list-disc list-inside space-y-3 text-lg font-bold leading-relaxed text-white">
             {bulletPoints.map((bp) => (
               <li key={bp}>{bp}</li>
             ))}
@@ -79,7 +79,7 @@ export default function ProductModal({
           onClick={onClose}
           className="
             absolute top-4 right-4
-            rounded-full bg-white/90 p-2 text-black
+            rounded-full bg-white/90 p-3 text-black
             shadow-lg transition hover:bg-green-600 hover:text-white cursor-pointer
           "
         >
