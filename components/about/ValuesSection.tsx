@@ -27,11 +27,19 @@ export default function ValuesSection({
   return (
     <section
       className="
-    relative mx-auto my-20 max-w-6xl rounded-xl px-6 py-16 shadow-2xl
-    bg-[url('/images/greenhouses/background_values.webp')] bg-cover bg-center
-  "
+          relative mx-auto my-20 max-w-6xl rounded-xl px-6 py-16 shadow-2xl
+          bg-[url('/images/greenhouses/background_values.webp')] bg-cover bg-center
+        "
     >
       {/* --- vista móvil: grid tradicional -------------------------------- */}
+      <div className="sm:hidden grid place-items-center gap-6 mb-6">
+        <span
+          className="w-64 rounded-full bg-gradient-to-br from-yellow-500 to-yellow-300
+                       px-6 py-3 text-center text-lg font-semibold text-green-600"
+        >
+          {title}
+        </span>
+      </div>
       <div className="sm:hidden grid place-items-center gap-6">
         {values.map((v) => (
           <span
