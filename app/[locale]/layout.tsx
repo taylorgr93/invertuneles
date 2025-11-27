@@ -19,18 +19,84 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Invertuneles",
+  metadataBase: new URL("https://invertuneles.com"),
+  title: {
+    default: "Invertuneles",
+    template: "%s | Invertuneles",
+  },
   description:
-    "Nuestra empresa ofrece una agenda de asesores disponibles para atender cualquier necesidad que pueda tener. Nos especializamos en proporcionar servicios personalizados para asegurar que cada cliente reciba la atención que necesita. ¡No se pierda nuestros próximos eventos! Para mantenerse al día, síganos en Instagram o dé un like a nuestra página. Para más información y cotizaciones, no dude en ponerse en contacto con nosotros. Estamos aquí para ayudarle a encontrar soluciones efectivas y personalizadas. Su satisfacción es nuestra prioridad. ¡Esperamos poder servirle pronto!",
-  keywords: ["acerca de nosotros", "servicios", "valores"],
+    "Empresa líder en túneles agrícolas, invernaderos y soluciones tecnológicas para cultivos. Asesoría especializada en agricultura protegida, berries y cultivos intensivos. Contacta con nuestros expertos.",
+  keywords: [
+    "túneles agrícolas",
+    "invernaderos",
+    "agricultura protegida",
+    "cultivo de berries",
+    "arandanos",
+    "frambuesas",
+    "fresas",
+    "zarzamoras",
+    "asesoría agrícola",
+    "tecnología agrícola",
+    "México",
+    "Invertuneles",
+  ],
+  authors: [{ name: "Invertuneles" }],
+  creator: "Invertuneles",
+  publisher: "Invertuneles",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+  openGraph: {
+    type: "website",
+    locale: "es_MX",
+    alternateLocale: ["en_US"],
+    url: "https://invertuneles.com",
+    siteName: "Invertuneles",
+    title: "Invertuneles - Túneles Agrícolas y Soluciones para Cultivos",
+    description:
+      "Empresa líder en túneles agrícolas, invernaderos y soluciones tecnológicas para cultivos.",
+    images: [
+      {
+        url: "/images/og-image.jpg", // Crea esta imagen 1200x630px
+        width: 1200,
+        height: 630,
+        alt: "Invertuneles - Túneles Agrícolas",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Invertuneles - Túneles Agrícolas",
+    description: "Soluciones profesionales en agricultura protegida",
+    images: ["/images/og-image.jpg"],
+  },
+  verification: {
+    // Add this after signing up to Google Search Console
+    // google: 'your-verification-code',
+  },
+  alternates: {
+    canonical: "https://invertuneles.com",
+    languages: {
+      "es-MX": "https://invertuneles.com/es",
+      "en-US": "https://invertuneles.com/en",
+    },
+  },
   icons: {
-    icon: "/",
+    icon: "/favicon.ico",
   },
 };
 
 type Props = {
   children: React.ReactNode;
-  params: Promise<{ locale: string }>; // 👈 importante: params es ahora una promesa
+  params: Promise<{ locale: string }>; // Important: params is now a promise
 };
 
 // NOTE: EL rootlayout es un HOC (Higher order component) - por que se mandan componentes children
@@ -39,6 +105,32 @@ export default function RootLayout({ children, params }: Props) {
 
   return (
     <html lang={locale}>
+      <head>
+        {/* JSON-LD para SEO estructurado */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Invertuneles",
+              url: "https://invertuneles.com",
+              logo: "https://invertuneles.com/logo.png",
+              description:
+                "Empresa líder en túneles agrícolas y soluciones para cultivos",
+              address: {
+                "@type": "PostalAddress",
+                addressCountry: "MX",
+              },
+              sameAs: [
+                // Agrega tus redes sociales aquí
+                // "https://www.instagram.com/tu-instagram",
+                // "https://www.facebook.com/tu-facebook",
+              ],
+            }),
+          }}
+        />
+      </head>
       <body
         className={`
           min-h-screen flex flex-col      /* llena la altura y apila */

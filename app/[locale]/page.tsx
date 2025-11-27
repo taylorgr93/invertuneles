@@ -1,5 +1,6 @@
 /* app/[locale]/page.tsx */
 import { use } from "react";
+import type { Metadata } from "next";
 import { makeT } from "@/lib/makeT";
 import { tArray } from "@/lib/tArray";
 import { getTranslations, Dict } from "@/lib/getTranslations";
@@ -35,6 +36,32 @@ const events: EventCard[] = [
   //   alt: "Congreso de plásticos agrícolasss",
   // },
 ];
+
+type Props = {
+  params: Promise<{ locale: string }>;
+};
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+
+  const titles = {
+    es: "Inicio - Invertuneles | Túneles Agrícolas y Berries",
+    en: "Home - Invertuneles | Agricultural Tunnels and Berries",
+  };
+
+  const descriptions = {
+    es: "Descubre nuestras soluciones en túneles agrícolas para cultivo de berries: arándanos, frambuesas, fresas y zarzamoras. Asesoría especializada y tecnología de vanguardia.",
+    en: "Discover our agricultural tunnel solutions for berry cultivation: blueberries, raspberries, strawberries and blackberries. Expert advice and cutting-edge technology.",
+  };
+
+  return {
+    title: titles[locale as "es" | "en"],
+    description: descriptions[locale as "es" | "en"],
+    alternates: {
+      canonical: `https://invertuneles.com/${locale}`,
+    },
+  };
+}
 
 export default function Home(props: { params: Promise<{ locale: string }> }) {
   const { locale } = use(props.params);
