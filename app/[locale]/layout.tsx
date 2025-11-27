@@ -80,7 +80,7 @@ export const metadata: Metadata = {
   },
   verification: {
     // Add this after signing up to Google Search Console
-    // google: 'your-verification-code',
+    google: "7QiUlkc0LE3mlc_ao6LIypfQ76hPwErdvVjvmq2Q_YQ",
   },
   alternates: {
     canonical: "https://invertuneles.com",
