@@ -20,7 +20,7 @@ const categoryKeys: readonly Category[] = [
 ];
 
 export const metadata: Metadata = {
-  title: "Invertuneles – Productos",
+  title: "Productos - Túneles y Soluciones Agrícolas",
   description: "Catálogo de productos por categoría…",
 };
 

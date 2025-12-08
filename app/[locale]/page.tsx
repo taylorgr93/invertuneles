@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params;
 
   const titles = {
-    es: "Inicio - Invertuneles | Túneles Agrícolas y Berries",
+    es: "Inicio - Invertuneles | Macrotuneles | Túneles Agrícolas y Berries",
     en: "Home - Invertuneles | Agricultural Tunnels and Berries",
   };
 
