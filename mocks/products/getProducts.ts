@@ -364,7 +364,7 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
         image: "/images/products/greenhouses/MACROTUNEL OV-M.webp",
         category: "greenhouses",
         bulletPoints: [
-          "Estructura fabricada con tubos ovalados de 40 x 30 mm, resistente a la tensión, con sección transversal más ancha, generando un sistema 30% más fuerte y robusto.",
+          "Estructura fabricada con tubos oval de 40 x 30 mm, resistente a la tensión, con sección transversal más ancha, generando un sistema 30% más fuerte y robusto.",
         ],
       },
       // -------------------- plastic-films ----------------------
