@@ -166,9 +166,9 @@ export default function Home(props: { params: Promise<{ locale: string }> }) {
         ]}
       />
 
-      <Divider />
+      {/* <Divider />
 
-      <UpcomingEvents title={t("UpcomingEvents.next_events")} events={events} />
+      <UpcomingEvents title={t("UpcomingEvents.next_events")} events={events} /> */}
 
       <Divider />
     </div>
