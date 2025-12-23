@@ -260,12 +260,6 @@
       "title": "Caso de Estudio Macrotuneles",
       "image": "/images/case-studies/caso_de_estudio_sistemas_invertuneles.webp",
       "doc": "/case-studies/SistemasDeInvertuneles.pdf"
-    },
-    {
-      "slug": "Caso de Estudio OV-M",
-      "title": "Caso de Estudio OV-M",
-      "image": "/images/case-studies/caso_de_estudio_ov_m.webp",
-      "doc": "/case-studies/OV-M Ficha Informativa.pdf"
     }
   ]
 }
