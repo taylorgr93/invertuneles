@@ -1,9 +1,10 @@
 // app/products/page.tsx
+import Link from "next/link";
 import { use } from "react";
+import type { Metadata } from "next";
+import { PageProps } from "@/types/page";
 import { makeT } from "@/lib/makeT";
 import { getTranslations, Dict } from "@/lib/getTranslations";
-import type { Metadata } from "next";
-import Link from "next/link";
 import VideoBackground from "@/components/home/VideoBackground";
 import type { ProductDTO } from "@/types/ProductDTO";
 import Divider from "@/components/common/Divider";
@@ -19,10 +20,33 @@ const categoryKeys: readonly Category[] = [
   "substrates",
 ];
 
-export const metadata: Metadata = {
-  title: "Productos - Túneles y Soluciones Agrícolas",
-  description: "Catálogo de productos por categoría…",
-};
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { locale } = await params;
+
+  const titles = {
+    es: "Productos - Túneles y Soluciones Agrícolas",
+    en: "Products - Agricultural Tunnels and Solutions",
+  };
+
+  const descriptions = {
+    es: "Descubre nuestra línea completa de túneles agrícolas, macrotúneles y soluciones para cultivo de berries. Tecnología de vanguardia para agricultura protegida.",
+    en: "Discover our complete line of agricultural tunnels, macro tunnels and berry cultivation solutions. Cutting-edge technology for protected agriculture.",
+  };
+
+  return {
+    title: titles[locale as "es" | "en"],
+    description: descriptions[locale as "es" | "en"],
+    alternates: {
+      canonical: `https://invertuneles.com/${locale}/products`,
+      languages: {
+        "es-MX": "https://invertuneles.com/es/products",
+        "en-US": "https://invertuneles.com/en/products",
+      },
+    },
+  };
+}
 
 export default function ProductsPage({
   params,

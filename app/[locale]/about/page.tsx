@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { makeT } from "@/lib/makeT";
 import { getTranslations, Dict } from "@/lib/getTranslations";
 import { tArray } from "@/lib/tArray";
+import { PageProps } from "@/types/page";
 // import Hero from "@/components/common/Hero";
 import Divider from "@/components/common/Divider";
 // import DualImages from "@/components/about/DualImages";
@@ -14,12 +15,33 @@ import ValuesSection from "@/components/about/ValuesSection";
 import CtaChip from "@/components/about/CtaChip";
 import VideoBackground from "@/components/home/VideoBackground";
 
-export const metadata: Metadata = {
-  title: "Nosotros - Acerca de Invertuneles",
-  description:
-    "Nuestra empresa ofrece una agenda de asesores disponibles para atender cualquier necesidad que pueda tener. Nos especializamos en proporcionar servicios personalizados para asegurar que cada cliente reciba la atención que necesita. ¡No se pierda nuestros próximos eventos! Para mantenerse al día, síganos en Instagram o dé un like a nuestra página. Para más información y cotizaciones, no dude en ponerse en contacto con nosotros. Estamos aquí para ayudarle a encontrar soluciones efectivas y personalizadas. Su satisfacción es nuestra prioridad. ¡Esperamos poder servirle pronto!",
-  keywords: ["acerca de", "acerca de nosotros", "..."],
-};
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { locale } = await params;
+
+  const titles = {
+    es: "Acerca de Nosotros - Invertuneles | Macrotuneles | Túneles Agrícolas y Berries",
+    en: "About Us - Invertuneles | Agricultural Tunnels and Berries",
+  };
+
+  const descriptions = {
+    es: "Somos una empresa centralizada en las personas, lo más importante son nuestros colaboradores agrícolas. Conoce nuestro equipo de expertos en agricultura protegida y túneles agrícolas.",
+    en: "We are a people-centered company, our agricultural collaborators are the most important. Meet our team of experts in protected agriculture and agricultural tunnels.",
+  };
+
+  return {
+    title: titles[locale as "es" | "en"],
+    description: descriptions[locale as "es" | "en"],
+    alternates: {
+      canonical: `https://invertuneles.com/${locale}/about`,
+      languages: {
+        "es-MX": "https://invertuneles.com/es/about",
+        "en-US": "https://invertuneles.com/en/about",
+      },
+    },
+  };
+}
 
 export default function AboutPage({
   params,

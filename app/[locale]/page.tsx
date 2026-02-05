@@ -59,6 +59,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: descriptions[locale as "es" | "en"],
     alternates: {
       canonical: `https://invertuneles.com/${locale}`,
+      languages: {
+        "es-MX": "https://invertuneles.com/es",
+        "en-US": "https://invertuneles.com/en",
+      },
     },
   };
 }

@@ -2,19 +2,41 @@
 import { use } from "react";
 import type { Metadata } from "next";
 import { makeT } from "@/lib/makeT";
+import { tArray } from "@/lib/tArray";
+import { PageProps } from "@/types/page";
 import { getTranslations, Dict } from "@/lib/getTranslations";
 import Hero from "@/components/common/Hero";
 import Divider from "@/components/common/Divider";
 import heroContact from "@/public/images/contact/handshake.webp";
 import ContactAdvisors from "@/components/contact/ContactAdvisors";
-import { tArray } from "@/lib/tArray";
 
-export const metadata: Metadata = {
-  title: "Contacto - Invertuneles",
-  description:
-    "Nuestra empresa ofrece una agenda de asesores disponibles para atender cualquier necesidad que pueda tener. Nos especializamos en proporcionar servicios personalizados para asegurar que cada cliente reciba la atención que necesita. ¡No se pierda nuestros próximos eventos! Para mantenerse al día, síganos en Instagram o dé un like a nuestra página. Para más información y cotizaciones, no dude en ponerse en contacto con nosotros. Estamos aquí para ayudarle a encontrar soluciones efectivas y personalizadas. Su satisfacción es nuestra prioridad. ¡Esperamos poder servirle pronto!",
-  keywords: ["acerca de", "acerca de nosotros", "..."],
-};
+export async function generateMetadata({
+  params,
+}: PageProps): Promise<Metadata> {
+  const { locale } = await params;
+
+  const titles = {
+    es: "Contacto - Invertuneles",
+    en: "Contact - Invertuneles",
+  };
+
+  const descriptions = {
+    es: "Contáctanos para obtener asesoría personalizada sobre túneles agrícolas y soluciones para cultivo de berries. Agenda una cita con nuestros expertos.",
+    en: "Contact us for personalized advice on agricultural tunnels and berry cultivation solutions. Schedule an appointment with our experts.",
+  };
+
+  return {
+    title: titles[locale as "es" | "en"],
+    description: descriptions[locale as "es" | "en"],
+    alternates: {
+      canonical: `https://invertuneles.com/${locale}/contact`,
+      languages: {
+        "es-MX": "https://invertuneles.com/es/contact",
+        "en-US": "https://invertuneles.com/en/contact",
+      },
+    },
+  };
+}
 
 export default function ContactPage({
   params,
