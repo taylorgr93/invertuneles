@@ -36,15 +36,15 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
           "Designed for greater ventilation control, this structure offers the option of opening from the side, front, or top.",
         ],
       },
-      {
-        id: 54,
-        title: "Macrotunnel OV-M",
-        image: "/images/products/greenhouses/MACROTUNEL OV-M.webp",
-        category: "greenhouses",
-        bulletPoints: [
-          "Structure made with 40 x 30 mm oval tubes, tension-resistant, with a wider cross-section, generating a 30% stronger and more robust system.",
-        ],
-      },
+      // {
+      //   id: 54,
+      //   title: "Macrotunnel OV-M",
+      //   image: "/images/products/greenhouses/MACROTUNEL OV-M.webp",
+      //   category: "greenhouses",
+      //   bulletPoints: [
+      //     "Structure made with 40 x 30 mm oval tubes, tension-resistant, with a wider cross-section, generating a 30% stronger and more robust system.",
+      //   ],
+      // },
       // ------------------- plastic-films ----------------------
       {
         id: 41,
@@ -358,15 +358,15 @@ export async function getProducts(locale: string): Promise<ProductDTO[]> {
           "Solución diseñada para mayor control de ventilación, es una estructura con opción de apertura latera, frontal o superior.",
         ],
       },
-      {
-        id: 54,
-        title: "Macrotunel OV-M",
-        image: "/images/products/greenhouses/MACROTUNEL OV-M.webp",
-        category: "greenhouses",
-        bulletPoints: [
-          "Estructura fabricada con tubos oval de 40 x 30 mm, resistente a la tensión, con sección transversal más ancha, generando un sistema 30% más fuerte y robusto.",
-        ],
-      },
+      // {
+      //   id: 54,
+      //   title: "Macrotunel OV-M",
+      //   image: "/images/products/greenhouses/MACROTUNEL OV-M.webp",
+      //   category: "greenhouses",
+      //   bulletPoints: [
+      //     "Estructura fabricada con tubos oval de 40 x 30 mm, resistente a la tensión, con sección transversal más ancha, generando un sistema 30% más fuerte y robusto.",
+      //   ],
+      // },
       // -------------------- plastic-films ----------------------
       {
         id: 41,
