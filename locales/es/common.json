@@ -260,6 +260,24 @@
       "title": "Caso de Estudio Macrotuneles",
       "image": "/images/case-studies/caso_de_estudio_sistemas_invertuneles.webp",
       "doc": "/case-studies/SistemasDeInvertuneles.pdf"
+    },
+    {
+      "slug": "Conoce Nuestros Plásticos",
+      "title": "Conoce Nuestros Plásticos",
+      "image": "/images/recurso-1-8.webp",
+      "doc": "/case-studies/CONOCE NUESTROS PLASTICOS WEB.pdf"
+    },
+    {
+      "slug": "Plasticos Con Tegnología de Isreali",
+      "title": "Plasticos Con Tegnología de Isreali",
+      "image": "/images/recurso-1-8.webp",
+      "doc": "/case-studies/PLASTICOS CON TECNOLOGIA ISRAELI WEB.pdf"
+    },
+    {
+      "slug": "Recomendación Berries",
+      "title": "Recomendación Berries",
+      "image": "/images/recurso-1-8.webp",
+      "doc": "/case-studies/RECOMENDACIÓN BERRIES WEB.pdf"
     }
   ]
 }
