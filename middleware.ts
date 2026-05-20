@@ -4,7 +4,6 @@ import { NextRequest, NextResponse } from "next/server";
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
 
-  // Solo hacer redirección si están en "/"
   if (pathname === "/") {
     const lang = request.headers.get("accept-language") || "es";
     const locale = lang.startsWith("en") ? "en" : "es";
@@ -13,3 +12,11 @@ export function middleware(request: NextRequest) {
 
   return NextResponse.next();
 }
+
+export const config = {
+  matcher: [
+    // Skip _next/static, _next/image, api routes, and files with extensions (images, fonts, etc.)
+    "/((?!_next/static|_next/image|api|favicon\\.ico|.*\\..*).*)",
+  ],
+};
+
