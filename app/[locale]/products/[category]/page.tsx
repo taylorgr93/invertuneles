@@ -35,14 +35,14 @@ const CATEGORY_META: Record<string, CategoryMeta> = {
   },
   "plastic-films": {
     es: {
-      title: "Películas Plásticas Agrícolas con Tecnología Israelí",
+      title: "Plásticos Agrícolas y Acolchados con Tecnología Israelí",
       description:
-        "Películas plásticas para agricultura con tecnología israelí. Protege tus cultivos y aumenta tu rendimiento. Los mejores plásticos agrícolas en México.",
+        "Plásticos agrícolas, acolchados y películas con tecnología israelí. Protege tus cultivos y aumenta tu rendimiento. Los mejores plásticos agrícolas en México.",
     },
     en: {
-      title: "Agricultural Plastic Films with Israeli Technology",
+      title: "Agricultural Plastics and Mulch Films with Israeli Technology",
       description:
-        "Agricultural plastic films with Israeli technology. Protect your crops and boost your yields. The best agricultural plastics in Mexico.",
+        "Agricultural plastics, mulch films and covers with Israeli technology. Protect your crops and boost your yields. The best agricultural plastics in Mexico.",
     },
   },
   tights: {
